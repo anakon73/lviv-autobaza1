@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx,html,hbs}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+          'montserrat': ['Montserrat'],
+          'lato': ['Lato'],
+          'garamond': ['Garamond']
+      }
+    },
   },
   plugins: [],
 }
