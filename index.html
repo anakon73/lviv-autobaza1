@@ -1,13 +1,52 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="/vite.svg"
+  />
+  <link
+    rel="stylesheet"
+    href="./src/style.css"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Vite + TS</title>
+</head>
+
+<body>
+  <div>
+    {{>ProductCard}}
+    <h1>Vite + TypeScript</h1>
+    <div class="card">
+      <button
+        id="counter"
+        type="button"
+      ></button>
+    </div>
+    <p class="read-the-docs">
+      Click on the Vite and TypeScript logos to learn more
+    </p>
+  </div>
+
+  <script>
+    function setupCounter(element) {
+      let counter = 0
+      const setCounter = (count) => {
+        counter = count
+        element.innerHTML = `count is ${counter}`
+      }
+      element.addEventListener('click', () => setCounter(counter + 1))
+      setCounter(0)
+    }
+
+    setupCounter(document.querySelector('#counter'))
+  </script>
+</body>
+
 </html>
