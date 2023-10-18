@@ -9,3 +9,7 @@ function cartCostWithSpaces() {
 }
 
 cartCostWithSpaces()
+
+const catalogItems = document.getElementById('catalogItems')
+
+catalogItems.innerText = Number(catalogItems.innerText).toLocaleString('en-US')
