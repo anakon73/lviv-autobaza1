@@ -13,3 +13,7 @@ cartCostWithSpaces()
 const catalogItems = document.getElementById('catalogItems')
 
 catalogItems.innerText = Number(catalogItems.innerText).toLocaleString('en-US')
+
+const catalogItemsFooter = document.getElementById('catalogItemsFooter')
+
+catalogItemsFooter.innerText = Number(catalogItemsFooter.innerText).toLocaleString('en-US')
