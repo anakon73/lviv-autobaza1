@@ -8,7 +8,9 @@ export default {
     extend: {
       fontFamily: {
         'montserrat': ['Montserrat'],
-        'jakarta': ['Plus Jakarta Sans']
+        'lato': ['Lato'],
+        'garamond': ['Garamond'],
+        'jakarta': ['Plus+Jakarta+Sans']
       }
     },
   },
