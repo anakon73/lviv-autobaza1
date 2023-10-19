@@ -16,3 +16,7 @@
 .contactCard {
   box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.07), 0px 33px 33px 0px rgba(0, 0, 0, 0.06), 0px 74px 45px 0px rgba(0, 0, 0, 0.04), 0px 132px 53px 0px rgba(0, 0, 0, 0.01), 0px 206px 58px 0px rgba(0, 0, 0, 0.00);
 }
+
+.paragraphIcon {
+  filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.08)) drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.04));
+}
