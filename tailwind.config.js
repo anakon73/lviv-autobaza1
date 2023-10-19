@@ -7,9 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-          'montserrat': ['Montserrat'],
-          'lato': ['Lato'],
-          'garamond': ['Garamond']
+        'montserrat': ['Montserrat'],
+        'jakarta': ['Plus Jakarta Sans']
       }
     },
   },
