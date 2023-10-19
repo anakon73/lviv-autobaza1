@@ -24,13 +24,10 @@
 
   {{>NotLoggedHeader}}
   {{>Navbar}}
-  <div class="flex">
-    <div class="pl-7">
-      {{>ProductCard}}
-    </div>
-    <div class="pl-7">
-      {{>ProductCardLiked}}
-    </div>
+  <div class="flex gap-5">
+    {{>ProductCard}}
+    {{>ProductCardLiked}}
+    {{>ProductCardWeak}}
   </div>
 
   {{>ServiceCard}}
