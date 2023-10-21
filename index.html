@@ -21,35 +21,190 @@
 </head>
 
 <body>
+  <div class="mb-14">
+    {{>NotLoggedHeader}}
 
-  {{>NotLoggedHeader}}
-
-  {{>Navbar}}
-
-  <div class="flex gap-5">
-    {{>ProductCard}}
-    {{>ProductCardLiked}}
-    {{>ProductCardWeak}}
+    {{>Navbar}}
   </div>
 
-  {{>ServiceCard}}
+  <div class="max-w-[1440px] mx-auto">
+    <div class="px-8 flex items-center gap-14 mb-32">
+      <div class="flex flex-col gap-6 items-start">
+        <h1 class="font-jakarta font-bold text-gray-900 leading-[66px] text-6xl">
+          Якісні запчастини для вантажівок
+        </h1>
+        <p class="text-neutral-500 font-montserrat leading-7">
+          Это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+        </p>
+        <button class="text-sm text-white font-montserrat font-bold px-7 py-4 rounded-[30px] bg-blue-600">
+          <a href="#">Перейти до каталогу</a>
+        </button>
+      </div>
+      <div class="relative">
+        <div class="absolute -top-6 -left-6 z-10 select-none">
+          <img src="/src/assets/weakDiscount.svg">
+          <p class="font-montserrat font-semibold leading-6 text-white absolute top-[53px] left-[17px] -rotate-[30deg]">
+            Знижки тижня
+          </p>
+        </div>
+        {{>WeakDiscountSwiper}}
+      </div>
+    </div>
+    <div class="mx-auto max-w-[1150px] hotOffersSwiper overflow-hidden mb-32">
+      <div class="flex justify-between items-center mb-9">
+        <div class="flex items-center gap-3">
+          <img
+            class="p-2 bg-white rounded-full paragraphIcon"
+            src="/src/assets/fireIcon.svg"
+            alt="fireIcon"
+          >
+          <div class="text-gray-900 text-[40px] leading-[44px] font-bold font-jakarta">
+            Гарячі пропозиції
+          </div>
+        </div>
+        <div class="flex gap-2.5 h-10">
+          <div class="p-2 bg-white rounded-full paragraphIcon prevOffer">
+            <img
+              class="w-6 h-6"
+              src="/src/assets/chevronLeft.svg"
+            >
+          </div>
+          <div class="p-2 bg-white rounded-full paragraphIcon nextOffer">
+            <img
+              class="w-6 h-6"
+              src="/src/assets/chevronRight.svg"
+            >
+          </div>
+        </div>
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">{{>ProductCard}}</div>
+        <div class="swiper-slide">{{>ProductCardLiked}}</div>
+        <div class="swiper-slide">{{>ProductCard}}</div>
+        <div class="swiper-slide">{{>ProductCard}}</div>
+        <div class="swiper-slide">{{>ProductCardLiked}}</div>
+        <div class="swiper-slide">{{>ProductCard}}</div>
+        <div class="swiper-slide">{{>ProductCard}}</div>
+        <div class="swiper-slide">{{>ProductCardLiked}}</div>
+      </div>
+    </div>
+    <div class="px-[150px] mb-[248px]">
+      <div class="flex items-center mb-8">
+        <img
+          class="paragraphIcon p-2 rounded-full bg-white mr-3"
+          src="/src/assets/handshakeIcon.svg"
+          alt="handshake icon"
+        >
+        <h1 class="mr-5 font-jakarta text-[40px] leading-[44px] font-bold text-gray-900">
+          Наші послуги
+        </h1>
+        <a
+          class="font-montserrat pt-2.5 text-blue-600 font-bold text-xs flex items-center"
+          href="#"
+        >
+          <p>Всі послуги</p>
+          <img src="/src/assets/blueArrow.svg">
+        </a>
+      </div>
+      <div class="grid grid-cols-2 gap-5">
+        {{>ServiceCard}}
+        {{>ServiceCard}}
+        {{>ServiceCard}}
+        {{>ServiceCard}}
+        {{>ServiceCard}}
+        {{>ServiceCard}}
+      </div>
+    </div>
+    <div class="px-[150px] mb-[120px]">
+      <div class="flex gap-0.5 items-start mb-10">
+        <img
+          class="paragraphIcon p-2 rounded-full bg-white mr-3"
+          src="/src/assets/advantagesStar.svg"
+          alt="advantages star icon"
+        >
+        <div>
+          <h1 class="font-jakarta text-[40px] text-gray-900 font-bold leading-[44px] mb-3">
+            Наші переваги
+          </h1>
+          <p class="max-w-[500px] text-neutral-500/70 text-xs font-montserrat leading-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt.
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-4 gap-5">
+        {{>AdvantageCard}}
+        {{>AdvantageCard}}
+        {{>AdvantageCard}}
+        {{>AdvantageCard}}
+        {{>AdvantageCard}}
+        {{>AdvantageCard}}
+        {{>AdvantageCard}}
+        {{>AdvantageCard}}
+      </div>
+    </div>
+  </div>
 
-  {{>AdvantageCard}}
+  <div class="[background:_linear-gradient(0deg,_rgba(36,_109,_239,_0.50)_0%,_rgba(36,_109,_239,_0.50)_100%),_url('/src/assets/blueWavesBg.png'),_lightgray_0px_-73.061px_/_100%_129.949%_no-repeat;] py-[120px]">
+    <div class="max-w-[1440px] mx-auto px-[134px]">
+      <div class="flex justify-center mb-14">
+        <div>
+          <div class="flex gap-3 items-center mb-5">
+            <img
+              class="paragraphIcon p-2 rounded-full bg-white mr-3"
+              src="/src/assets/messageCloudIcon.svg"
+              alt="message cloud icon"
+            >
+            <h1 class="text-white font-jakarta font-bold leading-[44px] text-[40px]">
+              Відгуки наших клієнтів
+            </h1>
+          </div>
+          <p class="font-montserrat text-xs leading-5 text-white/70 text-center max-w-[500px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
+            Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+            Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+          </p>
+        </div>
+      </div>
+      <div class="reviewsSwiper overflow-hidden">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide !relative !scale-90">1{{>ReviewCard}}</div>
+          <div class="swiper-slide !relative !scale-90">2{{>ReviewCard}}</div>
+          <div class="swiper-slide !relative !scale-90">3{{>ReviewCard}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  {{>ReviewCard}}
-
-  {{>ContactCard}}
-
-  {{>WeakDiscountSwiper}}
+  <div class="relative">
+    <div class="top-24 left-[380px] absolute z-20">
+      {{>ContactCard}}
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5149.855438201257!2d24.06431506044323!3d49.806226547065606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae81a36741bbf%3A0xe7464f623da4015b!2sSERVICE%20TIR!5e0!3m2!1suk!2sua!4v1697911690186!5m2!1suk!2sua"
+      width="100%"
+      height="670"
+      class="relative z-10"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      id="map"
+    >
+    </iframe>
+  </div>
 
   {{>Footer}}
 
-
-
   <script src="/src/scripts/NumberFormat.js"></script>
   <script
+    src="/src/scripts/Swiper.js"
     type="module"
-    src="src/scripts/Swiper.js"
+  ></script>
+  <script
+    src="/src/scripts/HotOffersSwiper.js"
+    type="module"
+  ></script>
+  <script
+    src="/src/scripts/ReviewsSwiper.js"
+    type="module"
   ></script>
 
 </body>
