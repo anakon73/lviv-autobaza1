@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="/vite.svg"
+  />
+  <link
+    rel="stylesheet"
+    href="/src/style.css"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Vite + TS | Catalog</title>
+
+</head>
+
+<body>
+  <div class="mb-5">
+    {{>NotLoggedHeader}}
+
+    {{>Navbar}}
+  </div>
+
+  <div class="max-w-[1440px] mx-auto px-[150px] mb-[120px]">
+    <div class="flex gap-1 items-center mb-10">
+      <p class="text-gray-900 font-montserrat text-xs opacity-50">Головна</p>
+      <img src="/src/assets/smallChevronRight.svg">
+      <p class="text-gray-900 font-montserrat text-xs">Каталог</p>
+    </div>
+    <div class="flex gap-3 items-center mb-8">
+      <img
+        class="p-2 bg-white rounded-full paragraphIcon"
+        src="/src/assets/toolsIcon.svg"
+        alt="tools icon"
+      >
+      <h1 class="text-gray-900 font-bold font-jakarta leading-[44px] text-[40px]">
+        Каталог товарів
+      </h1>
+    </div>
+    <div class="flex gap-5">
+      <div>{{>FilterForm}}</div>
+      <div>
+        <div class="grid grid-cols-3 gap-5 mb-10">
+          {{>ProductCard}}
+          {{>ProductCard}}
+          {{>ProductCardLiked}}
+          {{>ProductCardLiked}}
+          {{>ProductCard}}
+          {{>ProductCard}}
+          {{>ProductCardLiked}}
+          {{>ProductCard}}
+          {{>ProductCard}}
+          {{>ProductCardLiked}}
+          {{>ProductCard}}
+          {{>ProductCardLiked}}
+          {{>ProductCard}}
+          {{>ProductCardLiked}}
+          {{>ProductCard}}
+          {{>ProductCardLiked}}
+          {{>ProductCard}}
+          {{>ProductCardLiked}}
+        </div>
+        <div class="flex items-center justify-center gap-2">
+          <img
+            src="/src/assets/lightChevronLeft.svg"
+            class="cursor-pointer"
+          >
+          <a class="text-sm font-montserrat font-medium leading-5 text-blue-600
+             border border-slate-300 w-6 h-6 flex items-center justify-center rounded
+             cursor-pointer
+             ">
+            1
+          </a>
+          <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
+             w-6 h-6 flex items-center justify-center rounded cursor-pointer
+             ">
+            2
+          </a>
+          <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
+             w-6 h-6 flex items-center justify-center rounded cursor-pointer
+             ">
+            3
+          </a>
+          <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
+             w-6 h-6 flex items-center justify-center rounded cursor-pointer
+             ">
+            ...
+          </a>
+          <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
+             w-6 h-6 flex items-center justify-center rounded cursor-pointer
+             ">
+            36
+          </a>
+          <img
+            src="/src/assets/lightChevronRight.svg"
+            class="cursor-pointer"
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{>Footer}}
+
+  <script src="/src/scripts/FormatInputNumber.js"></script>
+  <script src="/src/scripts/NumberFormat.js"></script>
+</body>
+
+</html>
