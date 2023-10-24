@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="/vite.svg"
+  />
+  <link
+    rel="stylesheet"
+    href="/src/style.css"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Vite + TS | Catalog</title>
+
+</head>
+
+<body>
+  <div class="mb-5">
+    {{>NotLoggedHeader}}
+
+    {{>Navbar}}
+  </div>
+
+  <div class="max-w-[1440px] mx-auto px-[150px]">
+    <div class="text-gray-900 text-xs font-montserrat mb-10 flex items-center gap-1">
+      <p class="opacity-50">
+        <a href="/">Головна</a>
+      </p>
+      <img src="/src/assets/smallChevronRight.svg">
+      <p>Контакти</p>
+    </div>
+    <div class="flex items-center justify-between mb-10">
+      <div class="flex items-center gap-3">
+        <img
+          src="/src/assets/phoneBigIcon.svg"
+          alt="phone big icon"
+          class="paragraphIcon p-2 rounded-full bg-white"
+        >
+        <h1 class="text-gray-900 font-jakarta font-bold leading-[44px] text-[40px]">
+          Наші контакти
+        </h1>
+      </div>
+      <button class="py-3 px-[34px] font-bold font-montserrat text-white text-xs bg-blue-600 rounded-[30px]">
+        Зателефонувати
+      </button>
+    </div>
+    <div class="flex gap-[120px] items-start font-montserrat text-base mb-8">
+      <div class="flex flex-col gap-2.5 justify-start">
+        <h2 class="font-bold">Адреса:</h2>
+        <p class="text-neutral-500 leading-7">
+          Україна, м. Львів,<br> вул. Пасічна 127
+        </p>
+      </div>
+      <div class="flex flex-col gap-2.5 justify-start">
+        <h2 class="font-bold">Телефон</h2>
+        <p class="text-neutral-500 leading-7">
+          +38(098)-0000-122
+        </p>
+        <p class="text-neutral-500 leading-7">
+          +38(096)-0000-127
+        </p>
+      </div>
+      <div class="flex flex-col gap-2.5 justify-start">
+        <h2 class="font-bold">Пошта:</h2>
+        <p class="text-neutral-500 leading-7">
+          avtobaza12@ukr.net
+        </p>
+        <p class="text-neutral-500 leading-7">
+          avtobaza12@ukr.net
+        </p>
+      </div>
+    </div>
+    <div class="mb-[120px]">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5149.608856919481!2d24.05850095232348!3d49.808544341551475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae81a36741bbf%3A0xe7464f623da4015b!2z0JvRjNCy0ZbQstGB0YzQutCwINCQ0LLRgtC-0LHQsNC30LAg4oSWMSwg0KLQlNCS!5e0!3m2!1sru!2sua!4v1698168999309!5m2!1sru!2sua"
+        width="100%"
+        height="550"
+        style="border-radius: 30px;"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+
+  {{>Footer}}
+
+  <script
+    src="/src/scripts/NumberFormat.js"
+    type="module"
+  ></script>
+</body>
+
+</html>
