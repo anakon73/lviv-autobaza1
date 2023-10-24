@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="/vite.svg"
+  />
+  <link
+    rel="stylesheet"
+    href="/src/style.css"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Vite + TS | Catalog</title>
+
+</head>
+
+<body>
+  <div class="mb-5">
+    {{>NotLoggedHeader}}
+
+    {{>Navbar}}
+  </div>
+
+  <div class="max-w-[1440px] mx-auto px-[150px] mb-[120px]">
+    <div class="text-xs font-montserrat text-gray-900 flex items-center gap-1 mb-10">
+      <p class="opacity-50">Головна</p>
+      <img src="/src/assets/smallChevronRight.svg">
+      <p>Послуги</p>
+    </div>
+    <div class="flex gap-3 items-center mb-10">
+      <img
+        class="paragraphIcon p-2 rounded-full bg-white mr-3"
+        src="/src/assets/handshakeBigIcon.svg"
+        alt="handshake icon"
+      >
+      <h1 class="mr-5 font-jakarta text-[40px] leading-[44px] font-bold text-gray-900">
+        Наші послуги
+      </h1>
+    </div>
+    <div class="grid grid-cols-2 gap-5">
+      {{>ServiceCard}}
+      {{>ServiceCard}}
+      {{>ServiceCard}}
+      {{>ServiceCard}}
+      {{>ServiceCard}}
+      {{>ServiceCard}}
+      {{>ServiceCard}}
+      {{>ServiceCard}}
+      {{>ServiceCard}}
+      {{>ServiceCard}}
+      {{>ServiceCard}}
+      {{>ServiceCard}}
+    </div>
+  </div>
+
+  {{>Footer}}
+
+  <script
+    src="/src/scripts/NumberFormat.js"
+    type="module"
+  ></script>
+</body>
+
+</html>
