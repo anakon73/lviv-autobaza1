@@ -14,7 +14,8 @@ export default defineConfig({
         services: resolve(__dirname, 'services/index.html'),
         contacts: resolve(__dirname, 'contacts/index.html'),
         registration: resolve(__dirname, 'registration/index.html'),
-        authentication: resolve(__dirname, 'authentication/index.html')
+        authentication: resolve(__dirname, 'authentication/index.html'),
+        'reset-password': resolve(__dirname, 'reset-password/index.html'),
       }
     }
   }
