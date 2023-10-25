@@ -12,7 +12,8 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         catalog: resolve(__dirname, 'catalog/index.html'),
         services: resolve(__dirname, 'services/index.html'),
-        contacts: resolve(__dirname, 'contacts/index.html')
+        contacts: resolve(__dirname, 'contacts/index.html'),
+        registration: resolve(__dirname, 'registration/index.html')
       }
     }
   }
