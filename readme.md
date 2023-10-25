@@ -1,6 +1,6 @@
-# LvivAutobaza1
+# Service TIR
 
-Markup for LvivAutobaza1, using:
+Markup for Service TIR, using:
 
 Vite - for build
 
