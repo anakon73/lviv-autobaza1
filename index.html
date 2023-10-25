@@ -31,16 +31,21 @@
     <div class="px-8 flex items-center gap-14 mb-32">
       <div class="flex flex-col gap-6 items-start">
         <h1 class="font-jakarta font-bold text-gray-900 leading-[66px] text-6xl">
-          Якісні запчастини для вантажівок
+          Якісна діагностика ходової вантажівок
         </h1>
         <p class="text-neutral-500 font-montserrat leading-7">
           Это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
         </p>
         <button class="text-sm text-white font-montserrat font-bold px-7 py-4 rounded-[30px] bg-blue-600">
-          <a href="#">Перейти до каталогу</a>
+          <a href="#">Дізнатись ціну для вашого авто</a>
         </button>
       </div>
-      <div class="relative">
+      <img
+        class="rounded-[30px]"
+        src="/src/assets/EngineRepairService.png"
+        alt="engine repair service photo"
+      >
+      <!-- <div class="relative">
         <div class="absolute -top-6 -left-6 z-10 select-none">
           <img src="/src/assets/discountWeak.svg">
           <p class="font-montserrat font-semibold leading-6 text-white absolute top-[53px] left-[17px] -rotate-[30deg]">
@@ -48,7 +53,7 @@
           </p>
         </div>
         {{>WeakDiscountSwiper}}
-      </div>
+      </div> -->
     </div>
     <div class="mx-auto max-w-[1150px] hotOffersSwiper overflow-hidden mb-32">
       <div class="flex justify-between items-center mb-9">
@@ -103,7 +108,7 @@
           href="/services/"
         >
           <p>Всі послуги</p>
-          <img src="/src/assets/blueArrow.svg">
+          <img src="/src/assets/RightArrowBlue.svg">
         </a>
       </div>
       <div class="grid grid-cols-2 gap-5">
@@ -145,33 +150,38 @@
   </div>
 
   <div class="[background:_linear-gradient(0deg,_rgba(36,_109,_239,_0.50)_0%,_rgba(36,_109,_239,_0.50)_100%),_url('/src/assets/blueWavesBg.png'),_lightgray_0px_-73.061px_/_100%_129.949%_no-repeat;] py-[120px]">
-    <div class="max-w-[1440px] mx-auto px-[134px]">
-      <div class="flex justify-center mb-14">
-        <div>
-          <div class="flex gap-3 items-center mb-5">
-            <img
-              class="paragraphIcon p-2 rounded-full bg-white mr-3"
-              src="/src/assets/messageCloudIcon.svg"
-              alt="message cloud icon"
-            >
-            <h1 class="text-white font-jakarta font-bold leading-[44px] text-[40px]">
-              Відгуки наших клієнтів
-            </h1>
-          </div>
-          <p class="font-montserrat text-xs leading-5 text-white/70 text-center max-w-[500px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
-            Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
-            Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+    <div class="max-w-[1440px] mx-auto px-[134px] flex flex-col items-center">
+      <div class="flex flex-col justify-center gap-5 items-center mb-14">
+        <div class="flex gap-3 items-center mb-5">
+          <img
+            class="paragraphIcon p-2 rounded-full bg-white mr-3"
+            src="/src/assets/messageCloudIcon.svg"
+            alt="message cloud icon"
+          >
+          <h1 class="text-white font-jakarta font-bold leading-[44px] text-[40px]">
+            Відгуки наших клієнтів
+          </h1>
+        </div>
+        <p class="font-montserrat text-xs leading-5 text-white/70 text-center max-w-[500px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
+          Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+          Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+        </p>
+        <div class="flex items-center gap-1">
+          <p class="text-xs font-bold font-montserrat text-white">
+            Всі відгуки
           </p>
+          <img src="/src/assets/RightArrowWhite.svg">
         </div>
       </div>
-      <div class="reviewsSwiper overflow-hidden">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide !relative !scale-90">1{{>ReviewCard}}</div>
-          <div class="swiper-slide !relative !scale-90">2{{>ReviewCard}}</div>
-          <div class="swiper-slide !relative !scale-90">3{{>ReviewCard}}</div>
-        </div>
+      <div class="mb-16 flex relative w-full justify-center">
+        <div class="scale-90 absolute right-0">{{>ReviewCard}}</div>
+        <div class="relative z-10">{{>ReviewCard}}</div>
+        <div class="scale-90 absolute left-0">{{>ReviewCard}}</div>
       </div>
+      <button class="text-gray-900 bg-gray-100 rounded-[30px] font-bold font-montserrat text-xs py-3 px-[34px]">
+        Залишити відгук
+      </button>
     </div>
   </div>
 
