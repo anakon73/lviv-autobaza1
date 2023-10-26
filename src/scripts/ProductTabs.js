@@ -9,9 +9,7 @@ tabsBtn.forEach((btn) => {
     let tabId = currentBtn.getAttribute('data-tab')
     let currentTab = document.querySelector(tabId)
 
-    console.log(currentTab);
-
-    if (!currentBtn.classList.contains('hidden')) {
+    if (currentTab.classList.contains('hidden')) {
       tabsBtn.forEach((item) => item.classList.remove(...selectedTabBtnClasses))
       tabs.forEach((item) => item.classList.add('hidden'))
 
