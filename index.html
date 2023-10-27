@@ -167,10 +167,14 @@
             <img src="/src/assets/RightArrowWhite.svg">
           </a>
         </div>
-        <button class="text-gray-900 font-bold text-xs font-montserrat px-[34px] py-3 bg-white rounded-[30px]">
+        <button
+          id="openReviewModal"
+          class="text-gray-900 font-bold text-xs font-montserrat px-[34px] py-3 bg-white rounded-[30px]"
+        >
           Залишити відгук
         </button>
       </div>
+      {{>ReviewModal}}
       {{>ReviewsSwiper}}
     </div>
   </div>

@@ -34,6 +34,4 @@ modalWindow.addEventListener('click', (e) => {
 
 sendBtn.addEventListener('click', onClose)
 
-
-
 if (form) form.addEventListener('click', (e) => e.preventDefault())
