@@ -19,6 +19,7 @@ export default defineConfig({
         'reset-password': resolve(__dirname, 'reset-password/index.html'),
         'sms-confirm': resolve(__dirname, 'sms-confirm/index.html'),
         reviews: resolve(__dirname, 'reviews/index.html'),
+        results: resolve(__dirname, 'results/index.html'),
       }
     }
   }
