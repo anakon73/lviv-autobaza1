@@ -45,15 +45,6 @@
         src="/src/assets/EngineRepairService.png"
         alt="engine repair service photo"
       >
-      <!-- <div class="relative">
-        <div class="absolute -top-6 -left-6 z-10 select-none">
-          <img src="/src/assets/discountWeak.svg">
-          <p class="font-montserrat font-semibold leading-6 text-white absolute top-[53px] left-[17px] -rotate-[30deg]">
-            Знижки тижня
-          </p>
-        </div>
-        {{>WeakDiscountSwiper}}
-      </div> -->
     </div>
     <div class="mx-auto max-w-[1170px] px-2.5 hotOffersSwiper overflow-hidden py-4 mb-28">
       <div class="flex justify-between items-center mb-9">
@@ -150,8 +141,38 @@
   </div>
 
   <div class="[background:_linear-gradient(0deg,_rgba(36,_109,_239,_0.50)_0%,_rgba(36,_109,_239,_0.50)_100%),_url('/src/assets/blueWavesBg.png'),_lightgray_0px_-73.061px_/_100%_129.949%_no-repeat;] py-[120px]">
-    <div class="max-w-[1440px] mx-auto px-[134px] flex flex-col items-center">
-      <div class="flex flex-col justify-center gap-5 items-center mb-14">
+    <div class="max-w-[1440px] mx-auto px-[134px]">
+      <div class="flex justify-between items-start mb-6">
+        <div class="flex items-start">
+          <div class="flex flex-col justify-start gap-5">
+            <div class="flex gap-3 items-center mr-4">
+              <img
+                class="paragraphIcon p-2 rounded-full bg-white mr-3"
+                src="/src/assets/messageCloudIcon.svg"
+                alt="message cloud icon"
+              >
+              <h1 class="font-jakarta font-bold leading-[44px] text-[44px] text-white">
+                Відгуки наших клієнтів
+              </h1>
+            </div>
+            <p class="max-w-[500px] font-montserrat text-xs leading-5 text-white/70">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet.
+            </p>
+          </div>
+          <a
+            href="#"
+            class="flex items-center gap-1 pt-3"
+          >
+            <p class="font-bold font-montserrat text-xs text-white">Всі відгуки</p>
+            <img src="/src/assets/RightArrowWhite.svg">
+          </a>
+        </div>
+        <button class="text-gray-900 font-bold text-xs font-montserrat px-[34px] py-3 bg-white rounded-[30px]">
+          Залишити відгук
+        </button>
+      </div>
+      {{>ReviewsSwiper}}
+      <!-- <div class="flex flex-col justify-center gap-5 items-center mb-14">
         <div class="flex gap-3 items-center mb-5">
           <img
             class="paragraphIcon p-2 rounded-full bg-white mr-3"
@@ -173,15 +194,15 @@
           </p>
           <img src="/src/assets/RightArrowWhite.svg">
         </div>
-      </div>
-      <div class="mb-16 flex relative w-full justify-center">
+      </div> -->
+      <!-- <div class="mb-16 flex relative w-full justify-center">
         <div class="scale-90 absolute right-0">{{>ReviewCard}}</div>
         <div class="relative z-10">{{>ReviewCard}}</div>
         <div class="scale-90 absolute left-0">{{>ReviewCard}}</div>
       </div>
       <button class="text-gray-900 bg-gray-100 rounded-[30px] font-bold font-montserrat text-xs py-3 px-[34px]">
         Залишити відгук
-      </button>
+      </button> -->
     </div>
   </div>
 
