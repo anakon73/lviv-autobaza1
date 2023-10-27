@@ -34,3 +34,9 @@ document.addEventListener('keydown', (e) => {
 
 search.addEventListener('click', onOpen)
 overlay.addEventListener('click', onClose)
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    window.location.href = '/results/';
+  }
+})
