@@ -21,6 +21,10 @@
 </head>
 
 <body>
+
+  {{>ReviewModal}}
+
+
   <div class="mb-5">
     {{>HeaderNotLogged}}
     {{>Navbar}}
@@ -62,7 +66,10 @@
           <img src="/src/assets/RightArrowWhite.svg">
         </a>
       </div>
-      <button class="text-white font-bold text-xs font-montserrat px-[34px] py-3 bg-blue-600 rounded-[30px]">
+      <button
+        id="openReviewModal"
+        class="text-white font-bold text-xs font-montserrat px-[34px] py-3 bg-blue-600 rounded-[30px] focus:outline-0"
+      >
         Залишити відгук
       </button>
     </div>
@@ -127,6 +134,10 @@
   <script
     type="module"
     src="/src/scripts/NumberFormat.js"
+  ></script>
+  <script
+    type="module"
+    src="/src/scripts/ReviewModal.js"
   ></script>
 </body>
 
