@@ -12,11 +12,11 @@ searchInput.oninput = () => {
 
 const onOpen = () => {
   overlay.classList.remove('hidden')
+  searchResult.classList.add('hidden')
   if (searchValue !== '') {
     searchResult.classList.remove('hidden')
     searchResult.classList.add('flex')
   }
-  console.log('open');
 }
 
 const onClose = () => {
