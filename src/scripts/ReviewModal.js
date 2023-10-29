@@ -32,6 +32,15 @@ modalWindow.addEventListener('click', (e) => {
   if (e.target === modalWindow) onClose()
 })
 
-sendBtn.addEventListener('click', onClose)
+sendBtn.addEventListener('click', () => {
+  console.log(form);
+  console.log(successfully);
+
+  form.classList.add('hidden')
+  form.classList.remove('flex')
+
+  successfully.classList.remove('hidden')
+  successfully.classList.add('flex')
+})
 
 if (form) form.addEventListener('click', (e) => e.preventDefault())
