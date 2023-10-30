@@ -20,6 +20,7 @@ export default defineConfig({
         'sms-confirm': resolve(__dirname, 'sms-confirm/index.html'),
         reviews: resolve(__dirname, 'reviews/index.html'),
         results: resolve(__dirname, 'results/index.html'),
+        cart: resolve(__dirname, 'cart/index.html'),
       }
     }
   }
