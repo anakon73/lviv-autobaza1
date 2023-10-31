@@ -208,7 +208,10 @@
               </div>
             </div>
           </div>
-          <button class="bg-blue-600 px-[79px] py-3 rounded-[30px] text-white font-semibold text-sm self-start">
+          <button
+            id="confirmOrder"
+            class="bg-blue-600 px-[79px] py-3 rounded-[30px] text-white font-semibold text-sm self-start"
+          >
             Замовити
           </button>
         </div>
@@ -230,6 +233,8 @@
   </div>
 
   {{>Footer}}
+
+  {{>OrderModal}}
 
   <script
     src="/src/scripts/NumberFormat.js"
