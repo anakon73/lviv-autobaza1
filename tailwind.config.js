@@ -11,7 +11,8 @@ export default {
         'montserrat': ['Montserrat'],
         'lato': ['Lato'],
         'garamond': ['Garamond'],
-        'jakarta': ['Plus+Jakarta+Sans']
+        'jakarta': ['Plus+Jakarta+Sans'],
+        'inter': ['Inter']
       },
       keyframes: {
         "fade-in": {
