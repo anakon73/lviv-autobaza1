@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="/vite.svg"
+  />
+  <link
+    rel="stylesheet"
+    href="/src/style.css"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Service Tir | About Us</title>
+
+</head>
+
+<body>
+  <div class="mb-5">
+    {{>HeaderNotLogged}}
+    {{>Navbar}}
+  </div>
+
+  <div class="max-w-[1440px] mx-auto px-[150px]">
+    <div class="text-xs font-montserrat text-gray-900 flex gap-1 items-center mb-10">
+      <a
+        href="/"
+        class="opacity-50"
+      >
+        Головна
+      </a>
+      <img src="/src/assets/ChevronRightSmall.svg">
+      <p class="cursor-pointer">Про нас</p>
+    </div>
+    <div class="flex justify-between items-center mb-[120px]">
+      <div class="flex flex-col gap-5">
+        <div class="flex items-center gap-3">
+          <img
+            src="/src/assets/supremacyIcon.svg"
+            alt="supremacy Icon"
+            class="bg-white rounded-full paragraphIcon p-2"
+          >
+          <h1 class="text-gray-900 text-[40px] leading-[44px] font-bold font-jakarta">Про нас</h1>
+        </div>
+        <p class="font-montserrat text-sm leading-6 text-gray-900 max-w-[580px]">
+          Львівська Автобаза No1 вже понад 30 років надає транспортні послуги.
+          На нашій власній території ми маємо стоянку TIR, мийку шиномонтаж
+          та сервіс, де одночасно можемо обслуговувати до 10 машин. В основному
+          ми перевозимо вантажі по Євросоюзу та країнам Шенгенської зони. Наш
+          автопарк постійно збільшується та оновлюється. На сьогодні ми маємо
+          декілька десятків сучасних автомобілів стандарту євро-6 з різними
+          кузовами, причепами, завдяки чому наш автопарк завжди може бути
+          адаптований до потреб клієнта. На нашій базі ми маємо окрему
+          майстерню Tir-Service для ремонту наших транспортних засобів
+          і команду спеціалізованих автомеханіків, завдяки чому наші
+          транспортні засоби знаходяться на постійному технічному
+          контролі і в справному стані. Ми пишаємося професіоналізмом,
+          підтвердженим багатьма сертифікатами та нагородами,
+          і відмінним штатом експедиторів та інших спеціалістів.
+        </p>
+        <div class="flex gap-2.5 items-center font-montserrat">
+          <h2 class="text-[40px] font-bold leading-[60px] text-blue-600">150</h2>
+          <p class="text-gray-900 leading-6 text-sm">
+            людей в команді <br> забезпечують успіх
+          </p>
+        </div>
+      </div>
+      <img
+        src="/src/assets/aboutUsPhoto.png"
+        alt="about us image"
+      >
+    </div>
+    <div class="py-[120px]">
+      <div class="flex gap-0.5 items-start mb-10">
+        <img
+          class="paragraphIcon p-2 rounded-full bg-white mr-3"
+          src="/src/assets/advantagesStarIcon.svg"
+          alt="advantages star icon"
+        >
+        <div>
+          <h1 class="font-jakarta text-[40px] text-gray-900 font-bold leading-[44px] mb-3">
+            Наші переваги
+          </h1>
+          <p class="max-w-[500px] text-neutral-500/70 text-xs font-montserrat leading-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt.
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-4 gap-5">
+        {{>AdvantageCard}}
+        {{>AdvantageCard}}
+        {{>AdvantageCard}}
+        {{>AdvantageCard}}
+        {{>AdvantageCard}}
+        {{>AdvantageCard}}
+        {{>AdvantageCard}}
+        {{>AdvantageCard}}
+      </div>
+    </div>
+    <div class="py-[120px]">
+      <div class="flex items-center gap-3 mb-10">
+        <img
+          src="/src/assets/toolsIcon.svg"
+          alt="tools Icon"
+          class="bg-white rounded-full paragraphIcon p-2"
+        >
+        <h1 class="text-gray-900 text-[40px] leading-[44px] font-bold font-jakarta">Наші майстри</h1>
+      </div>
+      <div class="flex gap-5 justify-center">
+        <div class="flex flex-col gap-[140px]">
+          <div class="flex flex-col gap-[30px]">
+            <img
+              src="/src/assets/personOne.png"
+              class="rounded-2xl"
+            >
+            <div class="flex justify-between font-inter font-medium leading-[22px]">
+              <p class="text-neutral-800">Дмитро Евременко</p>
+              <p class="text-slate-500">Електрик</p>
+            </div>
+            <hr>
+          </div>
+          <div class="flex flex-col gap-[30px]">
+            <img
+              src="/src/assets/personPrickly.png"
+              class="rounded-2xl"
+            >
+            <div class="flex justify-between font-inter font-medium leading-[22px]">
+              <p class="text-neutral-800">Микола Заварев</p>
+              <p class="text-slate-500">Майстер по ходовій</p>
+            </div>
+            <hr>
+          </div>
+          <div class="flex flex-col gap-[30px]">
+            <img
+              src="/src/assets/personBeard.png"
+              class="rounded-2xl"
+            >
+            <div class="flex justify-between font-inter font-medium leading-[22px]">
+              <p class="text-neutral-800">Максим Захаров</p>
+              <p class="text-slate-500">Електрик</p>
+            </div>
+            <hr>
+          </div>
+        </div>
+        <div class="pt-[140px] flex flex-col gap-[140px]">
+          <div class="flex flex-col gap-[30px]">
+            <img
+              src="/src/assets/personWithWheel.png"
+              class="rounded-2xl"
+            >
+            <div class="flex justify-between font-inter font-medium leading-[22px]">
+              <p class="text-neutral-800">Володимир Матвієнко</p>
+              <p class="text-slate-500">Майстер по ходовій</p>
+            </div>
+            <hr>
+          </div>
+          <div class="flex flex-col gap-[30px]">
+            <img
+              src="/src/assets/person5.png"
+              class="rounded-2xl"
+            >
+            <div class="flex justify-between font-inter font-medium leading-[22px]">
+              <p class="text-neutral-800">Олександр Симонов</p>
+              <p class="text-slate-500">Моторист</p>
+            </div>
+            <hr>
+          </div>
+          <div class="flex flex-col gap-[30px]">
+            <img
+              src="/src/assets/personBrutal.png"
+              class="rounded-2xl"
+            >
+            <div class="flex justify-between font-inter font-medium leading-[22px]">
+              <p class="text-neutral-800">Дмитро Лисюк</p>
+              <p class="text-slate-500">Моторист</p>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="[background:_linear-gradient(0deg,_rgba(36,_109,_239,_0.50)_0%,_rgba(36,_109,_239,_0.50)_100%),_url('/src/assets/blueWavesBg.png'),_lightgray_0px_-73.061px_/_100%_129.949%_no-repeat;] py-[120px]">
+    <div class="max-w-[1440px] mx-auto px-[134px]">
+      <div class="flex justify-between items-start mb-6">
+        <div class="flex items-start">
+          <div class="flex flex-col justify-start gap-5">
+            <div class="flex gap-3 items-center mr-4">
+              <img
+                class="paragraphIcon p-2 rounded-full bg-white mr-3"
+                src="/src/assets/messageCloudIcon.svg"
+                alt="message cloud icon"
+              >
+              <h1 class="font-jakarta font-bold leading-[44px] text-[44px] text-white">
+                Відгуки наших клієнтів
+              </h1>
+            </div>
+            <p class="max-w-[500px] font-montserrat text-xs leading-5 text-white/70">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet.
+            </p>
+          </div>
+          <a
+            href="/reviews/"
+            class="flex items-center gap-1 pt-3"
+          >
+            <p class="font-bold font-montserrat text-xs text-white">Всі відгуки</p>
+            <img src="/src/assets/RightArrowWhite.svg">
+          </a>
+        </div>
+        <button
+          id="openReviewModal"
+          class="text-gray-900 font-bold text-xs font-montserrat px-[34px] py-3 bg-white rounded-[30px]"
+        >
+          Залишити відгук
+        </button>
+      </div>
+      {{>ReviewModal}}
+      {{>ReviewsSwiper}}
+    </div>
+  </div>
+
+  <div class="relative">
+    <div class="top-24 left-[380px] absolute z-20">
+      {{>ContactCard}}
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5149.855438201257!2d24.06431506044323!3d49.806226547065606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae81a36741bbf%3A0xe7464f623da4015b!2sSERVICE%20TIR!5e0!3m2!1suk!2sua!4v1697911690186!5m2!1suk!2sua"
+      width="100%"
+      height="670"
+      class="relative z-10"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      id="map"
+    >
+    </iframe>
+  </div>
+
+  {{>Footer}}
+
+  <script
+    type="module"
+    src="/src/scripts/NumberFormat.js"
+  ></script>
+  <script
+    type="module"
+    src="/src/scripts/ReviewsSwiper.js"
+  ></script>
+</body>
+
+</html>

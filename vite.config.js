@@ -23,6 +23,7 @@ export default defineConfig({
         results: resolve(__dirname, 'results/index.html'),
         cart: resolve(__dirname, 'cart/index.html'),
         order: resolve(__dirname, 'order/index.html'),
+        'about-us': resolve(__dirname, 'about-us/index.html'),
       }
     }
   }
