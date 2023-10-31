@@ -21,6 +21,7 @@ export default defineConfig({
         reviews: resolve(__dirname, 'reviews/index.html'),
         results: resolve(__dirname, 'results/index.html'),
         cart: resolve(__dirname, 'cart/index.html'),
+        order: resolve(__dirname, 'order/index.html'),
       }
     }
   }

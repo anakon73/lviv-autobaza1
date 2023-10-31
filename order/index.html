@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="/vite.svg"
+  />
+  <link
+    rel="stylesheet"
+    href="/src/style.css"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Service Tir | Cart</title>
+</head>
+
+<body>
+  <div class="mb-5">
+    {{>HeaderNotLogged}}
+    {{>Navbar}}
+  </div>
+
+  <div class="max-w-[1440px] mx-auto px-[150px] font-montserrat mb-[120px]">
+    <div class="flex gap-1 items-center text-gray-900 text-sm mb-10">
+      <a
+        href="/"
+        class="opacity-50"
+      >Головна</a>
+      <img src="/src/assets/ChevronRightSmall.svg">
+      <p class="cursor-pointer">Кошик</p>
+    </div>
+
+    <div class="flex items-center text-gray-900 mb-10">
+      <img
+        class="bg-white paragraphIcon p-2 rounded-full"
+        src="/src/assets/orderIcon.svg"
+        alt="order icon"
+      >
+      <h1 class="font-jakarta font-bold text-[40px] leading-[44px] ml-3 mr-4">Оформлення замовлення</h1>
+      <p class="self-end opacity-50 text-sm">3 товара</p>
+    </div>
+
+    <div class="flex justify-between">
+      <div>
+        <div class="flex flex-col gap-8">
+          <div class="flex flex-col gap-5">
+            <div class="flex items-center gap-2.5">
+              <p class="
+                 w-[30px] h-[30px] bg-blue-600 text-white flex items-center justify-center rounded-full font-medium leading-[21px]
+                 [filter:_drop-shadow(0px_4px_8px_rgba(0,_0,_0,_0.06))_drop-shadow(0px_0px_4px_rgba(0,_0,_0,_0.04))]
+                 ">
+                1
+              </p>
+              <h2 class="text-gray-900 text-xl font-medium leading-[22px]">Контактні данні</h2>
+            </div>
+            <div class="flex gap-5 w-full">
+              <div class="relative w-1/2">
+                <input
+                  type="text"
+                  placeholder="Імʼя"
+                  class="bg-white rounded-md border border-rose-500 text-sm text-gray-900 placeholder:text-gray-900/50 px-5 py-4 focus:ring-0 focus:border-rose-500 w-full"
+                >
+                <div class="flex absolute gap-2 items-center top-[11px] right-2.5 z-10 bg-white font-medium">
+                  <p class="text-xs leading-8 text-rose-500">Поле обовʼязкове</p>
+                  <img src="/src/assets/exclamation.svg">
+                </div>
+              </div>
+              <input
+                type="text"
+                placeholder="Прізвище"
+                class="bg-white rounded-md border border-slate-300 text-sm text-gray-900 placeholder:text-gray-900/50 px-5 py-4 w-1/2"
+              >
+            </div>
+            <div class="flex gap-5 w-full">
+              <input
+                type="text"
+                placeholder="Телефон"
+                class="bg-white rounded-md border border-slate-300 text-sm text-gray-900 placeholder:text-gray-900/50 px-5 py-4 w-1/2"
+              >
+              <input
+                type="text"
+                placeholder="E-mail"
+                class="bg-white rounded-md border border-slate-300 text-sm text-gray-900 placeholder:text-gray-900/50 px-5 py-4 w-1/2"
+              >
+            </div>
+            <textarea
+              class="
+              p-4 text-gray-900 text-sm leading-[22px] rounded-md border-slate-300 resize-none h-32 overflow-hidden w-[500px]
+              placeholder:text-gray-900/50 bg-white
+              "
+              placeholder="Коментарій до замовлення"
+            ></textarea>
+          </div>
+          <div class="flex flex-col gap-5">
+            <div class="flex gap-2.5 items-center">
+              <p class="
+                 w-[30px] h-[30px] bg-white text-black font-medium leading-[21px] flex items-center justify-center rounded-full
+                 [filter:_drop-shadow(0px_4px_8px_rgba(0,_0,_0,_0.06))_drop-shadow(0px_0px_4px_rgba(0,_0,_0,_0.04))]
+                 ">
+                2
+              </p>
+              <h2 class="text-gray-900 text-xl font-medium leading-[22px]">Доставка</h2>
+            </div>
+            <div class="flex flex-col gap-5">
+              <div class="flex gap-4 items-center">
+                <p class="p-1 w-6 h-6 border border-slate-300 rounded-full flex items-center justify-center">
+                  <input
+                    type="radio"
+                    id="NovaPost"
+                    name="delivery"
+                    class="w-4 h-4 peer focus:ring-transparent checked:text-blue-600 [background-image:_none_!important] border-none"
+                    checked
+                  >
+                </p>
+                <label
+                  class="leading-8 peer-checked:font-medium peer-checked:text-black text-neutral-500"
+                  for="NovaPost"
+                >Нова Пошта</label>
+              </div>
+              <div class="flex gap-4 items-center">
+                <p class="p-1 w-6 h-6 border border-slate-300 rounded-full flex items-center justify-center">
+                  <input
+                    type="radio"
+                    id="UkrPost"
+                    name="delivery"
+                    class="w-4 h-4 peer focus:ring-transparent checked:text-blue-600 [background-image:_none_!important] border-none"
+                  >
+                </p>
+                <label
+                  class="leading-8 peer-checked:font-medium peer-checked:text-black text-neutral-500"
+                  for="UkrPost"
+                >УкрПошта</label>
+              </div>
+              <div class="flex gap-4 items-center">
+                <p class="p-1 w-6 h-6 border border-slate-300 rounded-full flex items-center justify-center">
+                  <input
+                    type="radio"
+                    id="deliveryOnAddress"
+                    name="delivery"
+                    class="w-4 h-4 peer focus:ring-transparent checked:text-blue-600 [background-image:_none_!important] border-none"
+                  >
+                </p>
+                <label
+                  class="leading-8 peer-checked:font-medium peer-checked:text-black text-neutral-500"
+                  for="deliveryOnAddress"
+                >Відправка по адресу</label>
+              </div>
+            </div>
+            <div class="flex gap-5 w-full">
+              <input
+                type="text"
+                placeholder="Місто"
+                class="bg-white rounded-md border border-slate-300 text-sm text-gray-900 placeholder:text-gray-900/50 px-5 py-4 w-1/2"
+              >
+              <input
+                type="text"
+                placeholder="Вулиця, будинок"
+                class="bg-white rounded-md border border-slate-300 text-sm text-gray-900 placeholder:text-gray-900/50 px-5 py-4 w-1/2"
+              >
+            </div>
+          </div>
+          <div class="flex flex-col gap-5">
+            <div class="flex gap-2.5 items-center">
+              <p class="
+                 w-[30px] h-[30px] bg-white text-black font-medium leading-[21px] flex items-center justify-center rounded-full
+                 [filter:_drop-shadow(0px_4px_8px_rgba(0,_0,_0,_0.06))_drop-shadow(0px_0px_4px_rgba(0,_0,_0,_0.04))]
+                 ">
+                3
+              </p>
+              <h2 class="text-gray-900 text-xl font-medium leading-[22px]">Оплата</h2>
+            </div>
+            <div class="flex flex-col gap-5">
+              <div class="flex gap-4 items-center">
+                <p class="p-1 w-6 h-6 border border-slate-300 rounded-full flex items-center justify-center">
+                  <input
+                    type="radio"
+                    id="cash"
+                    name="payment"
+                    class="w-4 h-4 peer focus:ring-transparent checked:text-blue-600 [background-image:_none_!important] border-none"
+                    checked
+                  >
+                </p>
+                <label
+                  class="leading-8 peer-checked:font-medium peer-checked:text-black text-neutral-500"
+                  for="cash"
+                >Готівка</label>
+              </div>
+              <div class="flex gap-4 items-center">
+                <p class="p-1 w-6 h-6 border border-slate-300 rounded-full flex items-center justify-center">
+                  <input
+                    type="radio"
+                    id="card"
+                    name="payment"
+                    class="w-4 h-4 peer focus:ring-transparent checked:text-blue-600 [background-image:_none_!important] border-none"
+                  >
+                </p>
+                <label
+                  class="leading-8 peer-checked:font-medium peer-checked:text-black text-neutral-500"
+                  for="card"
+                >
+                  Банківська карта
+                </label>
+              </div>
+            </div>
+          </div>
+          <button class="bg-blue-600 px-[79px] py-3 rounded-[30px] text-white font-semibold text-sm self-start">
+            Замовити
+          </button>
+        </div>
+      </div>
+      <div class="card p-6 bg-white rounded-xl self-start flex flex-col gap-6 max-w-[463px] w-full">
+        <div class="flex flex-col w-full gap-2.5">
+          <h1 class="text-black text-xl font-semibold leading-[30px]">Ваше замовлення:</h1>
+          {{>OrderItem}}
+          {{>OrderItem}}
+          {{>OrderItem}}
+        </div>
+        <hr>
+        <h2 class="flex justify-between font-semibold text-lg text-gray-900">
+          <p>Загальна сума</p>
+          <p>10 095 &#8372;</p>
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  {{>Footer}}
+
+  <script
+    src="/src/scripts/NumberFormat.js"
+    type="module"
+  ></script>
+</body>
+
+</html>
