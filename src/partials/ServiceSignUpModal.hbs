@@ -1,0 +1,35 @@
+<dialog
+  class="
+  focus:outline-0 bg-white rounded-[30px] font-montserrat backdrop:backdrop-blur-sm
+  backdrop:border backdrop:border-black/10 backdrop:bg-black/25 
+  open:animate-fade-in open:backdrop:animate-fade-in
+  "
+  id="signUpWindow"
+>
+  <div class="py-10 bg-white relative rounded-[30px] px-14 font-montserrat">
+    <img
+      src="/src/assets/xMarkIcon.svg"
+      alt="x mark"
+      class="absolute top-5 right-5 cursor-pointer"
+      id="signUpXMark"
+    >
+    <div class="flex flex-col w-[340px] gap-3 items-center">
+      <h2 class="text-black font-semibold tracking-[0.4px] leading-[30px] text-xl">
+        Запис на ремонт
+      </h2>
+      <p class="text-black text-center tracking-[0.32px] leading-6">
+        Зателефонуйте нам для уточнення часу запису на ремонт
+      </p>
+      <ul class="flex flex-col items-center gap-2.5 text-blue-600 text-lg font-medium leading-7">
+        <li>+38(098)-0000-122</li>
+        <li>+38(096)-0000-127</li>
+        <li>+38(098)-0000-127</li>
+      </ul>
+    </div>
+  </div>
+</dialog>
+
+<script
+  type="module"
+  src="/src/scripts/ServiceSignUpModal.js"
+></script>
