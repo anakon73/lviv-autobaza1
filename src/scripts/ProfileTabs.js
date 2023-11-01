@@ -26,4 +26,4 @@ tabsBtn.forEach(btn => {
   })
 })
 
-document.querySelector('#ordersTabBtn').click()
+document.querySelector('.tabBtn').click()
