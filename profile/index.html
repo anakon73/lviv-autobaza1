@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="/vite.svg"
+  />
+  <link
+    rel="stylesheet"
+    href="/src/style.css"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Service Tir | Profile</title>
+
+</head>
+
+<body>
+  <div class="mb-5">
+    {{>HeaderLogged}}
+    {{>Navbar}}
+  </div>
+
+  <div class="max-w-[1440px] mx-auto px-[150px] font-montserrat">
+    <div class="mb-10 flex gap-1 items-center text-gray-900 text-sm">
+      <a
+        class="opacity-50"
+        href="/"
+      >Головна</a>
+      <img src="/src/assets/ChevronRightSmall.svg">
+      <p class="whitespace-nowrap">Особистий кабінет</p>
+    </div>
+    <div class="flex items-center gap-3 mb-8">
+      <img
+        src="/src/assets/caseIcon.svg"
+        alt="case icon"
+        class="p-2 paragraphIcon bg-white rounded-full"
+      >
+      <h1 class="font-jakarta text-[40px] font-bold text-gray-900 leading-[44px]">
+        Особистий кабінет
+      </h1>
+    </div>
+    <div class="flex items-center gap-8 mb-9 pl-4">
+      <div
+        class="relative tabBtn"
+        id="mainTabBtn"
+        data-tab="#mainTab"
+      >
+        <img
+          src="/src/assets/caseIcon.svg"
+          alt="case icon"
+          class="p-2 bg-gray-100 rounded-full absolute z-10 -left-4 border-2 border-white -top-2"
+        >
+        <p class="text-slate-700 bg-gray-100 pr-5 py-2 pl-9 text-xs font-medium rounded-lg">
+          Головна
+        </p>
+      </div>
+      <div
+        class="relative tabBtn"
+        id="infoTabBtn"
+        data-tab="#infoTab"
+      >
+        <img
+          src="/src/assets/orderIcon.svg"
+          alt="order icon"
+          class="p-2 bg-gray-100 rounded-full absolute z-10 -left-4 border-2 border-white -top-2"
+        >
+        <p class="text-slate-700 bg-gray-100 pr-5 py-2 pl-9 text-xs font-medium rounded-lg">
+          Особисті данні
+        </p>
+      </div>
+      <div
+        class="relative tabBtn"
+        id="favoriteTabBtn"
+        data-tab="#favoriteTab"
+      >
+        <img
+          src="/src/assets/HeartRedIcon.svg"
+          alt="case icon"
+          class="p-2 bg-gray-100 rounded-full absolute z-10 -left-4 border-2 border-white -top-2"
+        >
+        <p class="text-slate-700 bg-gray-100 pr-5 py-2 pl-9 text-xs font-medium rounded-lg">
+          Обране
+        </p>
+      </div>
+      <div
+        class="relative tabBtn"
+        id="ordersTabBtn"
+        data-tab="#ordersTab"
+      >
+        <img
+          src="/src/assets/boxIcon.svg"
+          alt="order icon"
+          class="p-2 bg-gray-100 rounded-full absolute z-10 -left-4 border-2 border-white -top-2"
+        >
+        <p class="text-slate-700 bg-gray-100 pr-5 py-2 pl-9 text-xs font-medium rounded-lg">
+          Мої замовлення
+        </p>
+      </div>
+    </div>
+    <div
+      class="hidden mb-[130px] tab"
+      id="mainTab"
+    >
+      <h1 class="text-2xl font-semibold text-gray-900 mb-8">
+        🎉 Вітаємо у вашому особистому кабінеті!
+      </h1>
+      <div class="flex items-stretch gap-5">
+        <div class="pb-6 px-4 pt-4 card bg-white rounded-2xl flex flex-col gap-6">
+          <img
+            src="/src/assets/Rectangle 240649010.png"
+            alt="track order image"
+          >
+          <div class="flex gap-1.5 flex-col">
+            <h2 class="text-gray-900 font-semibold text-xl">
+              Особистий менеджер
+            </h2>
+            <p class="text-gray-900 text-sm leading-[22px]">
+              В особистому кабінеті ви можете відслідковувати Ваші замовлення
+              та їх статус. Ми облегшили процес замовлення для багатьох наших покупців.
+            </p>
+            <button class="text-blue-600 font-medium text-sm self-start flex gap-1 items-center">
+              Перейти до замовлень
+              <img src="/src/assets/ChevronRightSmallBlue.svg">
+            </button>
+          </div>
+        </div>
+        <div class="pb-6 px-4 pt-4 card bg-white rounded-2xl flex flex-col gap-6">
+          <img
+            src="/src/assets/Rectangle 240649010 (1).png"
+            alt="person manager"
+          >
+          <div class="flex gap-1.5 flex-col">
+            <h2 class="text-gray-900 font-semibold text-xl">
+              Відслідкування замовлень
+            </h2>
+            <p class="text-gray-900 text-sm leading-[22px]">
+              В особистому кабінеті ви можете відслідковувати Ваші замовлення
+              та їх статус. Ми облегшили процес замовлення для багатьох наших покупців.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-[130px] hidden tab"
+      id="infoTab"
+    >
+      <div class="flex flex-col gap-4 w-[370px] mb-1.5">
+        <div class="flex flex-col gap-1">
+          <label class="text-sm font-semibold leading-[22px] text-slate-700">Імʼя та прізвище</label>
+          <input
+            type="text"
+            class="text-sm text-slate-700 font-medium leading-[22px] p-4 rounded-lg border-slate-300 placeholder:opacity-50"
+            value="Олександр Семененко"
+          >
+        </div>
+        <div class="flex flex-col gap-1">
+          <label class="text-sm font-semibold leading-[22px] text-slate-700">Місто</label>
+          <input
+            type="text"
+            class="text-sm text-slate-700 font-medium leading-[22px] p-4 rounded-lg border-slate-300 placeholder:opacity-50"
+            value="Київ"
+          >
+        </div>
+        <div class="flex flex-col gap-1">
+          <label class="text-sm font-semibold leading-[22px] text-slate-700">Номер телефона</label>
+          <input
+            type="text"
+            class="text-sm text-slate-700 font-medium leading-[22px] p-4 rounded-lg border-slate-300 placeholder:opacity-50"
+            value="+38 (093) 119-00-08"
+          >
+        </div>
+        <div class="flex flex-col gap-1">
+          <label class="text-sm font-semibold leading-[22px] text-slate-700">E-mail</label>
+          <input
+            type="text"
+            class="text-sm text-slate-700 font-medium leading-[22px] p-4 rounded-lg border-slate-300 placeholder:opacity-50"
+            placeholder="Немає данних"
+          >
+        </div>
+        <div class="flex flex-col gap-1">
+          <label class="text-sm font-semibold leading-[22px] text-slate-700">Пароль</label>
+          <input
+            type="password"
+            class="text-sm text-slate-700 font-medium leading-[22px] p-4 rounded-lg border-slate-300 placeholder:opacity-50"
+            value="fsdfsdfsd"
+          >
+        </div>
+      </div>
+      <p class="text-blue-600 text-xs font-medium leading-[18px] mb-8">
+        Змінити пароль
+      </p>
+      <button
+        disabled
+        class="
+        bg-blue-600 disabled:opacity-50 text-white 
+        px-[34px] py-3 rounded-[30px] text-xs font-bold
+        "
+      >
+        Зберегти зміни
+      </button>
+    </div>
+    <div
+      class="grid-cols-4 gap-4 mb-[130px] hidden tab"
+      id="favoriteTab"
+    >
+      {{>ProductCard}}
+      {{>ProductCard}}
+      {{>ProductCard}}
+      {{>ProductCard}}
+      {{>ProductCard}}
+      {{>ProductCard}}
+    </div>
+    <div
+      class="hidden mb-[130px] tab"
+      id="ordersTab"
+    >
+      <div class="flex gap-4 text-sm leading-[19px] mb-8">
+        <p
+          data-tab="#ordersActive"
+          class="px-2 py-1 rounded-full orderTabBtn"
+        >
+          Активні
+        </p>
+        <p
+          data-tab="#ordersCancel"
+          class="px-2 py-1 rounded-full orderTabBtn"
+        >
+          Відмінені
+        </p>
+        <p
+          data-tab="#ordersComplete"
+          class="px-2 py-1 rounded-full orderTabBtn"
+        >
+          Завершені
+        </p>
+      </div>
+      <div
+        id="ordersActive"
+        class="hidden flex-col gap-6 ordersTab"
+      >
+        {{>OrderCardActive}}
+        {{>OrderCardActive}}
+      </div>
+      <div
+        id="ordersCancel"
+        class="hidden flex-col gap-6 ordersTab"
+      >
+        {{>OrderCardCancel}}
+        {{>OrderCardCancel}}
+      </div>
+      <div
+        id="ordersComplete"
+        class="hidden flex-col gap-6 ordersTab"
+      >
+        {{>OrderCardComplete}}
+        {{>OrderCardComplete}}
+      </div>
+    </div>
+  </div>
+
+  {{>Footer}}
+
+  <script
+    type="module"
+    src="/src/scripts/NumberFormat.js"
+  ></script>
+  <script
+    type="module"
+    src="/src/scripts/ProfileTabs.js"
+  ></script>
+  <script
+    type="module"
+    src="/src/scripts/ProfileOrdersTabs.js"
+  ></script>
+</body>
+
+</html>

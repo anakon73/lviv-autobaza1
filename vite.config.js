@@ -24,6 +24,7 @@ export default defineConfig({
         cart: resolve(__dirname, 'cart/index.html'),
         order: resolve(__dirname, 'order/index.html'),
         'about-us': resolve(__dirname, 'about-us/index.html'),
+        'profile': resolve(__dirname, 'profile/index.html'),
       }
     }
   }
