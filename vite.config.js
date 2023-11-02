@@ -25,6 +25,7 @@ export default defineConfig({
         order: resolve(__dirname, 'order/index.html'),
         'about-us': resolve(__dirname, 'about-us/index.html'),
         'profile': resolve(__dirname, 'profile/index.html'),
+        blog: resolve(__dirname, 'blog/index.html'),
       }
     }
   }
