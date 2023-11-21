@@ -1,0 +1,30 @@
+<div class="servicesSwiper md:hidden block overflow-hidden px-2">
+  <div class="swiper-wrapper mb-6">
+    <div class="swiper-slide">{{>ServiceCard}}</div>
+    <div class="swiper-slide">{{>ServiceCard}}</div>
+    <div class="swiper-slide">{{>ServiceCard}}</div>
+    <div class="swiper-slide">{{>ServiceCard}}</div>
+    <div class="swiper-slide">{{>ServiceCard}}</div>
+    <div class="swiper-slide">{{>ServiceCard}}</div>
+  </div>
+  <div class="flex lg:hidden gap-5 justify-center items-end mt-5">
+    <button class="p-2 bg-white rounded-full paragraphIcon prevService">
+      <img
+        class="w-6 h-6"
+        src="/src/assets/chevronLeft.svg"
+      />
+    </button>
+    <div class="swiperService-pagination !relative !w-auto"></div>
+    <button class="p-2 bg-white rounded-full paragraphIcon nextService">
+      <img
+        class="w-6 h-6"
+        src="/src/assets/chevronRight.svg"
+      />
+    </button>
+  </div>
+</div>
+
+<script
+  type="module"
+  src="/src/scripts/ServiceSwiper.js"
+></script>

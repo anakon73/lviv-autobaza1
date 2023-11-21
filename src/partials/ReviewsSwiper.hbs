@@ -1,4 +1,4 @@
-<div class="reviewsSwiper overflow-hidden px-2 pb-4">
+<div class="reviewsSwiper overflow-hidden lg:px-2 lg:pb-4">
   <div class="swiper-wrapper mb-6">
     <div class="swiper-slide">{{>ReviewCard}}</div>
     <div class="swiper-slide">{{>ReviewCard}}</div>
@@ -7,19 +7,19 @@
     <div class="swiper-slide">{{>ReviewCard}}</div>
     <div class="swiper-slide">{{>ReviewCard}}</div>
   </div>
-  <div class="flex gap-5 justify-center items-end">
+  <div class="lg:flex hidden gap-5 justify-center items-end">
     <button class="p-2 bg-white rounded-full paragraphIcon prevReview">
       <img
         class="w-6 h-6"
         src="/src/assets/chevronLeft.svg"
-      >
+      />
     </button>
     <div class="swiper-pagination !relative !w-auto"></div>
     <button class="p-2 bg-white rounded-full paragraphIcon nextReview">
       <img
         class="w-6 h-6"
         src="/src/assets/chevronRight.svg"
-      >
+      />
     </button>
   </div>
 </div>

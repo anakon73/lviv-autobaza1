@@ -3,21 +3,16 @@ import "swiper/css"
 import "swiper/css/pagination"
 import { Navigation, Pagination } from "swiper/modules"
 
-const reviewsSwiper = new Swiper(".reviewsSwiper", {
+const serviceSwiper = new Swiper(".servicesSwiper", {
   modules: [Navigation, Pagination],
   navigation: {
-    nextEl: ".nextReview",
-    prevEl: ".prevReview",
+    nextEl: ".nextService",
+    prevEl: ".prevService",
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiperService-pagination",
     clickable: true,
   },
   slidesPerView: 1,
-  spaceBetween: 20,
-  breakpoints: {
-    1024: {
-      slidesPerView: 2,
-    },
-  },
+  spaceBetween: 16,
 })

@@ -1,75 +1,115 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/vite.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="/src/style.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Service Tir</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link
-    rel="icon"
-    type="image/svg+xml"
-    href="/vite.svg"
-  />
-  <link
-    rel="stylesheet"
-    href="/src/style.css"
-  >
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-  <title>Service Tir</title>
+  <body>
+    <!-- <div class="mb-14">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
-</head>
+    <div class="max-w-[1440px] mx-auto">
+      <div
+        class="xl:px-8 px-5 lg:px-44 xl:flex-row flex-col flex items-center gap-6 xl:gap-14 mb-28"
+      >
+        <div class="flex flex-col md:gap-6 items-start">
+          <h1
+            class="font-jakarta font-bold text-gray-900 leading-[66px] text-4xl xl:text-6xl"
+          >
+            Якісна діагностика ходової вантажівок
+          </h1>
+          <p
+            class="text-neutral-500 font-montserrat leading-7 xl:text-base text-sm"
+          >
+            Это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
+            Ipsum является стандартной "рыбой" для текстов на латинице с начала
+            XVI века.
+          </p>
+          <button
+            class="text-sm text-white font-montserrat font-bold px-7 py-4 rounded-[30px] bg-blue-600 whitespace-nowrap"
+          >
+            <a href="/service/">Дізнатись ціну для вашого авто</a>
+          </button>
+        </div>
+        <img
+          class="rounded-[30px]"
+          src="/src/assets/EngineRepairService.png"
+          alt="engine repair service photo"
+        />
+      </div> -->
 
-<body>
-  <div class="mb-14">
-    {{>HeaderNotLogged}}
+    <div class="mb-14">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
-    {{>Navbar}}
-  </div>
-
-  <div class="max-w-[1440px] mx-auto">
-    <div class="px-8 flex items-center gap-14 mb-28">
+    <div
+      class="xl:px-8 px-5 lg:px-10 lg:flex-row flex-col flex items-center gap-6 xl:gap-14 mb-28 max-w-[1440px] mx-auto"
+    >
       <div class="flex flex-col gap-6 items-start">
-        <h1 class="font-jakarta font-bold text-gray-900 leading-[66px] text-6xl">
+        <h1
+          class="font-jakarta font-bold text-gray-900 leading-[66px] text-4xl xl:text-6xl"
+        >
           Якісна діагностика ходової вантажівок
         </h1>
-        <p class="text-neutral-500 font-montserrat leading-7">
-          Это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+        <p
+          class="text-neutral-500 font-montserrat leading-7 xl:text-base text-sm"
+        >
+          Это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
+          Ipsum является стандартной "рыбой" для текстов на латинице с начала
+          XVI века.
         </p>
-        <button class="text-sm text-white font-montserrat font-bold px-7 py-4 rounded-[30px] bg-blue-600">
+        <button
+          class="text-sm text-white font-montserrat font-bold px-7 py-4 rounded-[30px] bg-blue-600 whitespace-nowrap"
+        >
           <a href="/service/">Дізнатись ціну для вашого авто</a>
         </button>
       </div>
       <img
-        class="rounded-[30px]"
+        class="rounded-[30px] w-auto lg:w-1/2"
         src="/src/assets/EngineRepairService.png"
         alt="engine repair service photo"
-      >
+      />
     </div>
-    <div class="mx-auto max-w-[1170px] px-2.5 hotOffersSwiper overflow-hidden py-4 mb-28">
+
+    <div
+      class="mx-auto max-w-[1170px] px-2.5 hotOffersSwiper overflow-hidden py-4 mb-28"
+    >
       <div class="flex justify-between items-center mb-9">
         <div class="flex items-center gap-3">
           <img
             class="p-2 bg-white rounded-full paragraphIcon"
             src="/src/assets/fireIcon.svg"
             alt="fireIcon"
+          />
+          <div
+            class="text-gray-900 text-[30px] md:text-[40px] leading-[33px] md:leading-[44px] font-bold font-jakarta"
           >
-          <div class="text-gray-900 text-[40px] leading-[44px] font-bold font-jakarta">
             Гарячі пропозиції
           </div>
         </div>
-        <div class="flex gap-2.5 h-10">
+        <div class="lg:flex hidden gap-2.5 h-10">
           <button class="p-2 bg-white rounded-full paragraphIcon prevOffer">
             <img
               class="w-6 h-6"
               src="/src/assets/chevronLeft.svg"
-            >
+            />
           </button>
           <button class="p-2 bg-white rounded-full paragraphIcon nextOffer">
             <img
               class="w-6 h-6"
               src="/src/assets/chevronRight.svg"
-            >
+            />
           </button>
         </div>
       </div>
@@ -83,15 +123,32 @@
         <div class="swiper-slide">{{>ProductCard}}</div>
         <div class="swiper-slide">{{>ProductCardLiked}}</div>
       </div>
+      <div class="flex lg:hidden gap-5 justify-center items-end mt-5">
+        <button class="p-2 bg-white rounded-full paragraphIcon prevOffer">
+          <img
+            class="w-6 h-6"
+            src="/src/assets/chevronLeft.svg"
+          />
+        </button>
+        <div class="swiperOffer-pagination !relative !w-auto"></div>
+        <button class="p-2 bg-white rounded-full paragraphIcon nextOffer">
+          <img
+            class="w-6 h-6"
+            src="/src/assets/chevronRight.svg"
+          />
+        </button>
+      </div>
     </div>
-    <div class="px-[150px] mb-[248px]">
+    <div class="xl:px-[150px] px-5 mb-[190px] pb-4">
       <div class="flex items-center mb-8">
         <img
           class="paragraphIcon p-2 rounded-full bg-white mr-3"
           src="/src/assets/handshakeIcon.svg"
           alt="handshake icon"
+        />
+        <h1
+          class="mr-5 font-jakarta text-[30px] lg:text-[40px] lg:leading-[44px] leading-[33px] font-bold text-gray-900"
         >
-        <h1 class="mr-5 font-jakarta text-[40px] leading-[44px] font-bold text-gray-900">
           Наші послуги
         </h1>
         <a
@@ -99,121 +156,212 @@
           href="/services/"
         >
           <p>Всі послуги</p>
-          <img src="/src/assets/RightArrowBlue.svg">
+          <img src="/src/assets/RightArrowBlue.svg" />
         </a>
       </div>
-      <div class="grid grid-cols-2 gap-5">
-        {{>ServiceCard}}
-        {{>ServiceCard}}
-        {{>ServiceCard}}
-        {{>ServiceCard}}
-        {{>ServiceCard}}
-        {{>ServiceCard}}
+      <div class="md:grid hidden xl:grid-cols-2 grid-cols-3 gap-5">
+        {{>ServiceCard}} {{>ServiceCard}} {{>ServiceCard}} {{>ServiceCard}}
+        {{>ServiceCard}} {{>ServiceCard}}
       </div>
+      {{>ServicesSwiper}}
     </div>
-    <div class="px-[150px] mb-[120px]">
+    <div class="xl:px-[150px] px-5 mb-[200px]">
       <div class="flex gap-0.5 items-start mb-10">
         <img
           class="paragraphIcon p-2 rounded-full bg-white mr-3"
           src="/src/assets/advantagesStarIcon.svg"
           alt="advantages star icon"
-        >
+        />
         <div>
-          <h1 class="font-jakarta text-[40px] text-gray-900 font-bold leading-[44px] mb-3">
+          <h1
+            class="font-jakarta text-[30px] lg:text-[40px] lg:leading-[44px] leading-[33px] text-gray-900 font-bold mb-3"
+          >
             Наші переваги
           </h1>
-          <p class="max-w-[500px] text-neutral-500/70 text-xs font-montserrat leading-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt.
+          <p
+            class="max-w-[500px] text-neutral-500/70 text-xs font-montserrat leading-5"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+            nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+            Faucibus amet etiam tincidunt.
           </p>
         </div>
       </div>
-      <div class="grid grid-cols-4 gap-5">
-        {{>AdvantageCard}}
-        {{>AdvantageCard}}
-        {{>AdvantageCard}}
-        {{>AdvantageCard}}
-        {{>AdvantageCard}}
-        {{>AdvantageCard}}
-        {{>AdvantageCard}}
-        {{>AdvantageCard}}
+      <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5">
+        {{>AdvantageCard}} {{>AdvantageCard}} {{>AdvantageCard}}
+        {{>AdvantageCard}} {{>AdvantageCard}} {{>AdvantageCard}}
+        {{>AdvantageCard}} {{>AdvantageCard}}
       </div>
     </div>
-  </div>
 
-  <div class="[background:_linear-gradient(0deg,_rgba(36,_109,_239,_0.50)_0%,_rgba(36,_109,_239,_0.50)_100%),_url('/src/assets/blueWavesBg.png'),_lightgray_0px_-73.061px_/_100%_129.949%_no-repeat;] py-[120px]">
-    <div class="max-w-[1440px] mx-auto px-[134px]">
-      <div class="flex justify-between items-start mb-6">
-        <div class="flex items-start">
-          <div class="flex flex-col justify-start gap-5">
-            <div class="flex gap-3 items-center mr-4">
-              <img
-                class="paragraphIcon p-2 rounded-full bg-white mr-3"
-                src="/src/assets/messageCloudIcon.svg"
-                alt="message cloud icon"
-              >
-              <h1 class="font-jakarta font-bold leading-[44px] text-[44px] text-white">
-                Відгуки наших клієнтів
-              </h1>
+    <div class="xl:px-[150px] px-5">
+      <div class="articlesSwiper overflow-hidden mb-[104px] pb-4">
+        <div class="flex justify-between items-center mb-9">
+          <div class="flex items-center gap-3">
+            <img
+              class="p-2 bg-white rounded-full paragraphIcon"
+              src="/src/assets/orderIcon.svg"
+              alt="fireIcon"
+            />
+            <div
+              class="text-gray-900 text-[30px] lg:text-[40px] lg:leading-[44px] leading-[33px] font-bold font-jakarta"
+            >
+              Cтатті
             </div>
-            <p class="max-w-[500px] font-montserrat text-xs leading-5 text-white/70">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet.
-            </p>
           </div>
+          <div class="md:flex hidden gap-2.5 h-10">
+            <button class="p-2 bg-white rounded-full paragraphIcon prevOffer">
+              <img
+                class="w-6 h-6"
+                src="/src/assets/chevronLeft.svg"
+              />
+            </button>
+            <button class="p-2 bg-white rounded-full paragraphIcon nextOffer">
+              <img
+                class="w-6 h-6"
+                src="/src/assets/chevronRight.svg"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+        </div>
+        <div class="flex md:hidden gap-5 justify-center items-end mt-5">
+          <button class="p-2 bg-white rounded-full paragraphIcon prevArticle">
+            <img
+              class="w-6 h-6"
+              src="/src/assets/chevronLeft.svg"
+            />
+          </button>
+          <div class="swiperArticle-pagination !relative !w-auto"></div>
+          <button class="p-2 bg-white rounded-full paragraphIcon nextArticle">
+            <img
+              class="w-6 h-6"
+              src="/src/assets/chevronRight.svg"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="[background:_linear-gradient(0deg,_rgba(36,_109,_239,_0.50)_0%,_rgba(36,_109,_239,_0.50)_100%),_url('/src/assets/blueWavesBg.png'),_lightgray_0px_-73.061px_/_100%_129.949%_no-repeat;] py-[95px] lg:py-[120px]"
+    >
+      <div class="max-w-[1440px] mx-auto xl:px-[134px] px-5">
+        <div class="flex justify-between items-start mb-6">
+          <div class="flex items-start">
+            <div class="flex flex-col justify-start gap-5">
+              <div class="flex gap-3 items-center mr-4">
+                <img
+                  class="paragraphIcon p-2 rounded-full bg-white mr-3"
+                  src="/src/assets/messageCloudIcon.svg"
+                  alt="message cloud icon"
+                />
+                <h1
+                  class="font-jakarta font-bold text-[30px] lg:text-[40px] lg:leading-[44px] leading-[33px] text-white"
+                >
+                  Відгуки наших клієнтів
+                </h1>
+              </div>
+              <p
+                class="max-w-[500px] font-montserrat text-xs leading-5 text-white/70"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+                Faucibus amet.
+              </p>
+            </div>
+            <a
+              href="/reviews/"
+              class="items-center gap-1 pt-3 lg:flex hidden"
+            >
+              <p
+                class="font-bold font-montserrat text-xs text-white whitespace-nowrap"
+              >
+                Всі відгуки
+              </p>
+              <img src="/src/assets/RightArrowWhite.svg" />
+            </a>
+          </div>
+          <button
+            id="openReviewModal"
+            class="text-gray-900 font-bold text-xs font-montserrat px-[34px] py-3 bg-white rounded-[30px] lg:block hidden whitespace-nowrap"
+          >
+            Залишити відгук
+          </button>
+        </div>
+        {{>ReviewModal}}
+        <div class="hidden lg:block">{{>ReviewsSwiper}}</div>
+        <div class="lg:hidden flex flex-col w-full gap-4 mb-7">
+          {{>ReviewCard}} {{>ReviewCard}}
+        </div>
+        <div class="lg:hidden flex items-center flex-col w-full gap-7">
           <a
             href="/reviews/"
-            class="flex items-center gap-1 pt-3"
+            class="items-center gap-1 pt-3 justify-center flex"
           >
-            <p class="font-bold font-montserrat text-xs text-white">Всі відгуки</p>
-            <img src="/src/assets/RightArrowWhite.svg">
+            <p
+              class="font-bold font-montserrat text-xs text-white whitespace-nowrap"
+            >
+              Всі відгуки
+            </p>
+            <img src="/src/assets/RightArrowWhite.svg" />
           </a>
+          <button
+            id="openReviewModal"
+            class="text-gray-900 font-bold text-xs font-montserrat px-[34px] py-3 bg-white rounded-[30px] whitespace-nowrap max-w-[180px]"
+          >
+            Залишити відгук
+          </button>
         </div>
-        <button
-          id="openReviewModal"
-          class="text-gray-900 font-bold text-xs font-montserrat px-[34px] py-3 bg-white rounded-[30px]"
-        >
-          Залишити відгук
-        </button>
       </div>
-      {{>ReviewModal}}
-      {{>ReviewsSwiper}}
     </div>
-  </div>
 
-  <div class="relative">
-    <div class="top-24 left-[380px] absolute z-20">
-      {{>ContactCard}}
+    <div class="relative">
+      <div
+        class="lg:top-24 left-5 top-64 xl:left-[380px] lg:mx-0 absolute z-20"
+      >
+        {{>ContactCard}}
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5149.855438201257!2d24.06431506044323!3d49.806226547065606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae81a36741bbf%3A0xe7464f623da4015b!2sSERVICE%20TIR!5e0!3m2!1suk!2sua!4v1697911690186!5m2!1suk!2sua"
+        width="100%"
+        class="relative z-10 h-[800px] lg:h-[670px]"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        id="map"
+      >
+      </iframe>
     </div>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5149.855438201257!2d24.06431506044323!3d49.806226547065606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae81a36741bbf%3A0xe7464f623da4015b!2sSERVICE%20TIR!5e0!3m2!1suk!2sua!4v1697911690186!5m2!1suk!2sua"
-      width="100%"
-      height="670"
-      class="relative z-10"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-      id="map"
-    >
-    </iframe>
-  </div>
 
-  {{>Footer}}
+    {{>Footer}}
 
-  <script
-    src="/src/scripts/NumberFormat.js"
-    type="module"
-  ></script>
-  <script
-    src="/src/scripts/Swiper.js"
-    type="module"
-  ></script>
-  <script
-    src="/src/scripts/HotOffersSwiper.js"
-    type="module"
-  ></script>
-  <script
-    src="/src/scripts/ReviewsSwiper.js"
-    type="module"
-  ></script>
-
-</body>
-
+    <script
+      src="/src/scripts/NumberFormat.js"
+      type="module"
+    ></script>
+    <script
+      src="/src/scripts/Swiper.js"
+      type="module"
+    ></script>
+    <script
+      src="/src/scripts/HotOffersSwiper.js"
+      type="module"
+    ></script>
+    <script
+      src="/src/scripts/ReviewsSwiper.js"
+      type="module"
+    ></script>
+    <script
+      src="/src/scripts/ArticleSwiper.js"
+      type="module"
+    ></script>
+  </body>
 </html>
