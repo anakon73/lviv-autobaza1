@@ -1,72 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/vite.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="/src/style.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Service Tir | Services</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link
-    rel="icon"
-    type="image/svg+xml"
-    href="/vite.svg"
-  />
-  <link
-    rel="stylesheet"
-    href="/src/style.css"
-  >
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-  <title>Service Tir | Services</title>
+  <body>
+    <div class="mb-5">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
-</head>
-
-<body>
-  <div class="mb-5">
-    {{>HeaderNotLogged}}
-
-    {{>Navbar}}
-  </div>
-
-  <div class="max-w-[1440px] mx-auto px-[150px] mb-[120px]">
-    <div class="text-xs font-montserrat text-gray-900 flex items-center gap-1 mb-10">
-      <p class="opacity-50">
-        <a href="/">Головна</a>
-      </p>
-      <img src="/src/assets/ChevronRightSmall.svg">
-      <p>Послуги</p>
-    </div>
-    <div class="flex gap-3 items-center mb-10">
-      <img
-        class="paragraphIcon p-2 rounded-full bg-white"
-        src="/src/assets/handshakeBigIcon.svg"
-        alt="handshake icon"
+    <div class="max-w-[1440px] mx-auto px-[150px] mb-[120px]">
+      <div
+        class="text-xs font-montserrat text-gray-900 flex items-center gap-1 mb-10"
       >
-      <h1 class="font-jakarta text-[40px] leading-[44px] font-bold text-gray-900">
-        Наші послуги
-      </h1>
+        <p class="opacity-50">
+          <a href="/">Головна</a>
+        </p>
+        <img src="/src/assets/ChevronRightSmall.svg" />
+        <p>Послуги</p>
+      </div>
+      <div class="flex gap-3 items-center mb-8">
+        <img
+          class="paragraphIcon p-2 rounded-full bg-white"
+          src="/src/assets/handshakeBigIcon.svg"
+          alt="handshake icon"
+        />
+        <h1
+          class="font-jakarta text-[40px] leading-[44px] font-bold text-gray-900"
+        >
+          Наші послуги
+        </h1>
+      </div>
+      {{>ServicesTabs}}
+      <div class="grid grid-cols-2 gap-5">
+        {{>ServiceCard}} {{>ServiceCard}} {{>ServiceCard}} {{>ServiceCard}}
+        {{>ServiceCard}} {{>ServiceCard}} {{>ServiceCard}} {{>ServiceCard}}
+        {{>ServiceCard}} {{>ServiceCard}} {{>ServiceCard}} {{>ServiceCard}}
+      </div>
     </div>
-    <div class="grid grid-cols-2 gap-5">
-      {{>ServiceCard}}
-      {{>ServiceCard}}
-      {{>ServiceCard}}
-      {{>ServiceCard}}
-      {{>ServiceCard}}
-      {{>ServiceCard}}
-      {{>ServiceCard}}
-      {{>ServiceCard}}
-      {{>ServiceCard}}
-      {{>ServiceCard}}
-      {{>ServiceCard}}
-      {{>ServiceCard}}
-    </div>
-  </div>
 
-  {{>Footer}}
+    {{>Footer}}
 
-  <script
-    src="/src/scripts/NumberFormat.js"
-    type="module"
-  ></script>
-</body>
-
+    <script
+      src="/src/scripts/NumberFormat.js"
+      type="module"
+    ></script>
+  </body>
 </html>
