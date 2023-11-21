@@ -1,10 +1,16 @@
-<div class="py-5 font-montserrat text-sm text-gray-900">
-  <div class="max-w-[1440px] px-36 mx-auto flex items-center justify-between">
+<div
+  id="header"
+  class="md:py-5 py-7 font-montserrat text-sm text-gray-900"
+>
+  <div
+    class="xl:max-w-[1440px] xl:px-36 px-10 mx-auto items-center justify-between md:flex hidden gap-2"
+  >
     <a href="/">
       <img
         src="/src/assets/Logo.svg"
         alt="service tir logo"
-      >
+        class="max-w-none"
+      />
     </a>
     {{>Search}}
     <div class="flex h-5 gap-10">
@@ -12,19 +18,18 @@
         <img
           src="/src/assets/userIcon.svg"
           alt="user icon"
-        >
+          class="max-w-none"
+        />
       </a>
       <div class="relative">
         <img
           src="/src/assets/heartIcon.svg"
           alt="heart icon"
-        >
+          class="max-w-none"
+        />
         <div
           id="favorite"
-          class="
-          absolute text-[8px] inline-flex items-center border border-white rounded-full
-          justify-center h-2.5 text-sky-500 px-0.5 -top-0.5 left-3.5 text-center bg-cyan-100
-          "
+          class="absolute text-[8px] inline-flex items-center border border-white rounded-full justify-center h-2.5 text-sky-500 px-0.5 -top-0.5 left-3.5 text-center bg-cyan-100"
         >
           0
         </div>
@@ -35,11 +40,11 @@
             <img
               src="/src/assets/cartIcon.svg"
               alt="cart icon"
+              class="max-w-none"
+            />
+            <div
+              class="absolute text-[8px] inline-flex items-center border border-white rounded-full justify-center px-0.5 h-2.5 text-emerald-500 left-3.5 -top-0.5 text-center bg-green-100"
             >
-            <div class="
-               absolute text-[8px] inline-flex items-center border border-white rounded-full
-               justify-center px-0.5 h-2.5 text-emerald-500 left-3.5 -top-0.5 text-center bg-green-100
-               ">
               6
             </div>
           </div>
@@ -50,4 +55,91 @@
       </a>
     </div>
   </div>
+  <div class="md:hidden px-5">
+    <div class="flex items-center justify-between">
+      <a href="/">
+        <img
+          src="/src/assets/Logo.svg"
+          alt="service tir logo"
+          class="max-w-none"
+        />
+      </a>
+      <button id="menuBtn">
+        <img
+          src="/src/assets/menuIcon.svg"
+          alt="menuIcon"
+          class="max-w-none"
+        />
+      </button>
+      <button
+        id="closeHeaderButton"
+        class="hidden"
+      >
+        <img
+          src="/src/assets/xMarkWhiteIcon.svg"
+          alt="x-mark icon"
+        />
+      </button>
+    </div>
+    <div
+      class="mt-[54px] flex-col gap-6 w-full text-white hidden"
+      id="dropMenu"
+    >
+      <ul class="font-montserrat flex flex-col gap-5">
+        <li>Головна</li>
+        <li>Каталог</li>
+        <li>Послуги</li>
+        <li>Про нас</li>
+        <li>Контакти</li>
+        <li>Відгуки</li>
+        <li>Статті</li>
+      </ul>
+      <hr class="border-0 h-px bg-zinc-50/50" />
+      <div class="flex gap-2 items-center">
+        <img
+          src="/src/assets/userWhiteIcon.svg"
+          alt="user icon"
+        />
+        <p>Особистий кабінет</p>
+      </div>
+      <div class="flex gap-2 items-center">
+        <div class="relative">
+          <img
+            src="/src/assets/heartWhiteIcon.svg"
+            alt="heart icon"
+          />
+          <div
+            id="favorite"
+            class="absolute text-[8px] inline-flex items-center border border-white rounded-full justify-center h-2.5 text-sky-500 px-0.5 -top-0.5 left-3.5 text-center bg-cyan-100"
+          >
+            0
+          </div>
+        </div>
+        <p>Обране</p>
+      </div>
+      <div class="flex gap-1 items-center">
+        <div class="relative">
+          <img
+            src="/src/assets/cartWhiteIcon.svg"
+            alt="cart icon"
+          />
+          <div
+            class="absolute text-[8px] inline-flex items-center border border-white rounded-full justify-center px-0.5 h-2.5 text-emerald-500 left-3.5 -top-0.5 text-center bg-green-100"
+          >
+            6
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <p>&#8372;10 000</p>
+          <p>Кошик</p>
+        </div>
+      </div>
+      {{>SearchMobile }}
+    </div>
+  </div>
 </div>
+
+<script
+  type="module"
+  src="/src/scripts/Header.js"
+></script>
