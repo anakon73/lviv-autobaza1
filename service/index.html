@@ -1,209 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/vite.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="/src/style.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Service Tir | Service</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link
-    rel="icon"
-    type="image/svg+xml"
-    href="/vite.svg"
-  />
-  <link
-    rel="stylesheet"
-    href="/src/style.css"
-  >
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-  <title>Service Tir | Service</title>
+  <body>
+    <div>{{>HeaderNotLogged}} {{>Navbar}}</div>
 
-</head>
-
-<body>
-  <div>
-    {{>HeaderNotLogged}}
-    {{>Navbar}}
-  </div>
-
-  <div class="pt-5 bg-gray-100">
-    <div class="max-w-[1440px] mx-auto pl-[150px] pr-24">
-      <div class="text-xs flex gap-1 font-montserrat text-gray-900 mb-6">
-        <a
-          class="opacity-50"
-          href="/"
-        >
-          Головна
-        </a>
-        <img src="/src/assets/ChevronRightSmall.svg">
-        <a
-          class="opacity-50"
-          href="/services/"
-        >
-          Послуги
-        </a>
-        <img src="/src/assets/ChevronRightSmall.svg">
-        <p class="cursor-pointer">Ремонт двигунів</p>
-      </div>
-      <div class="flex items-center gap-12 pb-14">
-        <div class="flex flex-col w-full gap-4">
-          <h1 class="font-jakarta font-bold leading-[44px] text-gray-900 text-[40px]">
-            Ремонт двигунів
-          </h1>
-          <p class="max-w-[542px] font-montserrat text-sm leading-6 text-gray-900">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-            in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua.
-          </p>
-          <button
-            id="signUpBtn"
-            class="font-montserrat bg-blue-600 px-[34px] py-3 rounded-[30px] text-white text-sm font-bold self-start"
+    <div class="pt-5 bg-gray-100">
+      <div class="max-w-[1440px] mx-auto pl-[150px] pr-24">
+        <div class="text-xs flex gap-1 font-montserrat text-gray-900 mb-6">
+          <a
+            class="opacity-50"
+            href="/"
           >
-            Записатись на ремонт
-          </button>
+            Головна
+          </a>
+          <img src="/src/assets/ChevronRightSmall.svg" />
+          <a
+            class="opacity-50"
+            href="/services/"
+          >
+            Послуги
+          </a>
+          <img src="/src/assets/ChevronRightSmall.svg" />
+          <p class="cursor-pointer">Ремонт двигунів</p>
         </div>
-        <img
-          src="/src/assets/unsplash_5m5418Ng6t8 (1).png"
-          alt="service image"
-        >
+        <div class="flex items-center gap-12 pb-14">
+          <div class="flex flex-col w-full gap-4">
+            <h1
+              class="font-jakarta font-bold leading-[44px] text-gray-900 text-[40px]"
+            >
+              Ремонт двигунів
+            </h1>
+            <p
+              class="max-w-[542px] font-montserrat text-sm leading-6 text-gray-900"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button
+              id="signUpBtn"
+              class="font-montserrat bg-blue-600 px-[34px] py-3 rounded-[30px] text-white text-sm font-bold self-start"
+            >
+              Записатись на ремонт
+            </button>
+          </div>
+          <img
+            src="/src/assets/unsplash_5m5418Ng6t8 (1).png"
+            alt="service image"
+          />
+        </div>
       </div>
     </div>
-  </div>
-  <div class="max-w-[1440px] mx-auto px-[150px] mt-[130px]">
-    <div class="flex items-center gap-3 mb-10">
-      <img
-        class="paragraphIcon p-2 rounded-full bg-white"
-        src="/src/assets/priceIcon.svg"
-        alt="price icon"
+    <div class="max-w-[1440px] mx-auto px-[150px] mt-[130px]">
+      <div class="flex items-center gap-3 mb-10">
+        <img
+          class="paragraphIcon p-2 rounded-full bg-white"
+          src="/src/assets/priceIcon.svg"
+          alt="price icon"
+        />
+        <h1
+          class="font-jakarta font-bold leading-[44px] text-gray-900 text-[40px]"
+        >
+          Ціни
+        </h1>
+      </div>
+      <div
+        class="w-full border border-slate-300 bg-white rounded-2xl p-1.5 mb-5 [filter:_drop-shadow(0px_4px_8px_rgba(0,_0,_0,_0.06))_drop-shadow(0px_0px_4px_rgba(0,_0,_0,_0.04))]"
       >
-      <h1 class="font-jakarta font-bold leading-[44px] text-gray-900 text-[40px]">
-        Ціни
-      </h1>
-    </div>
-    <div class="
-         w-full border border-slate-300 bg-white rounded-2xl p-1.5 mb-5
-         [filter:_drop-shadow(0px_4px_8px_rgba(0,_0,_0,_0.06))_drop-shadow(0px_0px_4px_rgba(0,_0,_0,_0.04))]
-         ">
-      <div class="
-           rounded-t-2xl bg-[#EAEDF2] text-gray-900 flex
-           font-medium font-montserrat tracking-[0.28px] text-sm
-           ">
-        <p class="max-w-[710px] w-full p-3">Назва послуги</p>
-        <p class="max-w-[266px] w-full p-3">Тривалість робот</p>
-        <p class="max-w-[152px] w-full p-3">Вартість</p>
-      </div>
-      {{>ServiceListItem}}
-      {{>ServiceListItemGray}}
-      {{>ServiceListItem}}
-      {{>ServiceListItemGray}}
-      {{>ServiceListItem}}
-      {{>ServiceListItemGray}}
-    </div>
-    <p class="font-montserrat text-sm leading-6 text-gray-900 mb-[130px]">
-      * Всі ціни і тривалість робіт вказані приблизні. Щоб дізнатись точну ціну - звʼяжіться з нами по номеру :
-      <span class="text-blue-600 font-medium">+38 (093) 000-00-00</span>
-    </p>
-    <div class="py-[120px]">
-      <div class="flex gap-0.5 items-start mb-10">
-        <img
-          class="paragraphIcon p-2 rounded-full bg-white mr-3"
-          src="/src/assets/advantagesStarIcon.svg"
-          alt="advantages star icon"
+        <div
+          class="rounded-t-2xl bg-[#EAEDF2] text-gray-900 flex font-medium font-montserrat tracking-[0.28px] text-sm"
         >
-        <div>
-          <h1 class="font-jakarta text-[40px] text-gray-900 font-bold leading-[44px] mb-3">
-            Наші переваги
-          </h1>
-          <p class="max-w-[500px] text-neutral-500/70 text-xs font-montserrat leading-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt.
-          </p>
+          <p class="max-w-[710px] w-full p-3">Назва послуги</p>
+          <p class="max-w-[266px] w-full p-3">Тривалість робот</p>
+          <p class="max-w-[152px] w-full p-3">Вартість</p>
         </div>
+        {{>ServiceListItem}} {{>ServiceListItemGray}} {{>ServiceListItem}}
+        {{>ServiceListItemGray}} {{>ServiceListItem}} {{>ServiceListItemGray}}
       </div>
-      <div class="grid grid-cols-4 gap-5">
-        {{>AdvantageCard}}
-        {{>AdvantageCard}}
-        {{>AdvantageCard}}
-        {{>AdvantageCard}}
-        {{>AdvantageCard}}
-        {{>AdvantageCard}}
-        {{>AdvantageCard}}
-        {{>AdvantageCard}}
-      </div>
-    </div>
-  </div>
-  <div class="[background:_linear-gradient(0deg,_rgba(36,_109,_239,_0.50)_0%,_rgba(36,_109,_239,_0.50)_100%),_url('/src/assets/blueWavesBg.png'),_lightgray_0px_-73.061px_/_100%_129.949%_no-repeat;] py-[120px]">
-    <div class="max-w-[1440px] mx-auto px-[134px]">
-      <div class="flex justify-between items-start mb-6">
-        <div class="flex items-start">
-          <div class="flex flex-col justify-start gap-5">
-            <div class="flex gap-3 items-center mr-4">
-              <img
-                class="paragraphIcon p-2 rounded-full bg-white mr-3"
-                src="/src/assets/messageCloudIcon.svg"
-                alt="message cloud icon"
-              >
-              <h1 class="font-jakarta font-bold leading-[44px] text-[44px] text-white">
-                Відгуки наших клієнтів
-              </h1>
-            </div>
-            <p class="max-w-[500px] font-montserrat text-xs leading-5 text-white/70">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet.
+      <p class="font-montserrat text-sm leading-6 text-gray-900 mb-[130px]">
+        * Всі ціни і тривалість робіт вказані приблизні. Щоб дізнатись точну
+        ціну - звʼяжіться з нами по номеру :
+        <span class="text-blue-600 font-medium">
+          <a href="tel:+380930000000">+38 (093) 000-00-00 </a>
+        </span>
+      </p>
+      <div class="py-[120px]">
+        <div class="flex gap-0.5 items-start mb-10">
+          <img
+            class="paragraphIcon p-2 rounded-full bg-white mr-3"
+            src="/src/assets/advantagesStarIcon.svg"
+            alt="advantages star icon"
+          />
+          <div>
+            <h1
+              class="font-jakarta text-[40px] text-gray-900 font-bold leading-[44px] mb-3"
+            >
+              Наші переваги
+            </h1>
+            <p
+              class="max-w-[500px] text-neutral-500/70 text-xs font-montserrat leading-5"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              Faucibus amet etiam tincidunt.
             </p>
           </div>
-          <a
-            href="/reviews/"
-            class="flex items-center gap-1 pt-3"
-          >
-            <p class="font-bold font-montserrat text-xs text-white">Всі відгуки</p>
-            <img src="/src/assets/RightArrowWhite.svg">
-          </a>
         </div>
-        <button
-          id="openReviewModal"
-          class="text-gray-900 font-bold text-xs font-montserrat px-[34px] py-3 bg-white rounded-[30px]"
-        >
-          Залишити відгук
-        </button>
+        <div class="grid grid-cols-4 gap-5">
+          {{>AdvantageCard}} {{>AdvantageCard}} {{>AdvantageCard}}
+          {{>AdvantageCard}} {{>AdvantageCard}} {{>AdvantageCard}}
+          {{>AdvantageCard}} {{>AdvantageCard}}
+        </div>
       </div>
-      {{>ReviewModal}}
-      {{>ReviewsSwiper}}
     </div>
-  </div>
-
-  <div class="relative">
-    <div class="top-24 left-[380px] absolute z-20">
-      {{>ContactCard}}
-    </div>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5149.855438201257!2d24.06431506044323!3d49.806226547065606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae81a36741bbf%3A0xe7464f623da4015b!2sSERVICE%20TIR!5e0!3m2!1suk!2sua!4v1697911690186!5m2!1suk!2sua"
-      width="100%"
-      height="670"
-      class="relative z-10"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-      id="map"
+    <div
+      class="[background:_linear-gradient(0deg,_rgba(36,_109,_239,_0.50)_0%,_rgba(36,_109,_239,_0.50)_100%),_url('/src/assets/blueWavesBg.png'),_lightgray_0px_-73.061px_/_100%_129.949%_no-repeat;] py-[120px]"
     >
-    </iframe>
-  </div>
+      <div class="max-w-[1440px] mx-auto px-[134px]">
+        <div class="flex justify-between items-start mb-6">
+          <div class="flex items-start">
+            <div class="flex flex-col justify-start gap-5">
+              <div class="flex gap-3 items-center mr-4">
+                <img
+                  class="paragraphIcon p-2 rounded-full bg-white mr-3"
+                  src="/src/assets/messageCloudIcon.svg"
+                  alt="message cloud icon"
+                />
+                <h1
+                  class="font-jakarta font-bold leading-[44px] text-[44px] text-white"
+                >
+                  Відгуки наших клієнтів
+                </h1>
+              </div>
+              <p
+                class="max-w-[500px] font-montserrat text-xs leading-5 text-white/70"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+                Faucibus amet.
+              </p>
+            </div>
+            <a
+              href="/reviews/"
+              class="flex items-center gap-1 pt-3"
+            >
+              <p class="font-bold font-montserrat text-xs text-white">
+                Всі відгуки
+              </p>
+              <img src="/src/assets/RightArrowWhite.svg" />
+            </a>
+          </div>
+          <button
+            id="openReviewModal"
+            class="text-gray-900 font-bold text-xs font-montserrat px-[34px] py-3 bg-white rounded-[30px]"
+          >
+            Залишити відгук
+          </button>
+        </div>
+        {{>ReviewModal}} {{>ReviewsSwiper}}
+      </div>
+    </div>
 
-  {{>Footer}}
+    <div class="relative">
+      <div class="top-24 left-[380px] absolute z-20">{{>ContactCard}}</div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5149.855438201257!2d24.06431506044323!3d49.806226547065606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae81a36741bbf%3A0xe7464f623da4015b!2sSERVICE%20TIR!5e0!3m2!1suk!2sua!4v1697911690186!5m2!1suk!2sua"
+        width="100%"
+        height="670"
+        class="relative z-10"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        id="map"
+      >
+      </iframe>
+    </div>
 
-  {{>ServiceSignUpModal}}
+    {{>Footer}} {{>ServiceSignUpModal}}
 
-
-  <script
-    src="/src/scripts/NumberFormat.js"
-    type="module"
-  ></script>
-  <script
-    src="/src/scripts/ReviewsSwiper.js"
-    type="module"
-  ></script>
-</body>
-
+    <script
+      src="/src/scripts/NumberFormat.js"
+      type="module"
+    ></script>
+    <script
+      src="/src/scripts/ReviewsSwiper.js"
+      type="module"
+    ></script>
+  </body>
 </html>
