@@ -16,97 +16,108 @@
     name="viewport"
     content="width=device-width, initial-scale=1.0"
   />
-  <title>Service Tir | Blog</title>
+  <title>Service Tir | Article</title>
 
 </head>
 
 <body>
   <div class="mb-5">
     {{>HeaderNotLogged}}
+
     {{>Navbar}}
   </div>
 
-  <div class="max-w-[1440px] mx-auto px-[150px]">
-    <div class="text-xs font-montserrat text-gray-900 mb-10 flex gap-1 items-center">
+  <div class="font-montserrat mx-auto max-w-[1440px] px-[150px]">
+    <div class="text-xs text-gray-900 flex items-center gap-1 mb-[50px]">
       <a
-        class="opacity-50"
         href="/"
+        class="opacity-50"
       >
         Головна
       </a>
       <img src="/src/assets/ChevronRightSmall.svg">
-      <p class="cursor-pointer">Блог</p>
-    </div>
-    <div class="flex gap-3 items-center mb-10">
-      <img
-        class="bg-white paragraphIcon p-2 rounded-full"
-        src="/src/assets/orderIcon.svg"
-        alt="order icon"
+      <a
+        class="opacity-50"
+        href="/blog/"
       >
-      <h1 class="font-jakarta font-bold text-[40px] leading-[44px] ml-3 mr-4">Блог</h1>
+        Блог
+      </a>
+      <img src="/src/assets/ChevronRightSmall.svg">
+      <p class="cursor-pointer">Як відбувається ремонт двигунів?</p>
     </div>
-    <div class="flex flex-col gap-12 mb-10">
-      <div class="flex gap-5">
-        {{>ArticleCard}}
-        {{>ArticleCard}}
-        {{>ArticleCard}}
-      </div>
-      <div class="flex gap-5">
-        {{>ArticleCard}}
-        {{>ArticleCard}}
-        {{>ArticleCard}}
-      </div>
-      <div class="flex gap-5">
-        {{>ArticleCard}}
-        {{>ArticleCard}}
-        {{>ArticleCard}}
-      </div>
-      <div class="flex gap-5">
-        {{>ArticleCard}}
-        {{>ArticleCard}}
-        {{>ArticleCard}}
+    <div class="mb-[87px]">
+      <p class="text-gray-400 font-semibold leading-5 text-xs mb-4">
+        1 Вересня 2023
+      </p>
+      <h1 class="mb-6 text-zinc-900 font-semibold text-[40px]">
+        Як відбувається ремонт двигунів?
+      </h1>
+      <div class="flex flex-col w-full gap-7">
+        <img
+          class="w-full"
+          src="/src/assets/engineImage.png"
+          alt="engine image"
+        >
+        <div class="text-gray-900 leading-[25px]">
+          <p class="mb-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</p>
+          <p>Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit</p>
+        </div>
+        <img
+          class="w-full"
+          src="/src/assets/engineImage.png"
+          alt="engine image"
+        >
+        <div class="text-gray-900 leading-[25px]">
+          <p class="mb-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</p>
+          <p>Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit</p>
+        </div>
       </div>
     </div>
-    <div class="flex items-center justify-center gap-2 mb-[120px]">
-      <img
-        src="/src/assets/ChevronLeftLight.svg"
-        class="cursor-pointer"
-      >
-      <a class="text-sm font-montserrat font-medium leading-5 text-blue-600
-         border border-slate-300 w-6 h-6 flex items-center justify-center rounded
-         cursor-pointer
-         ">
-        1
-      </a>
-      <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
-         w-6 h-6 flex items-center justify-center rounded cursor-pointer
-         ">
-        2
-      </a>
-      <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
-         w-6 h-6 flex items-center justify-center rounded cursor-pointer
-         ">
-        3
-      </a>
-      <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
-         w-6 h-6 flex items-center justify-center rounded cursor-pointer
-         ">
-        ...
-      </a>
-      <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
-         w-6 h-6 flex items-center justify-center rounded cursor-pointer
-         ">
-        36
-      </a>
-      <img
-        src="/src/assets/ChevronRightLight.svg"
-        class="cursor-pointer"
-      >
+    <div class="articlesSwiper overflow-hidden mb-[120px]">
+      <div class="flex justify-between items-center mb-9">
+        <div class="flex items-center gap-3">
+          <img
+            class="p-2 bg-white rounded-full paragraphIcon"
+            src="/src/assets/orderIcon.svg"
+            alt="fireIcon"
+          >
+          <div class="text-gray-900 text-[40px] leading-[44px] font-bold font-jakarta">
+            Схожі статі
+          </div>
+        </div>
+        <div class="flex gap-2.5 h-10">
+          <button class="p-2 bg-white rounded-full paragraphIcon prevOffer">
+            <img
+              class="w-6 h-6"
+              src="/src/assets/chevronLeft.svg"
+            >
+          </button>
+          <button class="p-2 bg-white rounded-full paragraphIcon nextOffer">
+            <img
+              class="w-6 h-6"
+              src="/src/assets/chevronRight.svg"
+            >
+          </button>
+        </div>
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">{{>ArticleCard}}</div>
+        <div class="swiper-slide">{{>ArticleCard}}</div>
+        <div class="swiper-slide">{{>ArticleCard}}</div>
+        <div class="swiper-slide">{{>ArticleCard}}</div>
+        <div class="swiper-slide">{{>ArticleCard}}</div>
+        <div class="swiper-slide">{{>ArticleCard}}</div>
+        <div class="swiper-slide">{{>ArticleCard}}</div>
+      </div>
     </div>
   </div>
 
   {{>Footer}}
 
+  <script
+    type="module"
+    src="/src/scripts/ArticleSwiper.js"
+  ></script>
   <script
     src="/src/scripts/NumberFormat.js"
     type="module"
