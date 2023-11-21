@@ -86,13 +86,27 @@
       id="dropMenu"
     >
       <ul class="font-montserrat flex flex-col gap-5">
-        <li>Головна</li>
-        <li>Каталог</li>
-        <li>Послуги</li>
-        <li>Про нас</li>
-        <li>Контакти</li>
-        <li>Відгуки</li>
-        <li>Статті</li>
+        <li>
+          <a href="/">Головна</a>
+        </li>
+        <li>
+          <a href="/catalog/">Каталог</a>
+        </li>
+        <li>
+          <a href="/services/">Послуги</a>
+        </li>
+        <li>
+          <a href="/about-us/">Про нас</a>
+        </li>
+        <li>
+          <a href="/contacts/">Контакти</a>
+        </li>
+        <li>
+          <a href="/reviews/">Відгуки</a>
+        </li>
+        <li>
+          <a href="/articles/">Статті</a>
+        </li>
       </ul>
       <hr class="border-0 h-px bg-zinc-50/50" />
       <div class="flex gap-2 items-center">
@@ -117,23 +131,25 @@
         </div>
         <p>Обране</p>
       </div>
-      <div class="flex gap-1 items-center">
-        <div class="relative">
-          <img
-            src="/src/assets/cartWhiteIcon.svg"
-            alt="cart icon"
-          />
-          <div
-            class="absolute text-[8px] inline-flex items-center border border-white rounded-full justify-center px-0.5 h-2.5 text-emerald-500 left-3.5 -top-0.5 text-center bg-green-100"
-          >
-            6
+      <a href="/order/">
+        <div class="flex gap-1 items-center">
+          <div class="relative">
+            <img
+              src="/src/assets/cartWhiteIcon.svg"
+              alt="cart icon"
+            />
+            <div
+              class="absolute text-[8px] inline-flex items-center border border-white rounded-full justify-center px-0.5 h-2.5 text-emerald-500 left-3.5 -top-0.5 text-center bg-green-100"
+            >
+              6
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <p>&#8372;10 000</p>
+            <p>Кошик</p>
           </div>
         </div>
-        <div class="flex gap-2">
-          <p>&#8372;10 000</p>
-          <p>Кошик</p>
-        </div>
-      </div>
+      </a>
       {{>SearchMobile }}
     </div>
   </div>

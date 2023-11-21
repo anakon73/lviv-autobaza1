@@ -11,7 +11,7 @@ const open = () => {
 
   closeHeaderButton.classList.remove("hidden")
 
-  header.classList.add("bg-blue-600", "h-full", "absolute", "w-full")
+  header.classList.add("bg-blue-600", "h-screen", "absolute", "w-full")
 
   document.body.classList.add("overflow-hidden")
 }
@@ -24,7 +24,7 @@ const close = () => {
 
   closeHeaderButton.classList.add("hidden")
 
-  header.classList.remove("bg-blue-600", "h-full", "absolute", "w-full")
+  header.classList.remove("bg-blue-600", "h-screen", "absolute", "w-full")
 
   document.body.classList.remove("overflow-hidden")
 }
