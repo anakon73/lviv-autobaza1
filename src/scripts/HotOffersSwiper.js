@@ -20,15 +20,12 @@ const hotOffersSwiper = new Swiper(".hotOffersSwiper", {
   breakpoints: {
     1200: {
       slidesPerView: 4,
-      spaceBetween: 40,
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 40,
     },
     768: {
       slidesPerView: 4,
-      spaceBetween: 20,
     },
   },
 })
