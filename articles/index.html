@@ -1,116 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/vite.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="/src/style.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Service Tir | Blog</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link
-    rel="icon"
-    type="image/svg+xml"
-    href="/vite.svg"
-  />
-  <link
-    rel="stylesheet"
-    href="/src/style.css"
-  >
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-  <title>Service Tir | Blog</title>
+  <body>
+    <div class="mb-5">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
-</head>
-
-<body>
-  <div class="mb-5">
-    {{>HeaderNotLogged}}
-    {{>Navbar}}
-  </div>
-
-  <div class="max-w-[1440px] mx-auto px-[150px]">
-    <div class="text-xs font-montserrat text-gray-900 mb-10 flex gap-1 items-center">
-      <a
-        class="opacity-50"
-        href="/"
+    <div class="font-montserrat xl:px-[150px] max-w-[1440px] px-5 mx-auto">
+      <div
+        class="text-xs font-montserrat text-gray-900 mb-10 flex gap-1 items-center"
       >
-        Головна
-      </a>
-      <img src="/src/assets/ChevronRightSmall.svg">
-      <p class="cursor-pointer">Блог</p>
-    </div>
-    <div class="flex gap-3 items-center mb-10">
-      <img
-        class="bg-white paragraphIcon p-2 rounded-full"
-        src="/src/assets/orderIcon.svg"
-        alt="order icon"
-      >
-      <h1 class="font-jakarta font-bold text-[40px] leading-[44px] ml-3 mr-4">Блог</h1>
-    </div>
-    <div class="flex flex-col gap-12 mb-10">
-      <div class="flex gap-5">
-        {{>ArticleCard}}
-        {{>ArticleCard}}
-        {{>ArticleCard}}
+        <a
+          class="opacity-50"
+          href="/"
+        >
+          Головна
+        </a>
+        <img src="/src/assets/ChevronRightSmall.svg" />
+        <p class="cursor-pointer">Блог</p>
       </div>
-      <div class="flex gap-5">
-        {{>ArticleCard}}
-        {{>ArticleCard}}
-        {{>ArticleCard}}
+      <div class="flex gap-3 items-center mb-10">
+        <img
+          class="bg-white paragraphIcon p-2 rounded-full"
+          src="/src/assets/orderIcon.svg"
+          alt="order icon"
+        />
+        <h1 class="font-jakarta font-bold text-[40px] leading-[44px] ml-3 mr-4">
+          Блог
+        </h1>
       </div>
-      <div class="flex gap-5">
-        {{>ArticleCard}}
-        {{>ArticleCard}}
-        {{>ArticleCard}}
+      <div class="grid lg:grid-cols-3 grid-cols-2 gap-x-5 gap-y-12 mb-10">
+        {{>ArticleCard}} {{>ArticleCard}} {{>ArticleCard}} {{>ArticleCard}}
+        {{>ArticleCard}} {{>ArticleCard}} {{>ArticleCard}} {{>ArticleCard}}
+        {{>ArticleCard}} {{>ArticleCard}} {{>ArticleCard}} {{>ArticleCard}}
       </div>
-      <div class="flex gap-5">
-        {{>ArticleCard}}
-        {{>ArticleCard}}
-        {{>ArticleCard}}
+      <div class="flex items-center justify-center gap-2 mb-[120px]">
+        <img
+          src="/src/assets/ChevronLeftLight.svg"
+          class="cursor-pointer"
+        />
+        <a
+          class="text-sm font-montserrat font-medium leading-5 text-blue-600 border border-slate-300 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+        >
+          1
+        </a>
+        <a
+          class="text-sm font-montserrat font-medium leading-5 text-slate-700 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+        >
+          2
+        </a>
+        <a
+          class="text-sm font-montserrat font-medium leading-5 text-slate-700 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+        >
+          3
+        </a>
+        <a
+          class="text-sm font-montserrat font-medium leading-5 text-slate-700 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+        >
+          ...
+        </a>
+        <a
+          class="text-sm font-montserrat font-medium leading-5 text-slate-700 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+        >
+          36
+        </a>
+        <img
+          src="/src/assets/ChevronRightLight.svg"
+          class="cursor-pointer"
+        />
       </div>
     </div>
-    <div class="flex items-center justify-center gap-2 mb-[120px]">
-      <img
-        src="/src/assets/ChevronLeftLight.svg"
-        class="cursor-pointer"
-      >
-      <a class="text-sm font-montserrat font-medium leading-5 text-blue-600
-         border border-slate-300 w-6 h-6 flex items-center justify-center rounded
-         cursor-pointer
-         ">
-        1
-      </a>
-      <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
-         w-6 h-6 flex items-center justify-center rounded cursor-pointer
-         ">
-        2
-      </a>
-      <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
-         w-6 h-6 flex items-center justify-center rounded cursor-pointer
-         ">
-        3
-      </a>
-      <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
-         w-6 h-6 flex items-center justify-center rounded cursor-pointer
-         ">
-        ...
-      </a>
-      <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
-         w-6 h-6 flex items-center justify-center rounded cursor-pointer
-         ">
-        36
-      </a>
-      <img
-        src="/src/assets/ChevronRightLight.svg"
-        class="cursor-pointer"
-      >
-    </div>
-  </div>
 
-  {{>Footer}}
+    {{>Footer}}
 
-  <script
-    src="/src/scripts/NumberFormat.js"
-    type="module"
-  ></script>
-</body>
-
+    <script
+      src="/src/scripts/NumberFormat.js"
+      type="module"
+    ></script>
+  </body>
 </html>
