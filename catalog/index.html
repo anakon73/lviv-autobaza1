@@ -1,123 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/vite.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="/src/style.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Service Tir | Catalog</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link
-    rel="icon"
-    type="image/svg+xml"
-    href="/vite.svg"
-  />
-  <link
-    rel="stylesheet"
-    href="/src/style.css"
-  >
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-  <title>Service Tir | Catalog</title>
+  <body>
+    <div class="mb-5">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
-</head>
-
-<body>
-  <div class="mb-5">
-    {{>HeaderNotLogged}}
-
-    {{>Navbar}}
-  </div>
-
-  <div class="max-w-[1440px] mx-auto px-[150px] mb-[120px]">
-    <div class="text-xs font-montserrat text-gray-900 flex items-center gap-1 mb-10">
-      <p class="opacity-50">
-        <a href="/">Головна</a>
-      </p>
-      <img src="/src/assets/ChevronRightSmall.svg">
-      <p class="cursor-pointer">Каталог</p>
-    </div>
-    <div class="flex gap-3 items-center mb-8">
-      <img
-        class="p-2 bg-white rounded-full paragraphIcon"
-        src="/src/assets/toolsIcon.svg"
-        alt="tools icon"
+    <div
+      class="xl:px-[150px] max-w-[1440px] px-1 min-[425px]:px-5 mx-auto mb-[120px]"
+    >
+      <div
+        class="text-xs font-montserrat text-gray-900 flex items-center gap-1 mb-10"
       >
-      <h1 class="text-gray-900 font-bold font-jakarta leading-[44px] text-[40px]">
-        Каталог товарів
-      </h1>
-    </div>
-    <div class="flex gap-5">
-      <div>{{>FilterForm}}</div>
-      <div>
-        <div class="grid grid-cols-3 gap-5 mb-10">
-          {{>ProductCard}}
-          {{>ProductCard}}
-          {{>ProductCardLiked}}
-          {{>ProductCardLiked}}
-          {{>ProductCard}}
-          {{>ProductCard}}
-          {{>ProductCardLiked}}
-          {{>ProductCard}}
-          {{>ProductCard}}
-          {{>ProductCardLiked}}
-          {{>ProductCard}}
-          {{>ProductCardLiked}}
-          {{>ProductCard}}
-          {{>ProductCardLiked}}
-          {{>ProductCard}}
-          {{>ProductCardLiked}}
-          {{>ProductCard}}
-          {{>ProductCardLiked}}
-        </div>
-        <div class="flex items-center justify-center gap-2">
-          <img
-            src="/src/assets/ChevronLeftLight.svg"
-            class="cursor-pointer"
+        <p class="opacity-50">
+          <a href="/">Головна</a>
+        </p>
+        <img src="/src/assets/ChevronRightSmall.svg" />
+        <p class="cursor-pointer">Каталог</p>
+      </div>
+      <div class="flex gap-3 items-center mb-8">
+        <img
+          class="p-2 bg-white rounded-full paragraphIcon"
+          src="/src/assets/toolsIcon.svg"
+          alt="tools icon"
+        />
+        <h1
+          class="text-gray-900 font-bold font-jakarta leading-[44px] text-[40px]"
+        >
+          Каталог товарів
+        </h1>
+      </div>
+      <div class="flex gap-5">
+        <div class="hidden md:block">{{>FilterForm}}</div>
+        <div>
+          <div
+            class="max-[425px]:flex justify-between w-full py-3 px-6 hidden card mb-8 rounded-2xl"
           >
-          <a class="text-sm font-montserrat font-medium leading-5 text-blue-600
-             border border-slate-300 w-6 h-6 flex items-center justify-center rounded
-             cursor-pointer
-             ">
-            1
-          </a>
-          <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
-             w-6 h-6 flex items-center justify-center rounded cursor-pointer
-             ">
-            2
-          </a>
-          <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
-             w-6 h-6 flex items-center justify-center rounded cursor-pointer
-             ">
-            3
-          </a>
-          <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
-             w-6 h-6 flex items-center justify-center rounded cursor-pointer
-             ">
-            ...
-          </a>
-          <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
-             w-6 h-6 flex items-center justify-center rounded cursor-pointer
-             ">
-            36
-          </a>
-          <img
-            src="/src/assets/ChevronRightLight.svg"
-            class="cursor-pointer"
+            <div class="flex items-center gap-3">
+              <img src="/src/assets/filterIcon.svg" />
+              <p class="font-medium text-gray-900 font-montserrat">Фільтр</p>
+            </div>
+            <img src="/src/assets/chevronDown.svg" />
+          </div>
+          <div
+            class="grid xl:grid-cols-3 grid-cols-2 gap-3 min-[425px]:gap-5 mb-10"
           >
+            {{>ProductCard}} {{>ProductCard}} {{>ProductCardLiked}}
+            {{>ProductCardLiked}} {{>ProductCard}} {{>ProductCard}}
+            {{>ProductCardLiked}} {{>ProductCard}} {{>ProductCard}}
+            {{>ProductCardLiked}} {{>ProductCard}} {{>ProductCardLiked}}
+            {{>ProductCard}} {{>ProductCardLiked}} {{>ProductCard}}
+            {{>ProductCardLiked}} {{>ProductCard}} {{>ProductCardLiked}}
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <img
+              src="/src/assets/ChevronLeftLight.svg"
+              class="cursor-pointer"
+            />
+            <a
+              class="text-sm font-montserrat font-medium leading-5 text-blue-600 border border-slate-300 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+            >
+              1
+            </a>
+            <a
+              class="text-sm font-montserrat font-medium leading-5 text-slate-700 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+            >
+              2
+            </a>
+            <a
+              class="text-sm font-montserrat font-medium leading-5 text-slate-700 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+            >
+              3
+            </a>
+            <a
+              class="text-sm font-montserrat font-medium leading-5 text-slate-700 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+            >
+              ...
+            </a>
+            <a
+              class="text-sm font-montserrat font-medium leading-5 text-slate-700 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+            >
+              36
+            </a>
+            <img
+              src="/src/assets/ChevronRightLight.svg"
+              class="cursor-pointer"
+            />
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  {{>Footer}}
+    {{>Footer}}
 
-  <script
-    src="/src/scripts/FormatInputNumber.js"
-    type="module"
-  ></script>
-  <script
-    src="/src/scripts/NumberFormat.js"
-    type="module"
-  ></script>
-</body>
-
+    <script
+      src="/src/scripts/FormatInputNumber.js"
+      type="module"
+    ></script>
+    <script
+      src="/src/scripts/NumberFormat.js"
+      type="module"
+    ></script>
+  </body>
 </html>
