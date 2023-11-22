@@ -1,127 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/vite.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="/src/style.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Service Tir | Article</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link
-    rel="icon"
-    type="image/svg+xml"
-    href="/vite.svg"
-  />
-  <link
-    rel="stylesheet"
-    href="/src/style.css"
-  >
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-  <title>Service Tir | Article</title>
+  <body>
+    <div class="mb-5">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
-</head>
-
-<body>
-  <div class="mb-5">
-    {{>HeaderNotLogged}}
-
-    {{>Navbar}}
-  </div>
-
-  <div class="font-montserrat mx-auto max-w-[1440px] px-[150px]">
-    <div class="text-xs text-gray-900 flex items-center gap-1 mb-[50px]">
-      <a
-        href="/"
-        class="opacity-50"
-      >
-        Головна
-      </a>
-      <img src="/src/assets/ChevronRightSmall.svg">
-      <a
-        class="opacity-50"
-        href="/blog/"
-      >
-        Блог
-      </a>
-      <img src="/src/assets/ChevronRightSmall.svg">
-      <p class="cursor-pointer">Як відбувається ремонт двигунів?</p>
-    </div>
-    <div class="mb-[87px]">
-      <p class="text-gray-400 font-semibold leading-5 text-xs mb-4">
-        1 Вересня 2023
-      </p>
-      <h1 class="mb-6 text-zinc-900 font-semibold text-[40px]">
-        Як відбувається ремонт двигунів?
-      </h1>
-      <div class="flex flex-col w-full gap-7">
-        <img
-          class="w-full"
-          src="/src/assets/engineImage.png"
-          alt="engine image"
+    <div class="font-montserrat xl:px-[150px] max-w-[1440px] px-5 mx-auto">
+      <div class="text-xs text-gray-900 flex items-center gap-1 mb-[50px]">
+        <a
+          href="/"
+          class="opacity-50"
         >
-        <div class="text-gray-900 leading-[25px]">
-          <p class="mb-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</p>
-          <p>Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit</p>
-        </div>
-        <img
-          class="w-full"
-          src="/src/assets/engineImage.png"
-          alt="engine image"
+          Головна
+        </a>
+        <img src="/src/assets/ChevronRightSmall.svg" />
+        <a
+          class="opacity-50"
+          href="/blog/"
         >
-        <div class="text-gray-900 leading-[25px]">
-          <p class="mb-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</p>
-          <p>Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit</p>
-        </div>
+          Блог
+        </a>
+        <img src="/src/assets/ChevronRightSmall.svg" />
+        <p class="cursor-pointer">Як відбувається ремонт двигунів?</p>
       </div>
-    </div>
-    <div class="articlesSwiper overflow-hidden mb-[120px]">
-      <div class="flex justify-between items-center mb-9">
-        <div class="flex items-center gap-3">
+      <div class="mb-[87px]">
+        <p class="text-gray-400 font-semibold leading-5 text-xs mb-4">
+          1 Вересня 2023
+        </p>
+        <h1 class="mb-6 text-zinc-900 font-semibold lg:text-[40px] text-3xl">
+          Як відбувається ремонт двигунів?
+        </h1>
+        <div class="flex flex-col w-full gap-7">
           <img
-            class="p-2 bg-white rounded-full paragraphIcon"
-            src="/src/assets/orderIcon.svg"
-            alt="fireIcon"
+            class="w-full"
+            src="/src/assets/engineImage.png"
+            alt="engine image"
+          />
+          <div
+            class="text-gray-900 lg:leading-[25px] leading-[21px] lg:text-base md:text-sm text-xs"
           >
-          <div class="text-gray-900 text-[40px] leading-[44px] font-bold font-jakarta">
-            Схожі статі
+            <p class="mb-7">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+              Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
+              ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus
+              amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus
+              tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Viverra nunc ante velit vitae. Est
+              tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt
+              rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc
+              libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
+              nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+              ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna,
+              feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis
+              enim.
+            </p>
+            <p>
+              Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+              Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
+              ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus
+              amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus
+              tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Viverra nunc ante velit vitae. Est
+              tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt
+              rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc
+              libero urna, feugiat. Lorem ipsum dolor sit
+            </p>
+          </div>
+          <img
+            class="w-full"
+            src="/src/assets/engineImage.png"
+            alt="engine image"
+          />
+          <div
+            class="text-gray-900 lg:leading-[25px] leading-[21px] lg:text-base md:text-sm text-xs"
+          >
+            <p class="mb-7">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+              Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
+              ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus
+              amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus
+              tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Viverra nunc ante velit vitae. Est
+              tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt
+              rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc
+              libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
+              nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+              ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna,
+              feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis
+              enim.
+            </p>
+            <p>
+              Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+              Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
+              ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus
+              amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus
+              tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Viverra nunc ante velit vitae. Est
+              tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt
+              rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc
+              libero urna, feugiat. Lorem ipsum dolor sit
+            </p>
           </div>
         </div>
-        <div class="flex gap-2.5 h-10">
-          <button class="p-2 bg-white rounded-full paragraphIcon prevOffer">
+      </div>
+      <div class="articlesSwiper overflow-hidden mb-[104px] pb-4">
+        <div class="flex justify-between items-center mb-9">
+          <div class="flex items-center gap-3">
+            <img
+              class="p-2 bg-white rounded-full paragraphIcon"
+              src="/src/assets/orderIcon.svg"
+              alt="fireIcon"
+            />
+            <div
+              class="text-gray-900 text-[30px] lg:text-[40px] lg:leading-[44px] leading-[33px] font-bold font-jakarta"
+            >
+              Схожі статі
+            </div>
+          </div>
+          <div class="md:flex hidden gap-2.5 h-10">
+            <button class="p-2 bg-white rounded-full paragraphIcon prevArticle">
+              <img
+                class="w-6 h-6"
+                src="/src/assets/chevronLeft.svg"
+              />
+            </button>
+            <button class="p-2 bg-white rounded-full paragraphIcon nextArticle">
+              <img
+                class="w-6 h-6"
+                src="/src/assets/chevronRight.svg"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+        </div>
+        <div class="flex md:hidden gap-5 justify-center items-end mt-5">
+          <button class="p-2 bg-white rounded-full paragraphIcon prevArticle">
             <img
               class="w-6 h-6"
               src="/src/assets/chevronLeft.svg"
-            >
+            />
           </button>
-          <button class="p-2 bg-white rounded-full paragraphIcon nextOffer">
+          <div class="swiperArticle-pagination !relative !w-auto"></div>
+          <button class="p-2 bg-white rounded-full paragraphIcon nextArticle">
             <img
               class="w-6 h-6"
               src="/src/assets/chevronRight.svg"
-            >
+            />
           </button>
         </div>
       </div>
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">{{>ArticleCard}}</div>
-        <div class="swiper-slide">{{>ArticleCard}}</div>
-        <div class="swiper-slide">{{>ArticleCard}}</div>
-        <div class="swiper-slide">{{>ArticleCard}}</div>
-        <div class="swiper-slide">{{>ArticleCard}}</div>
-        <div class="swiper-slide">{{>ArticleCard}}</div>
-        <div class="swiper-slide">{{>ArticleCard}}</div>
-      </div>
     </div>
-  </div>
 
-  {{>Footer}}
+    {{>Footer}}
 
-  <script
-    type="module"
-    src="/src/scripts/ArticleSwiper.js"
-  ></script>
-  <script
-    src="/src/scripts/NumberFormat.js"
-    type="module"
-  ></script>
-</body>
-
+    <script
+      type="module"
+      src="/src/scripts/ArticleSwiper.js"
+    ></script>
+    <script
+      src="/src/scripts/NumberFormat.js"
+      type="module"
+    ></script>
+  </body>
 </html>
