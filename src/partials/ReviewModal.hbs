@@ -1,15 +1,10 @@
 <dialog
-  class="
-  focus:outline-0 bg-white rounded-[30px] font-montserrat backdrop:backdrop-blur-sm
-  backdrop:border backdrop:border-black/10 backdrop:bg-black/25 
-  open:animate-fade-in open:backdrop:animate-fade-in
-  "
+  class="focus:outline-0 bg-white rounded-[30px] font-montserrat backdrop:backdrop-blur-sm backdrop:border backdrop:border-black/10 backdrop:bg-black/25 open:animate-fade-in open:backdrop:animate-fade-in"
   id="modalWindow"
 >
-
   <form
     id="form"
-    class="flex flex-col items-center gap-8 px-[120px] py-10 relative"
+    class="flex flex-col items-center gap-8 md:px-[120px] px-6 py-10 relative w-full"
   >
     <button
       id="xMarkClose"
@@ -18,30 +13,69 @@
       <img
         src="/src/assets/xMarkIcon.svg"
         alt="xMark icon"
-      >
+      />
     </button>
-    <div class=" flex flex-col items-center gap-3">
-      <h1 class="text-black font-semibold tracking-[0.4px] leading-[30px] text-center">Залишити відгук</h1>
-      <div class="flex gap-4">
+    <div class="flex flex-col items-center gap-3">
+      <h1
+        class="text-black font-semibold tracking-[0.4px] leading-[30px] text-center"
+      >
+        Залишити відгук
+      </h1>
+      <div class="flex min-[425px]:gap-4 gap-3">
         <div class="flex flex-col items-center">
-          <img src="/src/assets/starBigIcon.svg">
-          <p class="text-slate-700 leading-[18px] font-medium text-xs">Погано</p>
+          <img
+            src="/src/assets/starBigIcon.svg"
+            class="md:w-12 md:h-12 h-6 w-6"
+          />
+          <p
+            class="text-slate-700 leading-[18px] font-medium text-[10px] min-[425px]:text-xs"
+          >
+            Погано
+          </p>
         </div>
         <div class="flex flex-col items-center">
-          <img src="/src/assets/starBigIcon.svg">
-          <p class="text-slate-700 leading-[18px] font-medium text-xs">Так собі</p>
+          <img
+            src="/src/assets/starBigIcon.svg"
+            class="md:w-12 md:h-12 h-6 w-6"
+          />
+          <p
+            class="text-slate-700 leading-[18px] font-medium text-[10px] min-[425px]:text-xs whitespace-nowrap"
+          >
+            Так собі
+          </p>
         </div>
         <div class="flex flex-col items-center">
-          <img src="/src/assets/starBigIcon.svg">
-          <p class="text-slate-700 leading-[18px] font-medium text-xs">Нормально</p>
+          <img
+            src="/src/assets/starBigIcon.svg"
+            class="md:w-12 md:h-12 h-6 w-6"
+          />
+          <p
+            class="text-slate-700 leading-[18px] font-medium text-[10px] min-[425px]:text-xs"
+          >
+            Нормально
+          </p>
         </div>
         <div class="flex flex-col items-center">
-          <img src="/src/assets/starBigLightIcon.svg">
-          <p class="text-slate-700 leading-[18px] font-medium text-xs">Добре</p>
+          <img
+            src="/src/assets/starBigLightIcon.svg"
+            class="md:w-12 md:h-12 h-6 w-6"
+          />
+          <p
+            class="text-slate-700 leading-[18px] font-medium text-[10px] min-[425px]:text-xs"
+          >
+            Добре
+          </p>
         </div>
         <div class="flex flex-col items-center">
-          <img src="/src/assets/starBigLightIcon.svg">
-          <p class="text-slate-700 leading-[18px] font-medium text-xs">Відміно</p>
+          <img
+            src="/src/assets/starBigLightIcon.svg"
+            class="md:w-12 md:h-12 h-6 w-6"
+          />
+          <p
+            class="text-slate-700 leading-[18px] font-medium text-[10px] min-[425px]:text-xs"
+          >
+            Відміно
+          </p>
         </div>
       </div>
       <div class="flex flex-col gap-4 w-full">
@@ -53,7 +87,7 @@
           type="text"
           name="name"
           value="Даниїл"
-        >
+        />
       </div>
       <div class="flex flex-col gap-4 w-full">
         <label class="text-sm font-slate-700 font-semibold leading-[22px]">
@@ -61,28 +95,29 @@
         </label>
         <textarea
           name="reviewText"
-          class="p-4 text-slate-700 font-medium text-sm leading-[22px] rounded-lg border-slate-300 resize-none h-36 overflow-hidden w-[370px]"
-        >Это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+          class="p-4 text-slate-700 font-medium text-sm leading-[22px] rounded-lg border-slate-300 resize-none h-36 overflow-hidden w-full max-w-[370px]"
+        >
+Это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
         </textarea>
       </div>
     </div>
     <button
       id="sendBtn"
-      class="text-white font-bold text-xs px-[34px] py-3 bg-blue-600 rounded-[30px]"
+      class="text-white font-bold text-xs px-[34px] py-3 bg-blue-600 rounded-[30px] whitespace-nowrap"
     >
       Залишити відгук
     </button>
   </form>
   <div
     id="successfully"
-    class="flex-col items-center gap-8 px-[75px] py-10 hidden"
+    class="flex-col items-center gap-8 px-6 md:px-[75px] py-10 hidden"
   >
     <div class="flex flex-col items-center gap-3">
       <img
         src="/src/assets/checkWhite.svg"
         class="p-3 bg-emerald-500 rounded-full"
-      >
-      <h1 class="text-xl font-bold tracking-[0.4px] leading-[30px]">
+      />
+      <h1 class="text-xl font-bold tracking-[0.4px] leading-[30px] text-center">
         Ваш відгук надіслано
       </h1>
       <p class="text-center max-w-[450px] leading-6 tracking-[0.32px]">

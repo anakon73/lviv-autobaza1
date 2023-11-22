@@ -1,140 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/vite.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="/src/style.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <link
-    rel="icon"
-    type="image/svg+xml"
-    href="/vite.svg"
-  />
-  <link
-    rel="stylesheet"
-    href="/src/style.css"
-  >
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+    <title>Service Tir | Reviews</title>
+  </head>
 
-  <title>Service Tir | Reviews</title>
-</head>
+  <body>
+    {{>ReviewModal}}
 
-<body>
+    <div class="mb-5">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
-  {{>ReviewModal}}
-
-
-  <div class="mb-5">
-    {{>HeaderNotLogged}}
-    {{>Navbar}}
-  </div>
-
-  <div class="mx-auto max-w-[1440px] px-[150px]">
-    <div class="flex gap-1 items-center text-xs font-montserrat text-gray-900 mb-10">
-      <a
-        class="opacity-50"
-        href="/"
+    <div class="xl:px-[150px] max-w-[1440px] px-5 min-[425px]:px-5 mx-auto">
+      <div
+        class="flex gap-1 items-center text-xs font-montserrat text-gray-900 mb-10"
       >
-        Головна
-      </a>
-      <img src="/src/assets/ChevronRightSmall.svg">
-      <p class="cursor-pointer">Відгуки</p>
-    </div>
-    <div class="flex justify-between items-start mb-8">
-      <div class="flex items-start">
-        <div class="flex flex-col justify-start gap-5">
-          <div class="flex gap-3 items-center mr-4">
-            <img
-              class="paragraphIcon p-2 rounded-full bg-white"
-              src="/src/assets/messageCloudIcon.svg"
-              alt="message cloud icon"
-            >
-            <h1 class="font-jakarta font-bold leading-[44px] text-[44px] text-gray-900">
-              Відгуки наших клієнтів
-            </h1>
-          </div>
-          <p class="max-w-[500px] font-montserrat text-xs leading-5 text-neutral-500/70">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet.
-          </p>
-        </div>
         <a
-          href="#"
-          class="flex items-center gap-1 pt-3"
+          class="opacity-50"
+          href="/"
         >
-          <p class="font-bold font-montserrat text-xs text-white">Всі відгуки</p>
-          <img src="/src/assets/RightArrowWhite.svg">
+          Головна
         </a>
+        <img src="/src/assets/ChevronRightSmall.svg" />
+        <p class="cursor-pointer">Відгуки</p>
       </div>
-      <button
-        id="openReviewModal"
-        class="text-white font-bold text-xs font-montserrat px-[34px] py-3 bg-blue-600 rounded-[30px] focus:outline-0"
+      <div
+        class="flex justify-between lg:flex-row flex-col gap-5 items-start mb-8"
       >
-        Залишити відгук
-      </button>
+        <div class="flex items-start">
+          <div class="flex flex-col justify-start gap-5">
+            <div
+              class="flex sm:flex-row flex-col gap-3 sm:items-center items-start mr-4"
+            >
+              <img
+                class="paragraphIcon p-2 rounded-full bg-white"
+                src="/src/assets/messageCloudIcon.svg"
+                alt="message cloud icon"
+              />
+              <h1
+                class="font-jakarta font-bold text-[30px] lg:text-[40px] lg:leading-[44px] leading-[33px] text-gray-900"
+              >
+                Відгуки наших клієнтів
+              </h1>
+            </div>
+            <p
+              class="max-w-[500px] font-montserrat text-xs leading-5 text-neutral-500/70"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              Faucibus amet.
+            </p>
+          </div>
+          <a
+            href="#"
+            class="flex items-center gap-1 pt-3"
+          >
+            <p class="font-bold font-montserrat text-xs text-white">
+              Всі відгуки
+            </p>
+            <img src="/src/assets/RightArrowWhite.svg" />
+          </a>
+        </div>
+        <button
+          id="openReviewModal"
+          class="text-white font-bold text-xs font-montserrat px-[34px] py-3 bg-blue-600 rounded-[30px] focus:outline-0"
+        >
+          Залишити відгук
+        </button>
+      </div>
+      <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 mb-10">
+        {{>ReviewCard}} {{>ReviewCard}} {{>ReviewCard}} {{>ReviewCard}}
+        {{>ReviewCard}} {{>ReviewCard}} {{>ReviewCard}} {{>ReviewCard}}
+        {{>ReviewCard}} {{>ReviewCard}} {{>ReviewCard}} {{>ReviewCard}}
+        {{>ReviewCard}} {{>ReviewCard}} {{>ReviewCard}} {{>ReviewCard}}
+      </div>
+      <div class="mb-[120px] flex items-center justify-center gap-2">
+        <img
+          src="/src/assets/ChevronLeftLight.svg"
+          class="cursor-pointer"
+        />
+        <a
+          class="text-sm font-montserrat font-medium leading-5 text-blue-600 border border-slate-300 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+        >
+          1
+        </a>
+        <a
+          class="text-sm font-montserrat font-medium leading-5 text-slate-700 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+        >
+          2
+        </a>
+        <a
+          class="text-sm font-montserrat font-medium leading-5 text-slate-700 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+        >
+          3
+        </a>
+        <a
+          class="text-sm font-montserrat font-medium leading-5 text-slate-700 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+        >
+          ...
+        </a>
+        <a
+          class="text-sm font-montserrat font-medium leading-5 text-slate-700 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+        >
+          36
+        </a>
+        <img
+          src="/src/assets/ChevronRightLight.svg"
+          class="cursor-pointer"
+        />
+      </div>
     </div>
-    <div class="grid grid-cols-2 gap-5 mb-10">
-      {{>ReviewCard}}
-      {{>ReviewCard}}
-      {{>ReviewCard}}
-      {{>ReviewCard}}
-      {{>ReviewCard}}
-      {{>ReviewCard}}
-      {{>ReviewCard}}
-      {{>ReviewCard}}
-      {{>ReviewCard}}
-      {{>ReviewCard}}
-      {{>ReviewCard}}
-      {{>ReviewCard}}
-      {{>ReviewCard}}
-      {{>ReviewCard}}
-      {{>ReviewCard}}
-      {{>ReviewCard}}
-    </div>
-    <div class="mb-[120px] flex items-center justify-center gap-2">
-      <img
-        src="/src/assets/ChevronLeftLight.svg"
-        class="cursor-pointer"
-      >
-      <a class="text-sm font-montserrat font-medium leading-5 text-blue-600
-         border border-slate-300 w-6 h-6 flex items-center justify-center rounded
-         cursor-pointer
-         ">
-        1
-      </a>
-      <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
-         w-6 h-6 flex items-center justify-center rounded cursor-pointer
-         ">
-        2
-      </a>
-      <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
-         w-6 h-6 flex items-center justify-center rounded cursor-pointer
-         ">
-        3
-      </a>
-      <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
-         w-6 h-6 flex items-center justify-center rounded cursor-pointer
-         ">
-        ...
-      </a>
-      <a class="text-sm font-montserrat font-medium leading-5 text-slate-700
-         w-6 h-6 flex items-center justify-center rounded cursor-pointer
-         ">
-        36
-      </a>
-      <img
-        src="/src/assets/ChevronRightLight.svg"
-        class="cursor-pointer"
-      >
-    </div>
-  </div>
 
-  {{>Footer}}
+    {{>Footer}}
 
-  <script
-    type="module"
-    src="/src/scripts/NumberFormat.js"
-  ></script>
-</body>
-
+    <script
+      type="module"
+      src="/src/scripts/NumberFormat.js"
+    ></script>
+  </body>
 </html>
