@@ -14,9 +14,10 @@ const hotOffersSwiper = new Swiper(".hotOffersSwiper", {
     el: ".swiperOffer-pagination",
     clickable: true,
   },
+  slideActiveClass: "activeOffer",
   loop: true,
-  slidesPerView: 2,
-  spaceBetween: 20,
+  spaceBetween: 26,
+  slidesPerView: 1,
   breakpoints: {
     1200: {
       slidesPerView: 4,
@@ -25,7 +26,11 @@ const hotOffersSwiper = new Swiper(".hotOffersSwiper", {
       slidesPerView: 3,
     },
     768: {
-      slidesPerView: 4,
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    425: {
+      slidesPerView: 2,
     },
   },
 })
