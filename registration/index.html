@@ -1,103 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/vite.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="/src/style.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Service TIR | Registation</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <link
-    rel="icon"
-    type="image/svg+xml"
-    href="/vite.svg"
-  />
-  <link
-    rel="stylesheet"
-    href="/src/style.css"
-  >
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-  <title>Service TIR | Registation</title>
-</head>
-
-<body>
-  <div class="max-w-[1440px] mx-auto pl-[150px] font-montserrat">
-    <a href="/">
-      <img
-        class="absolute top-4"
-        src="/src/assets/Logo.svg"
-        alt="service tir logo"
+  <body>
+    <div
+      class="max-w-[1440px] mx-auto xl:pl-[150px] xl:pr-20 2xl:pr-0 font-montserrat px-5"
+    >
+      <a href="/">
+        <img
+          class="absolute top-4"
+          src="/src/assets/Logo.svg"
+          alt="service tir logo"
+        />
+      </a>
+      <div
+        class="flex lg:flex-row flex-col items-center justify-between lg:mb-0 mb-2 mt-28 lg:mt-0 gap-12 lg:gap-0"
       >
-    </a>
-    <div class="flex items-center justify-between">
-      <div class="w-[370px]">
-        <h1 class="text-2xl text-gray-900 font-semibold mb-6">
-          Реєстрація
-        </h1>
-        <div class="flex flex-col gap-4 mb-6 text-slate-700">
-          <div class="flex flex-col justify-start gap-1">
-            <label
-              class="text-sm font-semibold leading-[22px] block"
-              for="EmailInput"
-            >
-              E-mail
-            </label>
-            <input
-              class="
-              text-sm leading-[22px] font-semibold p-4 rounded-lg border-slate-300 focus:ring-0
-              "
-              type="text"
-              id="EmailInput"
-            >
-          </div>
-          <div class="flex flex-col justify-start gap-1 relative">
-            <label
-              class="text-sm font-semibold leading-[22px] block"
-              for="passwordInput"
-            >
-              Пароль
-            </label>
-            <input
-              class="
-              text-sm leading-[22px] font-semibold p-4 rounded-lg border-slate-300 focus:ring-0
-              "
-              id="passwordInput"
-              type="password"
-            >
-            <button id="showPass">
-              <img
-                class="w-6 h-6 absolute right-4 top-11"
-                src="/src/assets/eyeSlash.svg"
+        <div class="lg:max-w-[370px] w-full">
+          <h1 class="text-2xl text-gray-900 font-semibold mb-6">Реєстрація</h1>
+          <div class="flex flex-col gap-4 mb-6 text-slate-700">
+            <div class="flex flex-col justify-start gap-1">
+              <label
+                class="text-sm font-semibold leading-[22px] block"
+                for="EmailInput"
               >
+                E-mail
+              </label>
+              <input
+                class="text-sm leading-[22px] font-semibold p-4 rounded-lg border-slate-300 focus:ring-0"
+                type="text"
+                id="EmailInput"
+              />
+            </div>
+            <div class="flex flex-col justify-start gap-1 relative">
+              <label
+                class="text-sm font-semibold leading-[22px] block"
+                for="passwordInput"
+              >
+                Пароль
+              </label>
+              <input
+                class="text-sm leading-[22px] font-semibold p-4 rounded-lg border-slate-300 focus:ring-0"
+                id="passwordInput"
+                type="password"
+              />
+              <button id="showPass">
+                <img
+                  class="w-6 h-6 absolute right-4 top-11"
+                  src="/src/assets/eyeSlash.svg"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col items-start gap-5">
+            <button
+              class="px-[34px] py-3 bg-blue-600 rounded-[30px] text-white text-xs font-bold"
+            >
+              Зареєструватися
             </button>
+            <p class="tracking-[0.28px] text-sm text-zinc-700 leading-[22px]">
+              Вже є аккаунт?
+              <a
+                href="/authentication/"
+                class="text-blue-600 underline underline-offset-2 font-medium ml-2"
+              >
+                Увійти
+              </a>
+            </p>
           </div>
         </div>
-        <div class="flex flex-col items-start gap-5">
-          <button class="px-[34px] py-3 bg-blue-600 rounded-[30px] text-white text-xs font-bold">
-            Зареєструватися
-          </button>
-          <p class="tracking-[0.28px] text-sm text-zinc-700 leading-[22px]">
-            Вже є аккаунт?
-            <a
-              href="/authentication/"
-              class="text-blue-600 underline underline-offset-2 font-medium ml-2"
-            >
-              Увійти
-            </a>
-          </p>
-        </div>
+        <img
+          class="lg:h-screen lg:py-4 lg:pl-4 w-full lg:w-auto"
+          src="/src/assets/forestPhoto.png"
+          alt="forest photo"
+        />
       </div>
-      <img
-        class="h-screen py-4 pl-4"
-        src="/src/assets/forestPhoto.png"
-        alt="forest photo"
-      >
     </div>
-  </div>
 
-  <script
-    type="module"
-    src="/src/scripts/PasswordVisibility.js"
-  ></script>
-</body>
-
+    <script
+      type="module"
+      src="/src/scripts/PasswordVisibility.js"
+    ></script>
+  </body>
 </html>
