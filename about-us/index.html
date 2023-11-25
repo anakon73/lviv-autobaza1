@@ -23,7 +23,7 @@
 
     <div class="xl:px-[150px] max-w-[1440px] px-5 mx-auto">
       <div
-        class="text-xs font-montserrat text-gray-900 flex gap-1 items-center mb-10"
+        class="text-xs font-montserrat text-gray-900 flex gap-1 items-center mb-8 md:mb-10"
       >
         <a
           href="/"
@@ -35,7 +35,7 @@
         <p class="cursor-pointer">Про нас</p>
       </div>
       <div
-        class="flex lg:flex-row flex-col gap-5 justify-between items-center lg:mb-[120px] mb-[200px]"
+        class="flex lg:flex-row flex-col gap-5 justify-between items-center mb-[120px]"
       >
         <div class="flex flex-col gap-5">
           <div class="flex items-center gap-3">
@@ -84,35 +84,78 @@
           alt="about us image"
         />
       </div>
-      <div class="py-[120px]">
-        <div class="flex gap-0.5 items-start mb-10">
-          <img
-            class="paragraphIcon p-2 rounded-full bg-white mr-3"
-            src="/src/assets/advantagesStarIcon.svg"
-            alt="advantages star icon"
-          />
-          <div>
-            <h1
-              class="font-jakarta text-3xl lg:text-[40px] lg:leading-[44px] leading-[33px] text-gray-900 font-bold mb-3"
-            >
-              Наші переваги
-            </h1>
-            <p
-              class="max-w-[500px] text-neutral-500/70 text-xs font-montserrat leading-5"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-              Faucibus amet etiam tincidunt.
-            </p>
+      <div class="mb-[200px] md:mb-[250px]">
+        <div>
+          <div class="flex gap-0.5 items-start mb-5 md:mb-10">
+            <img
+              class="paragraphIcon p-2 rounded-full bg-white mr-3"
+              src="/src/assets/advantagesStarIcon.svg"
+              alt="advantages star icon"
+            />
+            <div>
+              <h1
+                class="font-jakarta text-3xl lg:text-[40px] lg:leading-[44px] leading-[33px] text-gray-900 font-bold mb-3"
+              >
+                Наші переваги
+              </h1>
+              <p
+                class="max-w-[500px] text-neutral-500/70 text-xs font-montserrat leading-5"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+                Faucibus amet etiam tincidunt.
+              </p>
+            </div>
+          </div>
+          <div
+            class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5 mb-10"
+          >
+            {{>AdvantageCard}} {{>AdvantageCard}} {{>AdvantageCard}}
+            {{>AdvantageCard}} {{>AdvantageCard}} {{>AdvantageCard}}
+            {{>AdvantageCard}} {{>AdvantageCard}}
           </div>
         </div>
-        <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5">
-          {{>AdvantageCard}} {{>AdvantageCard}} {{>AdvantageCard}}
-          {{>AdvantageCard}} {{>AdvantageCard}} {{>AdvantageCard}}
-          {{>AdvantageCard}} {{>AdvantageCard}}
+        <div class="text-gray-900 text-xs leading-[22px] font-montserrat mb-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
+          ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus
+          amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus
+          tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus
+          vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+          ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna,
+          feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+          Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper
+          risus tempor, ac nunc libero urna, feugiat. Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est
+          tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt
+          rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero
+          urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis
+          enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+          Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit.
+          <span class="opacity-70">
+            elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam
+            lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper
+            velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem
+            ipsum dolor sit amet, consectetur
+          </span>
+          <span class="opacity-50">
+            adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
+            nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+            ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna,
+            feugiat. Lorem ipsum dolor sit elit.
+          </span>
+        </div>
+        <div
+          class="text-blue-600 font-medium font-montserrat text-xs flex gap-1.5"
+        >
+          Показати більше
+          <img src="/src/assets/chevronDownBlue.svg" />
         </div>
       </div>
-      <div class="md:py-[120px] mb-[100px] mt-[200px] md:m-0">
+      <div class="md:mb-[120px] mb-[100px]">
         <div class="flex items-center gap-3 mb-10">
           <img
             src="/src/assets/toolsIcon.svg"
