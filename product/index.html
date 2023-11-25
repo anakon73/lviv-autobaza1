@@ -11,6 +11,10 @@
       rel="stylesheet"
       href="/src/style.css"
     />
+    <link
+      rel="stylesheet"
+      href="/src/styles/hotOfferSwiper.css"
+    />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
@@ -21,7 +25,7 @@
   <body>
     <div class="mb-5">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
-    <div class="max-w-[1440px] mx-auto px-[150px] font-montserrat">
+    <div class="xl:px-[150px] max-w-[1440px] px-5 mx-auto font-montserrat">
       <div class="flex gap-1 items-center text-gray-900 text-xs mb-10">
         <a
           class="opacity-50"
@@ -39,8 +43,52 @@
         <img src="/src/assets/ChevronRightSmall.svg" />
         <p>Диск гальмівний Scania</p>
       </div>
-      <div class="flex gap-12 mb-[60px] relative">
-        <p class="absolute text-right w-full top-4">Код: 6422889</p>
+      <div class="flex flex-col md:flex-row gap-7 md:gap-12 mb-[60px] relative">
+        <p
+          class="absolute md:block hidden xl:top-4 top-10 text-right w-full text-neutral-500/70 text-xs"
+        >
+          Код: 6422889
+        </p>
+        <div class="flex md:hidden flex-col gap-2">
+          <h1
+            class="text-gray-900 leading-[33px] font-jakarta text-3xl font-bold"
+          >
+            Диск гальмівний Scania
+          </h1>
+          <div class="flex gap-1 items-center">
+            <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+            <p class="font-semibold text-sm leading-[22px] text-green-500">
+              В наявності
+            </p>
+          </div>
+          <div class="flex">
+            <img
+              src="/src/assets/starIcon.svg"
+              alt="star"
+            />
+            <img
+              src="/src/assets/starIcon.svg"
+              alt="star"
+            />
+            <img
+              src="/src/assets/starIcon.svg"
+              alt="star"
+            />
+            <img
+              src="/src/assets/starIcon.svg"
+              alt="star"
+            />
+            <img
+              src="/src/assets/starIcon.svg"
+              alt="star"
+            />
+            <p class="text-xs">
+              <span class="text-blue-600 font-medium leading-5">4.8</span>
+              (127 відгуків)
+            </p>
+          </div>
+          <p class="text-neutral-500/70 text-xs">Код: 6422889</p>
+        </div>
         <div
           class="relative p-3 bg-white rounded-2xl card flex flex-col justify-between"
         >
@@ -49,42 +97,42 @@
             class="absolute w-6 h-6 bg-blue-600 right-7 top-7 p-1.5 rounded-full"
           />
           <div
-            class="bg-indigo-100 rounded-2xl flex items-center justify-center mb-2 h-full"
+            class="bg-indigo-100 rounded-2xl flex items-center justify-center mb-2 md:h-[320px] h-[250px]"
           >
             <img
               src="/src/assets/productPhotoBig.png"
               alt="product photo"
             />
           </div>
-          <div class="flex gap-2">
+          <div class="flex gap-[7px] flex-wrap md:gap-2">
             <img
               src="/src/assets/sl111386686_460x330 1.png"
-              class="w-[72px] h-[54px] bg-indigo-100 rounded-lg p-2.5"
+              class="lg:w-[72px] h-10 w-[54px] lg:h-[54px] bg-indigo-100 rounded-lg p-2 lg:p-2.5"
             />
             <img
               src="/src/assets/sl111386686_460x330 1.png"
-              class="w-[72px] h-[54px] bg-indigo-100 rounded-lg p-2.5"
+              class="lg:w-[72px] h-10 w-[54px] lg:h-[54px] bg-indigo-100 rounded-lg p-2 lg:p-2.5"
             />
             <img
               src="/src/assets/sl111386686_460x330 1.png"
-              class="w-[72px] h-[54px] bg-indigo-100 rounded-lg p-2.5"
+              class="lg:w-[72px] h-10 w-[54px] lg:h-[54px] bg-indigo-100 rounded-lg p-2 lg:p-2.5"
             />
             <img
               src="/src/assets/sl111386686_460x330 1.png"
-              class="w-[72px] h-[54px] bg-indigo-100 rounded-lg p-2.5"
+              class="lg:w-[72px] h-10 w-[54px] lg:h-[54px] bg-indigo-100 rounded-lg p-2 lg:p-2.5"
             />
             <img
               src="/src/assets/sl111386686_460x330 1.png"
-              class="w-[72px] h-[54px] bg-indigo-100 rounded-lg p-2.5"
+              class="lg:w-[72px] h-10 w-[54px] lg:h-[54px] bg-indigo-100 rounded-lg p-2 lg:p-2.5"
             />
             <img
               src="/src/assets/sl111386686_460x330 1.png"
-              class="w-[72px] h-[54px] bg-indigo-100 rounded-lg p-2.5"
+              class="lg:w-[72px] h-10 w-[54px] lg:h-[54px] bg-indigo-100 rounded-lg p-2 lg:p-2.5"
             />
           </div>
         </div>
         <div class="flex flex-col gap-7">
-          <div class="flex flex-col gap-2">
+          <div class="md:flex hidden flex-col gap-2">
             <h1 class="text-gray-900 leading-[51px] text-[32px] font-bold">
               Диск гальмівний Scania
             </h1>
@@ -174,23 +222,25 @@
           </div>
         </div>
       </div>
-      <div class="flex gap-[102px] w-full border-b border-gray-900/10 mb-5">
+      <div
+        class="flex md:gap-[102px] min-[425px]:gap-8 gap-0 w-full border-b border-gray-900/10 mb-4"
+      >
         <button
-          class="p-2.5 leading-6 text-black font-montserrat tabBtn"
+          class="min-[425px]:p-2.5 p-2 leading-6 text-black font-montserrat tabBtn"
           id="descriptionTabBtn"
           data-tab="#descriptionTab"
         >
           Опис
         </button>
         <button
-          class="p-2.5 leading-6 text-black font-montserrat tabBtn"
+          class="min-[425px]:p-2.5 p-2 leading-6 text-black font-montserrat tabBtn"
           id="specsTabBtn"
           data-tab="#specsTab"
         >
           Характеристики
         </button>
         <button
-          class="p-2.5 leading-6 text-black font-montserrat tabBtn"
+          class="min-[425px]:p-2.5 p-2 leading-6 text-black font-montserrat tabBtn"
           id="reviwesTabBtn"
           data-tab="#reviwesTab"
         >
@@ -199,7 +249,7 @@
       </div>
       <div
         id="descriptionTab"
-        class="text-gray-900 font-montserrat leading-6 text-sm mb-[120px] max-w-[947px] hidden tab"
+        class="text-gray-900 font-montserrat leading-6 text-sm mb-[100px] md:mb-[120px] max-w-[947px] hidden tab"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -217,7 +267,7 @@
       </div>
       <div
         id="specsTab"
-        class="mb-[135px] grid-cols-3 gap-20 hidden tab"
+        class="md:mb-[135px] mb-[100px] grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 hidden tab"
       >
         <div class="flex flex-col gap-3 text-gray-900 text-sm">
           <div class="flex gap-[42px]">
@@ -288,52 +338,56 @@
         id="reviwesTab"
         class="mb-[104px] hidden tab"
       >
-        <div class="flex gap-3 items-center mb-8">
-          <p class="text-gray-800 leading-[30px] text-[20px] font-semibold">
+        <div class="md:flex gap-3 items-center mb-8">
+          <p
+            class="text-gray-800 leading-[30px] text-base md:text-[20px] font-semibold"
+          >
             Відгук про товар:
           </p>
-          <p class="text-blue-600 font-semibold leading-[30px]">
-            Диск гальмівний Scania
-          </p>
-          <div class="flex">
-            <img
-              src="/src/assets/starIcon.svg"
-              alt="star"
-            />
-            <img
-              src="/src/assets/starIcon.svg"
-              alt="star"
-            />
-            <img
-              src="/src/assets/starIcon.svg"
-              alt="star"
-            />
-            <img
-              src="/src/assets/starIcon.svg"
-              alt="star"
-            />
-            <img
-              src="/src/assets/starIcon.svg"
-              alt="star"
-            />
-            <p class="text-xs">
-              <span class="text-blue-600 font-medium leading-5">4.8</span> (127
-              відгуків)
+          <div class="min-[425px]:flex gap-2">
+            <p
+              class="text-blue-600 md:text-base text-xs font-semibold leading-[30px]"
+            >
+              Диск гальмівний Scania
             </p>
+            <div class="flex items-center">
+              <img
+                src="/src/assets/starIcon.svg"
+                alt="star"
+              />
+              <img
+                src="/src/assets/starIcon.svg"
+                alt="star"
+              />
+              <img
+                src="/src/assets/starIcon.svg"
+                alt="star"
+              />
+              <img
+                src="/src/assets/starIcon.svg"
+                alt="star"
+              />
+              <img
+                src="/src/assets/starIcon.svg"
+                alt="star"
+              />
+              <p class="text-xs whitespace-nowrap">
+                <span class="text-blue-600 font-medium leading-5">4.8</span>
+                (127 відгуків)
+              </p>
+            </div>
           </div>
         </div>
         {{>ReviewsSwiper}}
       </div>
-      <div
-        class="mx-auto max-w-[1170px] px-2.5 hotOffersSwiper overflow-hidden py-4 mb-[120px]"
-      >
+      <div class="mx-auto hotOffersSwiper mb-28 overflow-hidden px-2.5 py-4">
         <div class="flex justify-between items-center mb-9">
           <div
-            class="text-gray-900 text-[40px] leading-[44px] font-bold font-jakarta"
+            class="text-gray-900 text-3xl md:text-[40px] leading-[33px] md:leading-[44px] font-bold font-jakarta"
           >
             Схожі товари
           </div>
-          <div class="flex gap-2.5 h-10">
+          <div class="lg:flex hidden gap-2.5 h-10">
             <button class="p-2 bg-white rounded-full paragraphIcon prevOffer">
               <img
                 class="w-6 h-6"
@@ -357,6 +411,21 @@
           <div class="swiper-slide">{{>ProductCard}}</div>
           <div class="swiper-slide">{{>ProductCard}}</div>
           <div class="swiper-slide">{{>ProductCardLiked}}</div>
+        </div>
+        <div class="flex lg:hidden gap-5 justify-center items-end mt-5">
+          <button class="p-2 bg-white rounded-full paragraphIcon prevOffer">
+            <img
+              class="w-6 h-6"
+              src="/src/assets/chevronLeft.svg"
+            />
+          </button>
+          <div class="swiperOffer-pagination !relative !w-auto"></div>
+          <button class="p-2 bg-white rounded-full paragraphIcon nextOffer">
+            <img
+              class="w-6 h-6"
+              src="/src/assets/chevronRight.svg"
+            />
+          </button>
         </div>
       </div>
     </div>
