@@ -21,7 +21,7 @@
   <body>
     <div>{{>HeaderNotLogged}} {{>Navbar}}</div>
 
-    <div class="pt-5 bg-gray-100">
+    <div class="md:pt-5 pt-10 bg-gray-100">
       <div class="max-w-[1440px] mx-auto xl:pl-[150px] px-5 xl:pr-24">
         <div class="text-xs flex gap-1 font-montserrat text-gray-900 mb-6">
           <a
@@ -40,7 +40,9 @@
           <img src="/src/assets/ChevronRightSmall.svg" />
           <p class="cursor-pointer">Ремонт двигунів</p>
         </div>
-        <div class="flex items-center flex-col lg:flex-row gap-12 pb-14">
+        <div
+          class="flex items-center flex-col lg:flex-row gap-6 md:gap-12 pb-6 md:pb-14"
+        >
           <div class="flex flex-col lg:w-full gap-6 lg:gap-4">
             <h1
               class="font-jakarta font-bold leading-[44px] text-gray-900 text-4xl lg:text-[40px]"
@@ -74,8 +76,10 @@
         </div>
       </div>
     </div>
-    <div class="xl:px-[150px] max-w-[1440px] px-5 mx-auto mt-[130px]">
-      <div class="flex items-center gap-3 mb-10">
+    <div
+      class="xl:px-[150px] max-w-[1440px] px-5 mx-auto mt-[100px] lg:mt-[130px] lg:mb-[120px] mb-[100px]"
+    >
+      <div class="flex items-center gap-3 mb-9 md:mb-10">
         <img
           class="paragraphIcon p-2 rounded-full bg-white"
           src="/src/assets/priceIcon.svg"
@@ -88,7 +92,7 @@
         </h1>
       </div>
       <div
-        class="w-full border border-slate-300 bg-white rounded-2xl p-1.5 mb-5 [filter:_drop-shadow(0px_4px_8px_rgba(0,_0,_0,_0.06))_drop-shadow(0px_0px_4px_rgba(0,_0,_0,_0.04))]"
+        class="w-full border border-slate-300 bg-white rounded-2xl p-1.5 mb-4 md:mb-5 [filter:_drop-shadow(0px_4px_8px_rgba(0,_0,_0,_0.06))_drop-shadow(0px_0px_4px_rgba(0,_0,_0,_0.04))]"
       >
         <div
           class="rounded-t-2xl bg-[#EAEDF2] text-gray-900 flex font-medium font-montserrat tracking-[0.28px] text-sm"
@@ -110,15 +114,17 @@
           {{>ServiceListItemGray}}
         </div>
       </div>
-      <p class="font-montserrat text-sm leading-6 text-gray-900 mb-[130px]">
+      <p
+        class="font-montserrat text-sm leading-6 text-gray-900 mb-[200px] md:mb-[250px]"
+      >
         * Всі ціни і тривалість робіт вказані приблизні. Щоб дізнатись точну
         ціну - звʼяжіться з нами по номеру :
         <span class="text-blue-600 font-medium">
           <a href="tel:+380930000000">+38 (093) 000-00-00 </a>
         </span>
       </p>
-      <div class="py-[120px]">
-        <div class="flex gap-0.5 items-start mb-10">
+      <div>
+        <div class="flex gap-0.5 items-start mb-5 md:mb-10">
           <img
             class="paragraphIcon p-2 rounded-full bg-white mr-3"
             src="/src/assets/advantagesStarIcon.svg"
@@ -139,15 +145,54 @@
             </p>
           </div>
         </div>
-        <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5">
+        <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5 mb-10">
           {{>AdvantageCard}} {{>AdvantageCard}} {{>AdvantageCard}}
           {{>AdvantageCard}} {{>AdvantageCard}} {{>AdvantageCard}}
           {{>AdvantageCard}} {{>AdvantageCard}}
         </div>
       </div>
+      <div class="text-gray-900 text-xs leading-[22px] font-montserrat mb-3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
+        ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet
+        etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac
+        nunc libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam
+        lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+        Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit
+        vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam
+        tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc
+        libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis
+        enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+        Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit
+        vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam
+        tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc
+        libero urna, feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit.
+        <span class="opacity-70">
+          elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis
+          enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+          Ullamcorper risus tempor, ac nunc libero urna, feugiat. Lorem ipsum
+          dolor sit amet, consectetur
+        </span>
+        <span class="opacity-50">
+          adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
+          nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+          ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna,
+          feugiat. Lorem ipsum dolor sit elit.
+        </span>
+      </div>
+      <div
+        class="text-blue-600 font-medium font-montserrat text-xs flex gap-1.5"
+      >
+        Показати більше
+        <img src="/src/assets/chevronDownBlue.svg" />
+      </div>
     </div>
     <div
-      class="[background:_linear-gradient(0deg,_rgba(36,_109,_239,_0.50)_0%,_rgba(36,_109,_239,_0.50)_100%),_url('/src/assets/blueWavesBg.png'),_lightgray_0px_-73.061px_/_100%_129.949%_no-repeat;] py-[95px] lg:py-[120px]"
+      class="[background:_linear-gradient(0deg,_rgba(36,_109,_239,_0.50)_0%,_rgba(36,_109,_239,_0.50)_100%),_url('/src/assets/blueWavesBg.png'),_lightgray_0px_-73.061px_/_100%_129.949%_no-repeat;] py-[100px] lg:py-[120px]"
     >
       <div class="max-w-[1440px] mx-auto xl:px-[134px] px-5">
         <div class="flex justify-between items-start mb-6">
