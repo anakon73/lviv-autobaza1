@@ -21,9 +21,11 @@
   <body>
     <div class="mb-5">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
-    <div class="max-w-[1440px] mx-auto lg:px-[150px] px-5">
+    <div
+      class="max-w-[1440px] mx-auto lg:px-[150px] px-5 mb-[100px] lg:mb-[130px]"
+    >
       <div
-        class="text-gray-900 text-xs font-montserrat mb-10 flex items-center gap-1"
+        class="text-gray-900 text-xs font-montserrat mb-8 md:mb-10 flex items-center gap-1"
       >
         <p class="opacity-50">
           <a href="/">Головна</a>
@@ -84,16 +86,14 @@
           Зателефонувати
         </button>
       </div>
-      <div class="mb-[120px]">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5149.608856919481!2d24.05850095232348!3d49.808544341551475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae81a36741bbf%3A0xe7464f623da4015b!2z0JvRjNCy0ZbQstGB0YzQutCwINCQ0LLRgtC-0LHQsNC30LAg4oSWMSwg0KLQlNCS!5e0!3m2!1sru!2sua!4v1698168999309!5m2!1sru!2sua"
-          width="100%"
-          style="border-radius: 30px"
-          loading="lazy"
-          class="md:h-[550px] h-[432px]"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5149.608856919481!2d24.05850095232348!3d49.808544341551475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae81a36741bbf%3A0xe7464f623da4015b!2z0JvRjNCy0ZbQstGB0YzQutCwINCQ0LLRgtC-0LHQsNC30LAg4oSWMSwg0KLQlNCS!5e0!3m2!1sru!2sua!4v1698168999309!5m2!1sru!2sua"
+        width="100%"
+        style="border-radius: 30px"
+        loading="lazy"
+        class="md:h-[550px] h-[432px]"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
 
     {{>Footer}}
