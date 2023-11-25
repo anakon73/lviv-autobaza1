@@ -24,9 +24,11 @@
 
     <div class="mb-5">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
-    <div class="xl:px-[150px] max-w-[1440px] px-5 min-[425px]:px-5 mx-auto">
+    <div
+      class="xl:px-[150px] max-w-[1440px] px-5 min-[425px]:px-5 mx-auto lg:mb-[120px] mb-[100]"
+    >
       <div
-        class="flex gap-1 items-center text-xs font-montserrat text-gray-900 mb-10"
+        class="flex gap-1 items-center text-xs font-montserrat text-gray-900 mb-8 md:mb-10"
       >
         <a
           class="opacity-50"
@@ -42,9 +44,7 @@
       >
         <div class="flex items-start">
           <div class="flex flex-col justify-start gap-5">
-            <div
-              class="flex sm:flex-row flex-col gap-3 sm:items-center items-start mr-4"
-            >
+            <div class="flex flex-row gap-3 items-center mr-4">
               <img
                 class="paragraphIcon p-2 rounded-full bg-white"
                 src="/src/assets/messageCloudIcon.svg"
@@ -87,7 +87,7 @@
         {{>ReviewCard}} {{>ReviewCard}} {{>ReviewCard}} {{>ReviewCard}}
         {{>ReviewCard}} {{>ReviewCard}} {{>ReviewCard}} {{>ReviewCard}}
       </div>
-      <div class="mb-[120px] flex items-center justify-center gap-2">
+      <div class="flex items-center justify-center gap-2">
         <img
           src="/src/assets/ChevronLeftLight.svg"
           class="cursor-pointer"
