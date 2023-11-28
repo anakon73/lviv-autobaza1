@@ -8,32 +8,29 @@
       src="/src/assets/searchIcon.svg"
       alt="search icon"
       id="searchBtn"
-    >
+    />
     <input
-      class="
-      border-b border-x-0 border-t-0 p-0 pb-2 border-gray-100 font-montserrat font-medium text-xs leading-7
-      placeholder:text-slate-500 text-gray-900 focus:ring-0 w-[75%]
-      "
+      class="border-b border-x-0 border-t-0 p-0 pb-2 border-gray-100 font-montserrat font-medium text-xs leading-7 placeholder:text-slate-500 text-gray-900 focus:ring-0 w-[75%]"
       id="searchInput"
       type="text"
       placeholder="Напишіть назву товару"
-    >
+    />
   </div>
   <div
     id="searchResult"
     class="bg-white absolute w-full rounded-2xl flex-col gap-1 shadow-2xl z-10 top-[54px] hidden"
   >
     {{>SearchResultCard}}
-    <hr>
+    <hr />
     {{>SearchResultCard}}
-    <hr>
+    <hr />
     {{>SearchResultCard}}
-    <hr>
+    <hr />
     {{>SearchResultCard}}
-    <hr>
+    <hr />
     <a
       class="text-blue-600 font-montserrat font-semibold leading-[22px] text-sm px-2 py-3"
-      href="#"
+      href="/results/"
     >
       Показати всі (239)
     </a>
