@@ -40,7 +40,7 @@
           class="p-2 paragraphIcon bg-white rounded-full"
         />
         <h1
-          class="font-jakarta text-3xl lg:text-[40px] lg:leading-[44px] leading-[33px] font-bold text-gray-900"
+          class="font-jakarta text-3xl lg:text-big lg:leading-extra-height leading-normal font-bold text-gray-900"
         >
           Особистий кабінет
         </h1>
@@ -118,7 +118,7 @@
         </div>
       </div>
       <div
-        class="hidden mb-[100px] md:mb-[130px] tab"
+        class="hidden mb-24 md:mb-32 tab"
         id="mainTab"
       >
         <h1 class="md:text-2xl text-xl font-semibold text-gray-900 mb-8">
@@ -138,7 +138,7 @@
               <h2 class="text-gray-900 font-semibold text-xl">
                 Особистий менеджер
               </h2>
-              <p class="text-gray-900 text-sm leading-[22px]">
+              <p class="text-gray-900 text-sm leading-small">
                 В особистому кабінеті ви можете відслідковувати Ваші замовлення
                 та їх статус. Ми облегшили процес замовлення для багатьох наших
                 покупців.
@@ -162,7 +162,7 @@
               <h2 class="text-gray-900 font-semibold text-xl">
                 Відслідкування замовлень
               </h2>
-              <p class="text-gray-900 text-sm leading-[22px]">
+              <p class="text-gray-900 text-sm leading-small">
                 В особистому кабінеті ви можете відслідковувати Ваші замовлення
                 та їх статус. Ми облегшили процес замовлення для багатьох наших
                 покупців.
@@ -172,57 +172,57 @@
         </div>
       </div>
       <div
-        class="md:mb-[130px] mb-[100px] hidden tab"
+        class="md:mb-32 mb-24 hidden tab"
         id="infoTab"
       >
         <div class="flex flex-col gap-4 max-w-[370px] mb-1.5">
           <div class="flex flex-col gap-1">
-            <label class="text-sm font-semibold leading-[22px] text-slate-700"
+            <label class="text-sm font-semibold leading-small text-slate-700"
               >Імʼя та прізвище</label
             >
             <input
               type="text"
-              class="text-sm text-slate-700 font-medium leading-[22px] p-4 rounded-lg border-slate-300 placeholder:opacity-50"
+              class="text-sm text-slate-700 font-medium leading-small p-4 rounded-lg border-slate-300 placeholder:opacity-50"
               value="Олександр Семененко"
             />
           </div>
           <div class="flex flex-col gap-1">
-            <label class="text-sm font-semibold leading-[22px] text-slate-700"
+            <label class="text-sm font-semibold leading-small text-slate-700"
               >Місто</label
             >
             <input
               type="text"
-              class="text-sm text-slate-700 font-medium leading-[22px] p-4 rounded-lg border-slate-300 placeholder:opacity-50"
+              class="text-sm text-slate-700 font-medium leading-small p-4 rounded-lg border-slate-300 placeholder:opacity-50"
               value="Київ"
             />
           </div>
           <div class="flex flex-col gap-1">
-            <label class="text-sm font-semibold leading-[22px] text-slate-700"
+            <label class="text-sm font-semibold leading-small text-slate-700"
               >Номер телефона</label
             >
             <input
               type="text"
-              class="text-sm text-slate-700 font-medium leading-[22px] p-4 rounded-lg border-slate-300 placeholder:opacity-50"
+              class="text-sm text-slate-700 font-medium leading-small p-4 rounded-lg border-slate-300 placeholder:opacity-50"
               value="+38 (093) 119-00-08"
             />
           </div>
           <div class="flex flex-col gap-1">
-            <label class="text-sm font-semibold leading-[22px] text-slate-700"
+            <label class="text-sm font-semibold leading-small text-slate-700"
               >E-mail</label
             >
             <input
               type="text"
-              class="text-sm text-slate-700 font-medium leading-[22px] p-4 rounded-lg border-slate-300 placeholder:opacity-50"
+              class="text-sm text-slate-700 font-medium leading-small p-4 rounded-lg border-slate-300 placeholder:opacity-50"
               placeholder="Немає данних"
             />
           </div>
           <div class="flex flex-col gap-1">
-            <label class="text-sm font-semibold leading-[22px] text-slate-700"
+            <label class="text-sm font-semibold leading-small text-slate-700"
               >Пароль</label
             >
             <input
               type="password"
-              class="text-sm text-slate-700 font-medium leading-[22px] p-4 rounded-lg border-slate-300 placeholder:opacity-50"
+              class="text-sm text-slate-700 font-medium leading-small p-4 rounded-lg border-slate-300 placeholder:opacity-50"
               value="fsdfsdfsd"
             />
           </div>
@@ -232,23 +232,23 @@
         </p>
         <button
           disabled
-          class="bg-blue-600 disabled:opacity-50 text-white px-[34px] py-3 rounded-[30px] text-xs font-bold"
+          class="bg-blue-600 disabled:opacity-50 text-white px-9 py-3 rounded-large text-xs font-bold"
         >
           Зберегти зміни
         </button>
       </div>
       <div
-        class="md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 grid-cols-2 gap-4 mb-[100px] md:mb-[130px] hidden tab"
+        class="md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 grid-cols-2 gap-4 mb-24 md:mb-32 hidden tab"
         id="favoriteTab"
       >
         {{>ProductCard}} {{>ProductCard}} {{>ProductCard}} {{>ProductCard}}
         {{>ProductCard}} {{>ProductCard}}
       </div>
       <div
-        class="hidden mb-[100px] md:mb-[130px] tab"
+        class="hidden mb-24 md:mb-32 tab"
         id="ordersTab"
       >
-        <div class="flex gap-4 text-sm leading-[19px] mb-8">
+        <div class="flex gap-4 text-sm leading-5 mb-8">
           <p
             data-tab="#ordersActive"
             class="px-2 py-1 rounded-full orderTabBtn"
