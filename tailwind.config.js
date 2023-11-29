@@ -44,6 +44,20 @@ export default {
       borderRadius: {
         large: "1.875rem",
       },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1.25rem",
+          xl: "150px",
+        },
+        screens: {
+          sm: "640px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1280px",
+          "2xl": "1536px",
+        },
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],
