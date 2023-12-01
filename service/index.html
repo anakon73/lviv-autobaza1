@@ -21,9 +21,9 @@
   <body>
     <div>{{>HeaderNotLogged}} {{>Navbar}}</div>
 
-    <div class="md:pt-5 pt-10 bg-gray-100">
+    <div class="bg-gray-100 pt-10 md:pt-5">
       <div class="container xl:pr-24">
-        <div class="text-xs flex gap-1 font-montserrat text-gray-900 mb-6">
+        <div class="mb-6 flex gap-1 font-montserrat text-xs text-gray-900">
           <a
             class="opacity-50"
             href="/"
@@ -41,16 +41,16 @@
           <p class="cursor-pointer">Ремонт двигунів</p>
         </div>
         <div
-          class="flex items-center flex-col lg:flex-row gap-6 md:gap-12 pb-6 md:pb-14"
+          class="flex flex-col items-center gap-6 pb-6 md:gap-12 md:pb-14 lg:flex-row"
         >
-          <div class="flex flex-col lg:w-full gap-6 lg:gap-4">
+          <div class="flex flex-col gap-6 lg:w-full lg:gap-4">
             <h1
-              class="font-jakarta font-bold leading-extra-height text-gray-900 text-4xl lg:text-big"
+              class="font-jakarta text-4xl font-bold leading-extra-height text-gray-900 lg:text-big"
             >
               Ремонт двигунів
             </h1>
             <p
-              class="lg:max-w-[542px] max-w-[605px] font-montserrat text-sm leading-6 text-neutral-500 lg:text-gray-900"
+              class="max-w-[605px] font-montserrat text-sm leading-6 text-neutral-500 lg:max-w-[542px] lg:text-gray-900"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -64,7 +64,7 @@
             </p>
             <button
               id="signUpBtn"
-              class="font-montserrat bg-blue-600 px-9 py-3 rounded-large text-white text-sm font-bold self-start"
+              class="self-start rounded-large bg-blue-600 px-9 py-3 font-montserrat text-sm font-bold text-white"
             >
               Записатись на ремонт
             </button>
@@ -77,65 +77,65 @@
       </div>
     </div>
     <div
-      class="xl:px-[150px] max-w-[1440px] px-5 mx-auto mt-24 lg:mt-32 lg:mb-28 mb-24"
+      class="mx-auto my-24 max-w-[1440px] px-5 lg:mb-28 lg:mt-32 xl:px-[150px]"
     >
-      <div class="flex items-center gap-3 mb-9 md:mb-10">
+      <div class="mb-9 flex items-center gap-3 md:mb-10">
         <img
-          class="paragraphIcon p-2 rounded-full bg-white"
+          class="paragraphIcon rounded-full bg-white p-2"
           src="/src/assets/priceIcon.svg"
           alt="price icon"
         />
         <h1
-          class="font-jakarta font-bold leading-extra-height text-gray-900 text-big"
+          class="font-jakarta text-big font-bold leading-extra-height text-gray-900"
         >
           Ціни
         </h1>
       </div>
       <div
-        class="w-full border border-slate-300 bg-white rounded-2xl p-1.5 mb-4 md:mb-5 [filter:_drop-shadow(0px_4px_8px_rgba(0,_0,_0,_0.06))_drop-shadow(0px_0px_4px_rgba(0,_0,_0,_0.04))]"
+        class="mb-4 w-full rounded-2xl border border-slate-300 bg-white p-1.5 [filter:_drop-shadow(0px_4px_8px_rgba(0,_0,_0,_0.06))_drop-shadow(0px_0px_4px_rgba(0,_0,_0,_0.04))] md:mb-5"
       >
         <div
-          class="rounded-t-2xl bg-[#EAEDF2] text-gray-900 flex font-medium font-montserrat tracking-[0.28px] text-sm"
+          class="flex rounded-t-2xl bg-[#EAEDF2] font-montserrat text-sm font-medium tracking-[0.28px] text-gray-900"
         >
-          <p class="max-w-[710px] md:hidden block w-full p-3">
+          <p class="block w-full max-w-[710px] p-3 md:hidden">
             Ціни на послуги
           </p>
-          <p class="max-w-[710px] md:block hidden w-full p-3">Назва послуги</p>
-          <div class="max-w-[418px] flex w-full">
-            <p class="max-w-[266px] md:block hidden w-full p-3">
+          <p class="hidden w-full max-w-[710px] p-3 md:block">Назва послуги</p>
+          <div class="flex w-full max-w-[418px]">
+            <p class="hidden w-full max-w-[266px] p-3 md:block">
               Тривалість робот
             </p>
-            <p class="max-w-[152px] md:block hidden w-full p-3">Вартість</p>
+            <p class="hidden w-full max-w-[152px] p-3 md:block">Вартість</p>
           </div>
         </div>
         {{>ServiceListItem}} {{>ServiceListItemGray}} {{>ServiceListItem}}
         {{>ServiceListItemGray}} {{>ServiceListItem}}
-        <div class="rounded-b-2xl overflow-hidden">
+        <div class="overflow-hidden rounded-b-2xl">
           {{>ServiceListItemGray}}
         </div>
       </div>
-      <p class="font-montserrat text-sm leading-6 text-gray-900 mb-48 md:mb-64">
+      <p class="mb-48 font-montserrat text-sm leading-6 text-gray-900 md:mb-64">
         * Всі ціни і тривалість робіт вказані приблизні. Щоб дізнатись точну
         ціну - звʼяжіться з нами по номеру :
-        <span class="text-blue-600 font-medium">
+        <span class="font-medium text-blue-600">
           <a href="tel:+380930000000">+38 (093) 000-00-00 </a>
         </span>
       </p>
       <div>
-        <div class="flex gap-0.5 items-start mb-5 md:mb-10">
+        <div class="mb-5 flex items-start gap-0.5 md:mb-10">
           <img
-            class="paragraphIcon p-2 rounded-full bg-white mr-3"
+            class="paragraphIcon mr-3 rounded-full bg-white p-2"
             src="/src/assets/advantagesStarIcon.svg"
             alt="advantages star icon"
           />
           <div>
             <h1
-              class="font-jakarta text-3xl lg:text-big lg:leading-extra-height leading-normal text-gray-900 font-bold mb-3"
+              class="mb-3 font-jakarta text-3xl font-bold leading-normal text-gray-900 lg:text-big lg:leading-extra-height"
             >
               Наші переваги
             </h1>
             <p
-              class="max-w-[500px] text-neutral-500/70 text-xs font-montserrat leading-5"
+              class="max-w-[500px] font-montserrat text-xs leading-5 text-neutral-500/70"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
               nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
@@ -143,13 +143,13 @@
             </p>
           </div>
         </div>
-        <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5 mb-10">
+        <div class="mb-10 grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4">
           {{>AdvantageCard}} {{>AdvantageCard}} {{>AdvantageCard}}
           {{>AdvantageCard}} {{>AdvantageCard}} {{>AdvantageCard}}
           {{>AdvantageCard}} {{>AdvantageCard}}
         </div>
       </div>
-      <div class="text-gray-900 text-xs leading-small font-montserrat mb-3">
+      <div class="mb-3 font-montserrat text-xs leading-small text-gray-900">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
         ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet
         etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac
@@ -183,27 +183,27 @@
         </span>
       </div>
       <div
-        class="text-blue-600 font-medium font-montserrat text-xs flex gap-1.5"
+        class="flex gap-1.5 font-montserrat text-xs font-medium text-blue-600"
       >
         Показати більше
         <img src="/src/assets/chevronDownBlue.svg" />
       </div>
     </div>
     <div
-      class="[background:_linear-gradient(0deg,_rgba(36,_109,_239,_0.50)_0%,_rgba(36,_109,_239,_0.50)_100%),_url('/src/assets/blueWavesBg.png'),_lightgray_0px_-73.061px_/_100%_129.949%_no-repeat;] py-[100px] lg:py-[120px]"
+      class="py-[100px] [background:_linear-gradient(0deg,_rgba(36,_109,_239,_0.50)_0%,_rgba(36,_109,_239,_0.50)_100%),_url('/src/assets/blueWavesBg.png'),_lightgray_0px_-73.061px_/_100%_129.949%_no-repeat;] lg:py-[120px]"
     >
-      <div class="max-w-[1440px] mx-auto xl:px-[134px] px-5">
-        <div class="flex justify-between items-start mb-6">
+      <div class="mx-auto max-w-[1440px] px-5 xl:px-[134px]">
+        <div class="mb-6 flex items-start justify-between">
           <div class="flex items-start">
             <div class="flex flex-col justify-start gap-5">
-              <div class="flex gap-3 items-center mr-4">
+              <div class="mr-4 flex items-center gap-3">
                 <img
-                  class="paragraphIcon p-2 rounded-full bg-white mr-3"
+                  class="paragraphIcon mr-3 rounded-full bg-white p-2"
                   src="/src/assets/messageCloudIcon.svg"
                   alt="message cloud icon"
                 />
                 <h1
-                  class="font-jakarta font-bold text-3xl lg:text-big lg:leading-extra-height leading-normal text-white"
+                  class="font-jakarta text-3xl font-bold leading-normal text-white lg:text-big lg:leading-extra-height"
                 >
                   Відгуки наших клієнтів
                 </h1>
@@ -218,10 +218,10 @@
             </div>
             <a
               href="/reviews/"
-              class="items-center gap-1 pt-3 lg:flex hidden"
+              class="hidden items-center gap-1 pt-3 lg:flex"
             >
               <p
-                class="font-bold font-montserrat text-xs text-white whitespace-nowrap"
+                class="whitespace-nowrap font-montserrat text-xs font-bold text-white"
               >
                 Всі відгуки
               </p>
@@ -230,23 +230,23 @@
           </div>
           <button
             id="openReviewModal"
-            class="text-gray-900 font-bold text-xs font-montserrat px-9 py-3 bg-white rounded-large lg:block hidden whitespace-nowrap"
+            class="hidden whitespace-nowrap rounded-large bg-white px-9 py-3 font-montserrat text-xs font-bold text-gray-900 lg:block"
           >
             Залишити відгук
           </button>
         </div>
         {{>ReviewModal}}
         <div class="hidden lg:block">{{>ReviewsSwiper}}</div>
-        <div class="lg:hidden flex flex-col w-full gap-4 mb-7">
+        <div class="mb-7 flex w-full flex-col gap-4 lg:hidden">
           {{>ReviewCard}} {{>ReviewCard}}
         </div>
-        <div class="lg:hidden flex items-center flex-col w-full gap-7">
+        <div class="flex w-full flex-col items-center gap-7 lg:hidden">
           <a
             href="/reviews/"
-            class="items-center gap-1 pt-3 justify-center flex"
+            class="flex items-center justify-center gap-1 pt-3"
           >
             <p
-              class="font-bold font-montserrat text-xs text-white whitespace-nowrap"
+              class="whitespace-nowrap font-montserrat text-xs font-bold text-white"
             >
               Всі відгуки
             </p>
@@ -254,7 +254,7 @@
           </a>
           <button
             id="openReviewModal"
-            class="text-gray-900 font-bold text-xs font-montserrat px-9 py-3 bg-white rounded-large whitespace-nowrap max-w-[180px]"
+            class="max-w-[180px] whitespace-nowrap rounded-large bg-white px-9 py-3 font-montserrat text-xs font-bold text-gray-900"
           >
             Залишити відгук
           </button>
@@ -264,7 +264,7 @@
 
     <div class="relative">
       <div
-        class="lg:top-24 min-[375px]:left-5 top-64 xl:left-96 lg:mx-0 absolute z-20"
+        class="absolute top-64 z-20 min-[375px]:left-5 lg:top-24 lg:mx-0 xl:left-96"
       >
         {{>ContactCard}}
       </div>

@@ -18,11 +18,11 @@
     <title>Service Tir | Cart</title>
   </head>
 
-  <body class="flex flex-col h-screen">
-    <div class="md:mb-5 mb-10">{{>HeaderNotLogged}} {{>Navbar}}</div>
+  <body class="flex h-screen flex-col">
+    <div class="mb-10 md:mb-5">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
-    <div class="container font-montserrat mb-24 md:mb-32 w-full">
-      <div class="flex gap-1 items-center text-gray-900 text-sm md:mb-10 mb-8">
+    <div class="container mb-24 w-full font-montserrat md:mb-32">
+      <div class="mb-8 flex items-center gap-1 text-sm text-gray-900 md:mb-10">
         <a
           href="/"
           class="opacity-50"
@@ -31,24 +31,24 @@
         <img src="/src/assets/ChevronRightSmall.svg" />
         <p class="cursor-pointer">Кошик</p>
       </div>
-      <div class="flex gap-3 items-center mb-8">
+      <div class="mb-8 flex items-center gap-3">
         <img
-          class="paragraphIcon p-2 rounded-full bg-white"
+          class="paragraphIcon rounded-full bg-white p-2"
           src="/src/assets/cartEmojiIcon.png"
           alt="tools icon"
         />
         <h1
-          class="font-jakarta font-bold text-3xl lg:text-big lg:leading-extra-height leading-normal text-gray-900"
+          class="font-jakarta text-3xl font-bold leading-normal text-gray-900 lg:text-big lg:leading-extra-height"
         >
           Кошик
         </h1>
       </div>
-      <div class="lg:flex grid gap-5 items-start">
-        <div class="flex flex-col gap-2 w-full">
+      <div class="grid items-start gap-5 lg:flex">
+        <div class="flex w-full flex-col gap-2">
           <div
-            class="md:flex hidden text-sm text-gray-900 tracking-[0.28px] bg-gray-100 rounded-lg gap-12 w-full"
+            class="hidden w-full gap-12 rounded-lg bg-gray-100 text-sm tracking-[0.28px] text-gray-900 md:flex"
           >
-            <p class="px-6 py-4 max-w-[240px] w-full">Назва товару</p>
+            <p class="w-full max-w-[240px] px-6 py-4">Назва товару</p>
             <p class="px-6 py-4">Вартість</p>
             <p class="px-6 py-4">Кількість</p>
             <p class="px-6 py-4">Сума</p>
@@ -56,24 +56,24 @@
           {{>CartItem}} {{>CartItem}} {{>CartItem}}
         </div>
         <div
-          class="px-5 card py-6 bg-white flex flex-col gap-6 w-full lg:max-w-[270px] border border-gray-100 rounded-xl row-end-1"
+          class="card row-end-1 flex w-full flex-col gap-6 rounded-xl border border-gray-100 bg-white px-5 py-6 lg:max-w-[270px]"
         >
-          <h1 class="text-gray-900 font-semibold text-xl">Ваше замовлення:</h1>
+          <h1 class="text-xl font-semibold text-gray-900">Ваше замовлення:</h1>
           <div>
             <div class="flex flex-col gap-5">
               <div class="flex flex-col gap-3">
                 <div class="flex items-center justify-between">
                   <p class="text-neutral-400">Товари (3)</p>
-                  <p class="text-zinc-600 font-medium">75 092 &#8372;</p>
+                  <p class="font-medium text-zinc-600">75 092 &#8372;</p>
                 </div>
                 <div class="flex items-center justify-between">
                   <p class="text-neutral-400">Знижка</p>
-                  <p class="text-zinc-600 font-medium">5 092 &#8372;</p>
+                  <p class="font-medium text-zinc-600">5 092 &#8372;</p>
                 </div>
               </div>
               <hr />
               <div
-                class="font-semibold text-gray-900 flex items-center justify-between"
+                class="flex items-center justify-between font-semibold text-gray-900"
               >
                 <p class="text-lg">Сума</p>
                 <p class="text-xl">10 095 &#8372;</p>
@@ -82,7 +82,7 @@
           </div>
           <a href="/order/">
             <button
-              class="bg-blue-600 text-white rounded-large px-9 py-3 self-start text-sm font-semibold whitespace-nowrap"
+              class="self-start whitespace-nowrap rounded-large bg-blue-600 px-9 py-3 text-sm font-semibold text-white"
             >
               Оформити замовлення
             </button>

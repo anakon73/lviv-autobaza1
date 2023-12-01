@@ -20,13 +20,13 @@
   </head>
 
   <body>
-    <div class="md:mb-5 mb-10">{{>HeaderNotLogged}} {{>Navbar}}</div>
+    <div class="mb-10 md:mb-5">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
     <div
-      class="xl:px-[150px] container px-1 md:px-2 min-[425px]:px-5 lg:mb-28 mb-24"
+      class="container mb-24 px-1 min-[425px]:px-5 md:px-2 lg:mb-28 xl:px-[150px]"
     >
       <div
-        class="flex gap-1 items-center text-xs font-montserrat text-gray-900 mb-8 md:mb-10"
+        class="mb-8 flex items-center gap-1 font-montserrat text-xs text-gray-900 md:mb-10"
       >
         <a
           class="opacity-50"
@@ -39,25 +39,25 @@
         />
         <p class="cursor-pointer">Каталог</p>
       </div>
-      <div class="flex gap-3 items-end mb-6 lg:mb-8">
+      <div class="mb-6 flex items-end gap-3 lg:mb-8">
         <img
-          class="paragraphIcon p-2 rounded-full bg-white xl:self-auto self-start"
+          class="paragraphIcon self-start rounded-full bg-white p-2 xl:self-auto"
           src="/src/assets/toolsIcon.svg"
           alt="tools icon"
         />
         <h1
-          class="font-jakarta font-bold lg:leading-extra-height lg:text-[44px] leading-[26px] text-2xl text-gray-900 self-center"
+          class="self-center font-jakarta text-2xl font-bold leading-[26px] text-gray-900 lg:text-[44px] lg:leading-extra-height"
         >
           Результати пошуку «Паливний бак»
         </h1>
         <p
-          class="font-jakarta font-bold leading-4 lg:leading-small text-gray-400 text-sm lg:text-xl"
+          class="font-jakarta text-sm font-bold leading-4 text-gray-400 lg:text-xl lg:leading-small"
         >
           200
         </p>
       </div>
       <div
-        class="grid lg:grid-cols-3 xl:grid-cols-4 md:grid-cols-4 grid-cols-2 md:gap-2.5 gap-1.5 mb-10"
+        class="mb-10 grid grid-cols-2 gap-1.5 md:grid-cols-4 md:gap-2.5 lg:grid-cols-3 xl:grid-cols-4"
       >
         <div class="flex justify-center">{{>ProductCard}}</div>
         <div class="flex justify-center">{{>ProductCard}}</div>
@@ -90,27 +90,27 @@
           class="cursor-pointer"
         />
         <a
-          class="text-sm font-montserrat font-medium leading-5 text-blue-600 border border-slate-300 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+          class="flex h-6 w-6 cursor-pointer items-center justify-center rounded border border-slate-300 font-montserrat text-sm font-medium leading-5 text-blue-600"
         >
           1
         </a>
         <a
-          class="text-sm font-montserrat font-medium leading-5 text-slate-700 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+          class="flex h-6 w-6 cursor-pointer items-center justify-center rounded font-montserrat text-sm font-medium leading-5 text-slate-700"
         >
           2
         </a>
         <a
-          class="text-sm font-montserrat font-medium leading-5 text-slate-700 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+          class="flex h-6 w-6 cursor-pointer items-center justify-center rounded font-montserrat text-sm font-medium leading-5 text-slate-700"
         >
           3
         </a>
         <a
-          class="text-sm font-montserrat font-medium leading-5 text-slate-700 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+          class="flex h-6 w-6 cursor-pointer items-center justify-center rounded font-montserrat text-sm font-medium leading-5 text-slate-700"
         >
           ...
         </a>
         <a
-          class="text-sm font-montserrat font-medium leading-5 text-slate-700 w-6 h-6 flex items-center justify-center rounded cursor-pointer"
+          class="flex h-6 w-6 cursor-pointer items-center justify-center rounded font-montserrat text-sm font-medium leading-5 text-slate-700"
         >
           36
         </a>

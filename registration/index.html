@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <div class="container xl:pr-20 2xl:pr-0 font-montserrat">
+    <div class="container font-montserrat xl:pr-20 2xl:pr-0">
       <a href="/">
         <img
           class="absolute top-4"
@@ -28,39 +28,39 @@
         />
       </a>
       <div
-        class="flex lg:flex-row flex-col items-center justify-between lg:mb-0 mb-2 mt-28 lg:mt-0 gap-12 lg:gap-0"
+        class="mb-2 mt-28 flex flex-col items-center justify-between gap-12 lg:my-0 lg:flex-row lg:gap-0"
       >
-        <div class="lg:max-w-[370px] w-full">
-          <h1 class="text-2xl text-gray-900 font-semibold mb-6">Реєстрація</h1>
-          <div class="flex flex-col gap-4 mb-6 text-slate-700">
+        <div class="w-full lg:max-w-[370px]">
+          <h1 class="mb-6 text-2xl font-semibold text-gray-900">Реєстрація</h1>
+          <div class="mb-6 flex flex-col gap-4 text-slate-700">
             <div class="flex flex-col justify-start gap-1">
               <label
-                class="text-sm font-semibold leading-small block"
+                class="block text-sm font-semibold leading-small"
                 for="EmailInput"
               >
                 E-mail
               </label>
               <input
-                class="text-sm leading-small font-semibold p-4 rounded-lg border-slate-300 focus:ring-0"
+                class="rounded-lg border-slate-300 p-4 text-sm font-semibold leading-small focus:ring-0"
                 type="text"
                 id="EmailInput"
               />
             </div>
-            <div class="flex flex-col justify-start gap-1 relative">
+            <div class="relative flex flex-col justify-start gap-1">
               <label
-                class="text-sm font-semibold leading-small block"
+                class="block text-sm font-semibold leading-small"
                 for="passwordInput"
               >
                 Пароль
               </label>
               <input
-                class="text-sm leading-small font-semibold p-4 rounded-lg border-slate-300 focus:ring-0"
+                class="rounded-lg border-slate-300 p-4 text-sm font-semibold leading-small focus:ring-0"
                 id="passwordInput"
                 type="password"
               />
               <button id="showPass">
                 <img
-                  class="w-6 h-6 absolute right-4 top-11"
+                  class="absolute right-4 top-11 h-6 w-6"
                   src="/src/assets/eyeSlash.svg"
                 />
               </button>
@@ -68,15 +68,15 @@
           </div>
           <div class="flex flex-col items-start gap-5">
             <button
-              class="px-9 py-3 bg-blue-600 rounded-large text-white text-xs font-bold"
+              class="rounded-large bg-blue-600 px-9 py-3 text-xs font-bold text-white"
             >
               Зареєструватися
             </button>
-            <p class="tracking-[0.28px] text-sm text-zinc-700 leading-small">
+            <p class="text-sm leading-small tracking-[0.28px] text-zinc-700">
               Вже є аккаунт?
               <a
                 href="/authentication/"
-                class="text-blue-600 underline underline-offset-2 font-medium ml-2"
+                class="ml-2 font-medium text-blue-600 underline underline-offset-2"
               >
                 Увійти
               </a>
@@ -84,7 +84,7 @@
           </div>
         </div>
         <img
-          class="lg:h-screen lg:py-4 lg:pl-4 w-full lg:w-auto"
+          class="w-full lg:h-screen lg:w-auto lg:py-4 lg:pl-4"
           src="/src/assets/forestPhoto.png"
           alt="forest photo"
         />

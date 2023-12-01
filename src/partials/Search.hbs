@@ -1,16 +1,16 @@
-<div class="relative z-20 max-w-lg w-full">
+<div class="relative z-20 w-full max-w-lg">
   <div
     id="search"
-    class="max-w-lg flex items-end w-full relative gap-6 bg-white z-10 rounded-3xl"
+    class="relative z-10 flex w-full max-w-lg items-end gap-6 rounded-3xl bg-white"
   >
     <img
-      class="p-3 bg-gray-100 rounded-full"
+      class="rounded-full bg-gray-100 p-3"
       src="/src/assets/searchIcon.svg"
       alt="search icon"
       id="searchBtn"
     />
     <input
-      class="border-b border-x-0 border-t-0 p-0 pb-2 border-gray-100 font-montserrat font-medium text-xs leading-7 placeholder:text-slate-500 text-gray-900 focus:ring-0 w-[75%]"
+      class="w-[75%] border-x-0 border-b border-t-0 border-gray-100 p-0 pb-2 font-montserrat text-xs font-medium leading-7 text-gray-900 placeholder:text-slate-500 focus:ring-0"
       id="searchInput"
       type="text"
       placeholder="Напишіть назву товару"
@@ -18,7 +18,7 @@
   </div>
   <div
     id="searchResult"
-    class="bg-white absolute w-full rounded-2xl flex-col gap-1 shadow-2xl z-10 top-[54px] hidden"
+    class="absolute top-[54px] z-10 hidden w-full flex-col gap-1 rounded-2xl bg-white shadow-2xl"
   >
     {{>SearchResultCard}}
     <hr />
@@ -29,7 +29,7 @@
     {{>SearchResultCard}}
     <hr />
     <a
-      class="text-blue-600 font-montserrat font-semibold leading-small text-sm px-2 py-3"
+      class="px-2 py-3 font-montserrat text-sm font-semibold leading-small text-blue-600"
       href="/results/"
     >
       Показати всі (239)
@@ -37,7 +37,7 @@
   </div>
   <div
     id="overlay"
-    class="fixed w-full h-full inset-0 bg-black/25 blur-sm border border-black/10 hidden"
+    class="fixed inset-0 hidden h-full w-full border border-black/10 bg-black/25 blur-sm"
   ></div>
 </div>
 

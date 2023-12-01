@@ -19,10 +19,10 @@
   </head>
 
   <body>
-    <div class="md:mb-5 mb-10">{{>HeaderNotLogged}} {{>Navbar}}</div>
+    <div class="mb-10 md:mb-5">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
-    <div class="font-montserrat container mb-20 lg:mb-24">
-      <div class="text-xs text-gray-900 flex items-center gap-1 mb-6 md:mb-12">
+    <div class="container mb-20 font-montserrat lg:mb-24">
+      <div class="mb-6 flex items-center gap-1 text-xs text-gray-900 md:mb-12">
         <a
           href="/"
           class="opacity-50"
@@ -40,20 +40,20 @@
         <p class="cursor-pointer">Як відбувається ремонт двигунів?</p>
       </div>
       <div class="mb-[87px]">
-        <p class="text-gray-400 font-semibold leading-5 text-xs mb-4">
+        <p class="mb-4 text-xs font-semibold leading-5 text-gray-400">
           1 Вересня 2023
         </p>
-        <h1 class="mb-6 text-zinc-900 font-semibold lg:text-big text-3xl">
+        <h1 class="mb-6 text-3xl font-semibold text-zinc-900 lg:text-big">
           Як відбувається ремонт двигунів?
         </h1>
-        <div class="flex flex-col w-full gap-7">
+        <div class="flex w-full flex-col gap-7">
           <img
             class="w-full"
             src="/src/assets/engineImage.png"
             alt="engine image"
           />
           <div
-            class="text-gray-900 lg:leading-6 leading-5 lg:text-base md:text-sm text-xs"
+            class="text-xs leading-5 text-gray-900 md:text-sm lg:text-base lg:leading-6"
           >
             <p class="mb-7">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
@@ -94,7 +94,7 @@
             alt="engine image"
           />
           <div
-            class="text-gray-900 lg:leading-6 leading-5 lg:text-base md:text-sm text-xs"
+            class="text-xs leading-5 text-gray-900 md:text-sm lg:text-base lg:leading-6"
           >
             <p class="mb-7">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
@@ -132,29 +132,29 @@
         </div>
       </div>
       <div class="articlesSwiper overflow-hidden pb-4">
-        <div class="flex justify-between items-center mb-9">
+        <div class="mb-9 flex items-center justify-between">
           <div class="flex items-center gap-3">
             <img
-              class="p-2 bg-white rounded-full paragraphIcon"
+              class="paragraphIcon rounded-full bg-white p-2"
               src="/src/assets/orderIcon.svg"
               alt="fireIcon"
             />
             <div
-              class="text-gray-900 text-3xl lg:text-big lg:leading-extra-height leading-normal font-bold font-jakarta"
+              class="font-jakarta text-3xl font-bold leading-normal text-gray-900 lg:text-big lg:leading-extra-height"
             >
               Схожі статі
             </div>
           </div>
-          <div class="md:flex hidden gap-2.5 h-10">
-            <button class="p-2 bg-white rounded-full paragraphIcon prevArticle">
+          <div class="hidden h-10 gap-2.5 md:flex">
+            <button class="paragraphIcon prevArticle rounded-full bg-white p-2">
               <img
-                class="w-6 h-6"
+                class="h-6 w-6"
                 src="/src/assets/chevronLeft.svg"
               />
             </button>
-            <button class="p-2 bg-white rounded-full paragraphIcon nextArticle">
+            <button class="paragraphIcon nextArticle rounded-full bg-white p-2">
               <img
-                class="w-6 h-6"
+                class="h-6 w-6"
                 src="/src/assets/chevronRight.svg"
               />
             </button>
@@ -169,17 +169,17 @@
           <div class="swiper-slide">{{>ArticleCard}}</div>
           <div class="swiper-slide">{{>ArticleCard}}</div>
         </div>
-        <div class="flex md:hidden gap-5 justify-center items-end mt-5">
-          <button class="p-2 bg-white rounded-full paragraphIcon prevArticle">
+        <div class="mt-5 flex items-end justify-center gap-5 md:hidden">
+          <button class="paragraphIcon prevArticle rounded-full bg-white p-2">
             <img
-              class="w-6 h-6"
+              class="h-6 w-6"
               src="/src/assets/chevronLeft.svg"
             />
           </button>
           <div class="swiperArticle-pagination !relative !w-auto"></div>
-          <button class="p-2 bg-white rounded-full paragraphIcon nextArticle">
+          <button class="paragraphIcon nextArticle rounded-full bg-white p-2">
             <img
-              class="w-6 h-6"
+              class="h-6 w-6"
               src="/src/assets/chevronRight.svg"
             />
           </button>

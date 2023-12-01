@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <div class="container xl:pr-20 2xl:pr-0 font-montserrat">
+    <div class="container font-montserrat xl:pr-20 2xl:pr-0">
       <a href="/">
         <img
           class="absolute top-4"
@@ -28,21 +28,21 @@
         />
       </a>
       <div
-        class="flex lg:flex-row flex-col items-center justify-between lg:mb-0 mb-2 mt-44 lg:mt-0 gap-28 lg:gap-0"
+        class="mb-2 mt-44 flex flex-col items-center justify-between gap-28 lg:my-0 lg:flex-row lg:gap-0"
       >
-        <div class="lg:max-w-[370px] w-full">
-          <h1 class="text-2xl text-gray-900 font-semibold mb-6">
+        <div class="w-full lg:max-w-[370px]">
+          <h1 class="mb-6 text-2xl font-semibold text-gray-900">
             Відновлення паролю
           </h1>
-          <div class="flex flex-col justify-start gap-1 mb-6 text-slate-700">
+          <div class="mb-6 flex flex-col justify-start gap-1 text-slate-700">
             <label
-              class="text-sm font-semibold leading-small block"
+              class="block text-sm font-semibold leading-small"
               for="EmailInput"
             >
               Ваш e-mail
             </label>
             <input
-              class="text-sm leading-small font-semibold p-4 rounded-lg border-slate-300 focus:ring-0"
+              class="rounded-lg border-slate-300 p-4 text-sm font-semibold leading-small focus:ring-0"
               type="text"
               id="EmailInput"
             />
@@ -50,14 +50,14 @@
           <div class="flex items-start gap-5">
             <a href="/authentication/">
               <button
-                class="px-9 py-3 bg-gray-100 rounded-large text-gray-900 text-xs font-bold"
+                class="rounded-large bg-gray-100 px-9 py-3 text-xs font-bold text-gray-900"
               >
                 Назад
               </button>
             </a>
             <a href="/sms-confirm/">
               <button
-                class="px-9 py-3 bg-blue-600 rounded-large text-white text-xs font-bold"
+                class="rounded-large bg-blue-600 px-9 py-3 text-xs font-bold text-white"
               >
                 Далі
               </button>
@@ -65,7 +65,7 @@
           </div>
         </div>
         <img
-          class="lg:h-screen lg:py-4 lg:pl-4 w-full lg:w-auto"
+          class="w-full lg:h-screen lg:w-auto lg:py-4 lg:pl-4"
           src="/src/assets/forestPhoto.png"
           alt="forest photo"
         />

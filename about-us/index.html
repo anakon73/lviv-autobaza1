@@ -19,11 +19,11 @@
   </head>
 
   <body>
-    <div class="md:mb-5 mb-10">{{>HeaderNotLogged}} {{>Navbar}}</div>
+    <div class="mb-10 md:mb-5">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
     <div class="container">
       <div
-        class="text-xs font-montserrat text-gray-900 flex gap-1 items-center mb-8 md:mb-10"
+        class="mb-8 flex items-center gap-1 font-montserrat text-xs text-gray-900 md:mb-10"
       >
         <a
           href="/"
@@ -35,23 +35,23 @@
         <p class="cursor-pointer">Про нас</p>
       </div>
       <div
-        class="flex lg:flex-row flex-col gap-5 justify-between items-center mb-28"
+        class="mb-28 flex flex-col items-center justify-between gap-5 lg:flex-row"
       >
         <div class="flex flex-col gap-5">
           <div class="flex items-center gap-3">
             <img
               src="/src/assets/supremacyIcon.svg"
               alt="supremacy Icon"
-              class="bg-white rounded-full paragraphIcon p-2"
+              class="paragraphIcon rounded-full bg-white p-2"
             />
             <h1
-              class="text-gray-900 text-3xl lg:text-big lg:leading-extra-height leading-normal font-bold font-jakarta"
+              class="font-jakarta text-3xl font-bold leading-normal text-gray-900 lg:text-big lg:leading-extra-height"
             >
               Про нас
             </h1>
           </div>
           <p
-            class="font-montserrat text-xs lg:text-sm lg:leading-6 leading-5 text-gray-900 max-w-xl"
+            class="max-w-xl font-montserrat text-xs leading-5 text-gray-900 lg:text-sm lg:leading-6"
           >
             Львівська Автобаза No1 вже понад 30 років надає транспортні послуги.
             На нашій власній території ми маємо стоянку TIR, мийку шиномонтаж та
@@ -68,36 +68,36 @@
             сертифікатами та нагородами, і відмінним штатом експедиторів та
             інших спеціалістів.
           </p>
-          <div class="flex gap-2.5 items-center font-montserrat">
+          <div class="flex items-center gap-2.5 font-montserrat">
             <h2 class="text-big font-bold leading-[60px] text-blue-600">150</h2>
-            <p class="text-gray-900 leading-6 text-sm">
+            <p class="text-sm leading-6 text-gray-900">
               людей в команді <br />
               забезпечують успіх
             </p>
           </div>
         </div>
         <img
-          class="lg:w-auto md:w-[500px] w-full"
+          class="w-full md:w-[500px] lg:w-auto"
           src="/src/assets/aboutUsPhoto.png"
           alt="about us image"
         />
       </div>
       <div class="mb-48 md:mb-64">
         <div>
-          <div class="flex gap-0.5 items-start mb-5 md:mb-10">
+          <div class="mb-5 flex items-start gap-0.5 md:mb-10">
             <img
-              class="paragraphIcon p-2 rounded-full bg-white mr-3"
+              class="paragraphIcon mr-3 rounded-full bg-white p-2"
               src="/src/assets/advantagesStarIcon.svg"
               alt="advantages star icon"
             />
             <div>
               <h1
-                class="font-jakarta text-3xl lg:text-big lg:leading-extra-height leading-normal text-gray-900 font-bold mb-3"
+                class="mb-3 font-jakarta text-3xl font-bold leading-normal text-gray-900 lg:text-big lg:leading-extra-height"
               >
                 Наші переваги
               </h1>
               <p
-                class="max-w-[500px] text-neutral-500/70 text-xs font-montserrat leading-5"
+                class="max-w-[500px] font-montserrat text-xs leading-5 text-neutral-500/70"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
                 nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
@@ -106,14 +106,14 @@
             </div>
           </div>
           <div
-            class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5 mb-10"
+            class="mb-10 grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4"
           >
             {{>AdvantageCard}} {{>AdvantageCard}} {{>AdvantageCard}}
             {{>AdvantageCard}} {{>AdvantageCard}} {{>AdvantageCard}}
             {{>AdvantageCard}} {{>AdvantageCard}}
           </div>
         </div>
-        <div class="text-gray-900 text-xs leading-small font-montserrat mb-3">
+        <div class="mb-3 font-montserrat text-xs leading-small text-gray-900">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
           ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus
           amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus
@@ -147,26 +147,26 @@
           </span>
         </div>
         <div
-          class="text-blue-600 font-medium font-montserrat text-xs flex gap-1.5"
+          class="flex gap-1.5 font-montserrat text-xs font-medium text-blue-600"
         >
           Показати більше
           <img src="/src/assets/chevronDownBlue.svg" />
         </div>
       </div>
-      <div class="md:mb-28 mb-24">
-        <div class="flex items-center gap-3 mb-10">
+      <div class="mb-24 md:mb-28">
+        <div class="mb-10 flex items-center gap-3">
           <img
             src="/src/assets/toolsIcon.svg"
             alt="tools Icon"
-            class="bg-white rounded-full paragraphIcon p-2"
+            class="paragraphIcon rounded-full bg-white p-2"
           />
           <h1
-            class="text-gray-900 text-3xl lg:text-big lg:leading-extra-height leading-normal font-bold font-jakarta"
+            class="font-jakarta text-3xl font-bold leading-normal text-gray-900 lg:text-big lg:leading-extra-height"
           >
             Наші майстри
           </h1>
         </div>
-        <div class="md:flex gap-5 justify-center">
+        <div class="justify-center gap-5 md:flex">
           <div class="flex flex-col gap-36">
             <div class="flex flex-col gap-7">
               <img
@@ -208,7 +208,7 @@
               <hr />
             </div>
           </div>
-          <div class="pt-36 flex flex-col gap-36">
+          <div class="flex flex-col gap-36 pt-36">
             <div class="flex flex-col gap-7">
               <img
                 src="/src/assets/personWithWheel.png"
@@ -254,20 +254,20 @@
     </div>
 
     <div
-      class="[background:_linear-gradient(0deg,_rgba(36,_109,_239,_0.50)_0%,_rgba(36,_109,_239,_0.50)_100%),_url('/src/assets/blueWavesBg.png'),_lightgray_0px_-73.061px_/_100%_129.949%_no-repeat;] py-[95px] lg:py-[120px]"
+      class="py-[95px] [background:_linear-gradient(0deg,_rgba(36,_109,_239,_0.50)_0%,_rgba(36,_109,_239,_0.50)_100%),_url('/src/assets/blueWavesBg.png'),_lightgray_0px_-73.061px_/_100%_129.949%_no-repeat;] lg:py-[120px]"
     >
-      <div class="max-w-[1440px] mx-auto xl:px-[134px] px-5">
-        <div class="flex justify-between items-start mb-6">
+      <div class="mx-auto max-w-[1440px] px-5 xl:px-[134px]">
+        <div class="mb-6 flex items-start justify-between">
           <div class="flex items-start">
             <div class="flex flex-col justify-start gap-5">
-              <div class="flex gap-3 items-center mr-4">
+              <div class="mr-4 flex items-center gap-3">
                 <img
-                  class="paragraphIcon p-2 rounded-full bg-white mr-3"
+                  class="paragraphIcon mr-3 rounded-full bg-white p-2"
                   src="/src/assets/messageCloudIcon.svg"
                   alt="message cloud icon"
                 />
                 <h1
-                  class="font-jakarta font-bold text-3xl lg:text-big lg:leading-extra-height leading-normal text-white"
+                  class="font-jakarta text-3xl font-bold leading-normal text-white lg:text-big lg:leading-extra-height"
                 >
                   Відгуки наших клієнтів
                 </h1>
@@ -282,10 +282,10 @@
             </div>
             <a
               href="/reviews/"
-              class="items-center gap-1 pt-3 lg:flex hidden"
+              class="hidden items-center gap-1 pt-3 lg:flex"
             >
               <p
-                class="font-bold font-montserrat text-xs text-white whitespace-nowrap"
+                class="whitespace-nowrap font-montserrat text-xs font-bold text-white"
               >
                 Всі відгуки
               </p>
@@ -294,23 +294,23 @@
           </div>
           <button
             id="openReviewModal"
-            class="text-gray-900 font-bold text-xs font-montserrat px-9 py-3 bg-white rounded-large lg:block hidden whitespace-nowrap"
+            class="hidden whitespace-nowrap rounded-large bg-white px-9 py-3 font-montserrat text-xs font-bold text-gray-900 lg:block"
           >
             Залишити відгук
           </button>
         </div>
         {{>ReviewModal}}
         <div class="hidden lg:block">{{>ReviewsSwiper}}</div>
-        <div class="lg:hidden flex flex-col w-full gap-4 mb-7">
+        <div class="mb-7 flex w-full flex-col gap-4 lg:hidden">
           {{>ReviewCard}} {{>ReviewCard}}
         </div>
-        <div class="lg:hidden flex items-center flex-col w-full gap-7">
+        <div class="flex w-full flex-col items-center gap-7 lg:hidden">
           <a
             href="/reviews/"
-            class="items-center gap-1 pt-3 justify-center flex"
+            class="flex items-center justify-center gap-1 pt-3"
           >
             <p
-              class="font-bold font-montserrat text-xs text-white whitespace-nowrap"
+              class="whitespace-nowrap font-montserrat text-xs font-bold text-white"
             >
               Всі відгуки
             </p>
@@ -318,7 +318,7 @@
           </a>
           <button
             id="openReviewModal"
-            class="text-gray-900 font-bold text-xs font-montserrat px-9 py-3 bg-white rounded-large whitespace-nowrap max-w-[180px]"
+            class="max-w-[180px] whitespace-nowrap rounded-large bg-white px-9 py-3 font-montserrat text-xs font-bold text-gray-900"
           >
             Залишити відгук
           </button>
@@ -328,7 +328,7 @@
 
     <div class="relative">
       <div
-        class="lg:top-24 min-[375px]:left-5 top-64 xl:left-96 lg:mx-0 absolute z-20"
+        class="absolute top-64 z-20 min-[375px]:left-5 lg:top-24 lg:mx-0 xl:left-96"
       >
         {{>ContactCard}}
       </div>

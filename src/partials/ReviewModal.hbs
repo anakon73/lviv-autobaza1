@@ -1,14 +1,14 @@
 <dialog
-  class="focus:outline-0 bg-white rounded-large font-montserrat backdrop:backdrop-blur-sm backdrop:border backdrop:border-black/10 backdrop:bg-black/25 open:animate-fade-in open:backdrop:animate-fade-in"
+  class="rounded-large bg-white font-montserrat backdrop:border backdrop:border-black/10 backdrop:bg-black/25 backdrop:backdrop-blur-sm open:animate-fade-in open:backdrop:animate-fade-in focus:outline-0"
   id="modalWindow"
 >
   <form
     id="form"
-    class="flex flex-col items-center gap-8 md:px-[120px] px-6 py-10 relative w-full"
+    class="relative flex w-full flex-col items-center gap-8 px-6 py-10 md:px-[120px]"
   >
     <button
       id="xMarkClose"
-      class="absolute top-4 right-4 focus:outline-0"
+      class="absolute right-4 top-4 focus:outline-0"
     >
       <img
         src="/src/assets/xMarkIcon.svg"
@@ -17,18 +17,18 @@
     </button>
     <div class="flex flex-col items-center gap-3">
       <h1
-        class="text-black font-semibold tracking-[0.4px] leading-[30px] text-center"
+        class="text-center font-semibold leading-[30px] tracking-[0.4px] text-black"
       >
         Залишити відгук
       </h1>
-      <div class="flex min-[425px]:gap-4 gap-3">
+      <div class="flex gap-3 min-[425px]:gap-4">
         <div class="flex flex-col items-center">
           <img
             src="/src/assets/starBigIcon.svg"
-            class="md:w-12 md:h-12 h-6 w-6"
+            class="h-6 w-6 md:h-12 md:w-12"
           />
           <p
-            class="text-slate-700 leading-[18px] font-medium text-[10px] min-[425px]:text-xs"
+            class="text-[10px] font-medium leading-[18px] text-slate-700 min-[425px]:text-xs"
           >
             Погано
           </p>
@@ -36,10 +36,10 @@
         <div class="flex flex-col items-center">
           <img
             src="/src/assets/starBigIcon.svg"
-            class="md:w-12 md:h-12 h-6 w-6"
+            class="h-6 w-6 md:h-12 md:w-12"
           />
           <p
-            class="text-slate-700 leading-[18px] font-medium text-[10px] min-[425px]:text-xs whitespace-nowrap"
+            class="whitespace-nowrap text-[10px] font-medium leading-[18px] text-slate-700 min-[425px]:text-xs"
           >
             Так собі
           </p>
@@ -47,10 +47,10 @@
         <div class="flex flex-col items-center">
           <img
             src="/src/assets/starBigIcon.svg"
-            class="md:w-12 md:h-12 h-6 w-6"
+            class="h-6 w-6 md:h-12 md:w-12"
           />
           <p
-            class="text-slate-700 leading-[18px] font-medium text-[10px] min-[425px]:text-xs"
+            class="text-[10px] font-medium leading-[18px] text-slate-700 min-[425px]:text-xs"
           >
             Нормально
           </p>
@@ -58,10 +58,10 @@
         <div class="flex flex-col items-center">
           <img
             src="/src/assets/starBigLightIcon.svg"
-            class="md:w-12 md:h-12 h-6 w-6"
+            class="h-6 w-6 md:h-12 md:w-12"
           />
           <p
-            class="text-slate-700 leading-[18px] font-medium text-[10px] min-[425px]:text-xs"
+            class="text-[10px] font-medium leading-[18px] text-slate-700 min-[425px]:text-xs"
           >
             Добре
           </p>
@@ -69,33 +69,33 @@
         <div class="flex flex-col items-center">
           <img
             src="/src/assets/starBigLightIcon.svg"
-            class="md:w-12 md:h-12 h-6 w-6"
+            class="h-6 w-6 md:h-12 md:w-12"
           />
           <p
-            class="text-slate-700 leading-[18px] font-medium text-[10px] min-[425px]:text-xs"
+            class="text-[10px] font-medium leading-[18px] text-slate-700 min-[425px]:text-xs"
           >
             Відміно
           </p>
         </div>
       </div>
-      <div class="flex flex-col gap-4 w-full">
-        <label class="text-sm font-slate-700 font-semibold leading-small">
+      <div class="flex w-full flex-col gap-4">
+        <label class="font-slate-700 text-sm font-semibold leading-small">
           Імʼя
         </label>
         <input
-          class="p-4 text-slate-700 font-medium text-sm leading-small rounded-lg border-slate-300"
+          class="rounded-lg border-slate-300 p-4 text-sm font-medium leading-small text-slate-700"
           type="text"
           name="name"
           value="Даниїл"
         />
       </div>
-      <div class="flex flex-col gap-4 w-full">
-        <label class="text-sm font-slate-700 font-semibold leading-small">
+      <div class="flex w-full flex-col gap-4">
+        <label class="font-slate-700 text-sm font-semibold leading-small">
           Ваш відгук
         </label>
         <textarea
           name="reviewText"
-          class="p-4 text-slate-700 font-medium text-sm leading-small rounded-lg border-slate-300 resize-none h-36 overflow-hidden w-full max-w-[370px]"
+          class="h-36 w-full max-w-[370px] resize-none overflow-hidden rounded-lg border-slate-300 p-4 text-sm font-medium leading-small text-slate-700"
         >
 Это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
         </textarea>
@@ -103,29 +103,29 @@
     </div>
     <button
       id="sendBtn"
-      class="text-white font-bold text-xs px-9 py-3 bg-blue-600 rounded-large whitespace-nowrap"
+      class="whitespace-nowrap rounded-large bg-blue-600 px-9 py-3 text-xs font-bold text-white"
     >
       Залишити відгук
     </button>
   </form>
   <div
     id="successfully"
-    class="flex-col items-center gap-8 px-6 md:px-[75px] py-10 hidden"
+    class="hidden flex-col items-center gap-8 px-6 py-10 md:px-[75px]"
   >
     <div class="flex flex-col items-center gap-3">
       <img
         src="/src/assets/checkWhite.svg"
-        class="p-3 bg-emerald-500 rounded-full"
+        class="rounded-full bg-emerald-500 p-3"
       />
-      <h1 class="text-xl font-bold tracking-[0.4px] leading-[30px] text-center">
+      <h1 class="text-center text-xl font-bold leading-[30px] tracking-[0.4px]">
         Ваш відгук надіслано
       </h1>
-      <p class="text-center max-w-[450px] leading-6 tracking-[0.32px]">
+      <p class="max-w-[450px] text-center leading-6 tracking-[0.32px]">
         Дякуюємо за ваш відгук, ваша думка дуже важлива для нас.
       </p>
     </div>
     <button
-      class="bg-gray-100 py-3 px-24 rounded-large text-gray-900 font-semibold text-sm focus:outline-0"
+      class="rounded-large bg-gray-100 px-24 py-3 text-sm font-semibold text-gray-900 focus:outline-0"
       id="closeReviewModal"
     >
       Далі
