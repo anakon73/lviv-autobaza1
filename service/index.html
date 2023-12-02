@@ -18,12 +18,12 @@
     <title>Service Tir | Service</title>
   </head>
 
-  <body>
+  <body class="font-montserrat">
     <div>{{>HeaderNotLogged}} {{>Navbar}}</div>
 
     <div class="bg-gray-100 pt-10 md:pt-5">
       <div class="container xl:pr-24">
-        <div class="mb-6 flex gap-1 font-montserrat text-xs text-gray-900">
+        <div class="mb-6 flex gap-1 text-xs text-gray-900">
           <a
             class="opacity-50"
             href="/"
@@ -50,7 +50,7 @@
               Ремонт двигунів
             </h1>
             <p
-              class="max-w-[605px] font-montserrat text-sm leading-6 text-neutral-500 lg:max-w-[542px] lg:text-gray-900"
+              class="max-w-[605px] text-sm leading-6 text-neutral-500 lg:max-w-[542px] lg:text-gray-900"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -64,7 +64,7 @@
             </p>
             <button
               id="signUpBtn"
-              class="self-start rounded-large bg-blue-600 px-9 py-3 font-montserrat text-sm font-bold text-white"
+              class="self-start rounded-large bg-blue-600 px-9 py-3 text-sm font-bold text-white"
             >
               Записатись на ремонт
             </button>
@@ -95,7 +95,7 @@
         class="mb-4 w-full rounded-2xl border border-slate-300 bg-white p-1.5 [filter:_drop-shadow(0px_4px_8px_rgba(0,_0,_0,_0.06))_drop-shadow(0px_0px_4px_rgba(0,_0,_0,_0.04))] md:mb-5"
       >
         <div
-          class="flex rounded-t-2xl bg-[#EAEDF2] font-montserrat text-sm font-medium tracking-[0.28px] text-gray-900"
+          class="flex rounded-t-2xl bg-[#EAEDF2] text-sm font-medium tracking-[0.28px] text-gray-900"
         >
           <p class="block w-full max-w-[710px] p-3 md:hidden">
             Ціни на послуги
@@ -114,7 +114,7 @@
           {{>ServiceListItemGray}}
         </div>
       </div>
-      <p class="mb-48 font-montserrat text-sm leading-6 text-gray-900 md:mb-64">
+      <p class="mb-48 text-sm leading-6 text-gray-900 md:mb-64">
         * Всі ціни і тривалість робіт вказані приблизні. Щоб дізнатись точну
         ціну - звʼяжіться з нами по номеру :
         <span class="font-medium text-blue-600">
@@ -134,9 +134,7 @@
             >
               Наші переваги
             </h1>
-            <p
-              class="max-w-[500px] font-montserrat text-xs leading-5 text-neutral-500/70"
-            >
+            <p class="max-w-[500px] text-xs leading-5 text-neutral-500/70">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
               nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
               Faucibus amet etiam tincidunt.
@@ -149,7 +147,7 @@
           {{>AdvantageCard}} {{>AdvantageCard}}
         </div>
       </div>
-      <div class="mb-3 font-montserrat text-xs leading-small text-gray-900">
+      <div class="mb-3 text-xs leading-small text-gray-900">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
         ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet
         etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac
@@ -182,9 +180,7 @@
           feugiat. Lorem ipsum dolor sit elit.
         </span>
       </div>
-      <div
-        class="flex gap-1.5 font-montserrat text-xs font-medium text-blue-600"
-      >
+      <div class="flex gap-1.5 text-xs font-medium text-blue-600">
         Показати більше
         <img src="/src/assets/chevronDownBlue.svg" />
       </div>
@@ -208,9 +204,7 @@
                   Відгуки наших клієнтів
                 </h1>
               </div>
-              <p
-                class="max-w-lg font-montserrat text-xs leading-5 text-white/70"
-              >
+              <p class="max-w-lg text-xs leading-5 text-white/70">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
                 nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
                 Faucibus amet.
@@ -220,9 +214,7 @@
               href="/reviews/"
               class="hidden items-center gap-1 pt-3 lg:flex"
             >
-              <p
-                class="whitespace-nowrap font-montserrat text-xs font-bold text-white"
-              >
+              <p class="whitespace-nowrap text-xs font-bold text-white">
                 Всі відгуки
               </p>
               <img src="/src/assets/RightArrowWhite.svg" />
@@ -230,7 +222,7 @@
           </div>
           <button
             id="openReviewModal"
-            class="hidden whitespace-nowrap rounded-large bg-white px-9 py-3 font-montserrat text-xs font-bold text-gray-900 lg:block"
+            class="hidden whitespace-nowrap rounded-large bg-white px-9 py-3 text-xs font-bold text-gray-900 lg:block"
           >
             Залишити відгук
           </button>
@@ -245,16 +237,14 @@
             href="/reviews/"
             class="flex items-center justify-center gap-1 pt-3"
           >
-            <p
-              class="whitespace-nowrap font-montserrat text-xs font-bold text-white"
-            >
+            <p class="whitespace-nowrap text-xs font-bold text-white">
               Всі відгуки
             </p>
             <img src="/src/assets/RightArrowWhite.svg" />
           </a>
           <button
             id="openReviewModal"
-            class="max-w-[180px] whitespace-nowrap rounded-large bg-white px-9 py-3 font-montserrat text-xs font-bold text-gray-900"
+            class="max-w-[180px] whitespace-nowrap rounded-large bg-white px-9 py-3 text-xs font-bold text-gray-900"
           >
             Залишити відгук
           </button>
