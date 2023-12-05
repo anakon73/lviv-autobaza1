@@ -21,7 +21,9 @@
   <body class="font-montserrat">
     <div class="mb-10 md:mb-5">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
-    <div class="container mb-24 px-1 min-[425px]:px-5 lg:mb-32 xl:px-[150px]">
+    <div
+      class="container mb-24 px-5 max-[425px]:px-1 lg:mb-32 xl:px-24 min-[1400px]:px-[150px]"
+    >
       <div class="mb-8 flex items-center gap-1 text-xs text-gray-900 md:mb-10">
         <p class="opacity-50">
           <a href="/">Головна</a>
@@ -41,11 +43,11 @@
           Каталог товарів
         </h1>
       </div>
-      <div class="flex gap-5">
-        <div class="hidden md:block">{{>FilterForm}}</div>
+      <div class="flex gap-3 xl:gap-5">
+        <div class="hidden lg:block">{{>FilterForm}}</div>
         <div>
           <div
-            class="card mb-8 hidden w-full justify-between rounded-2xl px-6 py-3 max-[425px]:flex"
+            class="card mb-8 flex w-full justify-between rounded-2xl px-6 py-3 lg:hidden"
           >
             <div class="flex items-center gap-3">
               <img src="/src/assets/filterIcon.svg" />
@@ -54,7 +56,7 @@
             <img src="/src/assets/chevronDown.svg" />
           </div>
           <div
-            class="mb-10 grid grid-cols-2 gap-3 min-[425px]:gap-5 xl:grid-cols-3"
+            class="mb-10 grid grid-cols-2 gap-3 min-[425px]:gap-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3"
           >
             {{>ProductCard}} {{>ProductCard}} {{>ProductCardLiked}}
             {{>ProductCardLiked}} {{>ProductCard}} {{>ProductCard}}
