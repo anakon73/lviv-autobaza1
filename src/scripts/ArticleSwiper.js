@@ -14,11 +14,14 @@ const articlesSwiper = new Swiper(".articlesSwiper", {
     clickable: true,
     el: ".swiperArticle-pagination",
   },
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
   breakpoints: {
-    1024: {
+    400: {
+      slidesPerView: 2,
+    },
+    768: {
       slidesPerView: 3,
     },
   },
