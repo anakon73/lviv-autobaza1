@@ -20,9 +20,15 @@
           alt="user icon"
         />
         <div class="text-xs font-medium">
-          <p>Олександр</p>
+          <p class="transition-colors duration-300 hover:text-gray-950">
+            Олександр
+          </p>
           <a href="/">
-            <p class="text-blue-600">Вийти</p>
+            <p
+              class="text-blue-600 transition-colors duration-300 hover:text-blue-700"
+            >
+              Вийти
+            </p>
           </a>
         </div>
       </div>
@@ -39,13 +45,17 @@
           0
         </div>
       </div>
-      <a href="/cart/">
-        <div class="flex items-center gap-2">
+      <a
+        href="/cart/"
+        class="group"
+      >
+        <div
+          class="flex items-center gap-1 group-hover:text-zinc-200 transition-colors duration-300"
+        >
           <div class="relative">
             <img
-              src="/src/assets/cartIcon.svg"
+              src="/src/assets/cartWhiteIcon.svg"
               alt="cart icon"
-              class="max-w-none"
             />
             <div
               class="absolute -top-0.5 left-3.5 inline-flex h-2.5 items-center justify-center rounded-full border border-white bg-green-100 px-0.5 text-center text-[8px] text-emerald-500"
@@ -53,8 +63,9 @@
               6
             </div>
           </div>
-          <div class="w-[80px] truncate">
-            &#8372; <span id="cartCost">10000</span>
+          <div class="flex gap-2">
+            <p>&#8372;10 000</p>
+            <p>Кошик</p>
           </div>
         </div>
       </a>
@@ -87,30 +98,58 @@
       </button>
     </div>
     <div
-      class="mt-[54px] hidden w-full flex-col gap-6 text-white"
+      class="mt-[54px] hidden w-full flex-col gap-6 text-white duration-300 transition-colors"
       id="dropMenu"
     >
       <ul class="flex flex-col gap-5">
         <li>
-          <a href="/">Головна</a>
+          <a
+            class="hover:text-zinc-200 transition-colors duration-300"
+            href="/"
+            >Головна</a
+          >
         </li>
         <li>
-          <a href="/catalog/">Каталог</a>
+          <a
+            class="hover:text-zinc-200 transition-colors duration-300"
+            href="/catalog/"
+            >Каталог</a
+          >
         </li>
         <li>
-          <a href="/services/">Послуги</a>
+          <a
+            class="hover:text-zinc-200 transition-colors duration-300"
+            href="/services/"
+            >Послуги</a
+          >
         </li>
         <li>
-          <a href="/about-us/">Про нас</a>
+          <a
+            class="hover:text-zinc-200 transition-colors duration-300"
+            href="/about-us/"
+            >Про нас</a
+          >
         </li>
         <li>
-          <a href="/contacts/">Контакти</a>
+          <a
+            class="hover:text-zinc-200 transition-colors duration-300"
+            href="/contacts/"
+            >Контакти</a
+          >
         </li>
         <li>
-          <a href="/reviews/">Відгуки</a>
+          <a
+            class="hover:text-zinc-200 transition-colors duration-300"
+            href="/reviews/"
+            >Відгуки</a
+          >
         </li>
         <li>
-          <a href="/articles/">Статті</a>
+          <a
+            class="hover:text-zinc-200 transition-colors duration-300"
+            href="/articles/"
+            >Статті</a
+          >
         </li>
       </ul>
       <hr class="h-px border-0 bg-zinc-50/50" />
@@ -120,13 +159,21 @@
           alt="user icon"
         />
         <div class="text-xs font-medium">
-          <p>Олександр</p>
+          <a
+            href="/profile/"
+            class="transition-colors duration-300 hover:text-zinc-200"
+            >Олександр</a
+          >
           <a href="/">
-            <p class="text-white">Вийти</p>
+            <p
+              class="text-white transition-colors duration-300 hover:text-zinc-200"
+            >
+              Вийти
+            </p>
           </a>
         </div>
       </div>
-      <div class="flex items-center gap-2">
+      <button class="flex items-center gap-2 group">
         <div class="relative">
           <img
             src="/src/assets/heartWhiteIcon.svg"
@@ -139,10 +186,17 @@
             0
           </div>
         </div>
-        <p>Обране</p>
-      </div>
-      <a href="/cart/">
-        <div class="flex items-center gap-1">
+        <p class="group-hover:text-zinc-200 transition-colors duration-300">
+          Обране
+        </p>
+      </button>
+      <a
+        href="/cart/"
+        class="group"
+      >
+        <div
+          class="flex items-center gap-1 group-hover:text-zinc-200 transition-colors duration-300"
+        >
           <div class="relative">
             <img
               src="/src/assets/cartWhiteIcon.svg"

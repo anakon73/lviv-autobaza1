@@ -22,7 +22,9 @@
     <div class="mb-10 md:mb-5">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
     <div class="container mb-20 lg:mb-24">
-      <div class="mb-6 flex items-center gap-1 text-xs text-gray-900 md:mb-12">
+      <div
+        class="mb-6 flex items-center gap-1 text-xs text-gray-900 transition-colors duration-300 hover:text-gray-950 md:mb-12"
+      >
         <a
           href="/"
           class="opacity-50"
@@ -146,13 +148,17 @@
             </div>
           </div>
           <div class="hidden h-10 gap-2.5 md:flex">
-            <button class="paragraphIcon prevArticle rounded-full bg-white p-2">
+            <button
+              class="paragraphIcon prevArticle rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
+            >
               <img
                 class="h-6 w-6"
                 src="/src/assets/chevronLeft.svg"
               />
             </button>
-            <button class="paragraphIcon nextArticle rounded-full bg-white p-2">
+            <button
+              class="paragraphIcon nextArticle rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
+            >
               <img
                 class="h-6 w-6"
                 src="/src/assets/chevronRight.svg"
@@ -170,14 +176,18 @@
           <div class="swiper-slide">{{>ArticleCard}}</div>
         </div>
         <div class="mt-5 flex items-end justify-center gap-5 md:hidden">
-          <button class="paragraphIcon prevArticle rounded-full bg-white p-2">
+          <button
+            class="paragraphIcon prevArticle rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
+          >
             <img
               class="h-6 w-6"
               src="/src/assets/chevronLeft.svg"
             />
           </button>
           <div class="swiperArticle-pagination !relative !w-auto"></div>
-          <button class="paragraphIcon nextArticle rounded-full bg-white p-2">
+          <button
+            class="paragraphIcon nextArticle rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
+          >
             <img
               class="h-6 w-6"
               src="/src/assets/chevronRight.svg"

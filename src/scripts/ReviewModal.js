@@ -28,6 +28,15 @@ openBtn.addEventListener("click", () => {
   document.body.classList.add("overflow-hidden")
 })
 
+if (document.getElementById("openReviewModalMobile") !== null || undefined) {
+  const openBtnMobile = document.getElementById("openReviewModalMobile")
+
+  openBtnMobile.addEventListener("click", () => {
+    modalWindow.showModal()
+    document.body.classList.add("overflow-hidden")
+  })
+}
+
 closeBtn.addEventListener("click", onClose)
 xMarkClose.addEventListener("click", onClose)
 

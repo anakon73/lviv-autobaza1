@@ -40,7 +40,7 @@
           XVI века.
         </p>
         <button
-          class="whitespace-nowrap rounded-large bg-blue-600 px-7 py-4 text-sm font-bold text-white"
+          class="whitespace-nowrap rounded-large bg-blue-600 px-7 py-4 text-sm font-bold text-white transition-colors duration-300 hover:bg-blue-700 hover:text-zinc-100"
         >
           <a href="/service/">Дізнатись ціну для вашого авто</a>
         </button>
@@ -70,13 +70,17 @@
             </div>
           </div>
           <div class="hidden h-10 gap-2.5 lg:flex">
-            <button class="paragraphIcon prevOffer rounded-full bg-white p-2">
+            <button
+              class="paragraphIcon prevOffer rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
+            >
               <img
                 class="h-6 w-6"
                 src="/src/assets/chevronLeft.svg"
               />
             </button>
-            <button class="paragraphIcon nextOffer rounded-full bg-white p-2">
+            <button
+              class="paragraphIcon nextOffer rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
+            >
               <img
                 class="h-6 w-6"
                 src="/src/assets/chevronRight.svg"
@@ -95,14 +99,18 @@
           <div class="swiper-slide">{{>ProductCardLiked}}</div>
         </div>
         <div class="mt-5 flex items-end justify-center gap-5 lg:hidden">
-          <button class="paragraphIcon prevOffer rounded-full bg-white p-2">
+          <button
+            class="paragraphIcon prevOffer rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
+          >
             <img
               class="h-6 w-6"
               src="/src/assets/chevronLeft.svg"
             />
           </button>
           <div class="swiperOffer-pagination !relative !w-auto"></div>
-          <button class="paragraphIcon nextOffer rounded-full bg-white p-2">
+          <button
+            class="paragraphIcon nextOffer rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
+          >
             <img
               class="h-6 w-6"
               src="/src/assets/chevronRight.svg"
@@ -123,7 +131,7 @@
             Наші послуги
           </h1>
           <a
-            class="flex items-center pt-2.5 text-xs font-bold text-blue-600"
+            class="flex items-center pt-2.5 text-xs font-bold text-blue-600 transition-colors duration-300 hover:bg-blue-700"
             href="/services/"
           >
             <p>Всі послуги</p>
@@ -182,7 +190,7 @@
             </div>
             <div class="hidden h-10 gap-2.5 md:flex">
               <button
-                class="paragraphIcon prevArticle rounded-full bg-white p-2"
+                class="paragraphIcon prevArticle rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
               >
                 <img
                   class="h-6 w-6"
@@ -190,7 +198,7 @@
                 />
               </button>
               <button
-                class="paragraphIcon nextArticle rounded-full bg-white p-2"
+                class="paragraphIcon nextArticle rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
               >
                 <img
                   class="h-6 w-6"
@@ -209,14 +217,18 @@
             <div class="swiper-slide">{{>ArticleCard}}</div>
           </div>
           <div class="mt-5 flex items-end justify-center gap-5 md:hidden">
-            <button class="paragraphIcon prevArticle rounded-full bg-white p-2">
+            <button
+              class="paragraphIcon prevArticle rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
+            >
               <img
                 class="h-6 w-6"
                 src="/src/assets/chevronLeft.svg"
               />
             </button>
             <div class="swiperArticle-pagination !relative !w-auto"></div>
-            <button class="paragraphIcon nextArticle rounded-full bg-white p-2">
+            <button
+              class="paragraphIcon nextArticle rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
+            >
               <img
                 class="h-6 w-6"
                 src="/src/assets/chevronRight.svg"
@@ -254,9 +266,11 @@
             </div>
             <a
               href="/reviews/"
-              class="hidden items-center gap-1 pt-3 lg:flex"
+              class="group hidden items-center gap-1 pt-3 lg:flex"
             >
-              <p class="whitespace-nowrap text-xs font-bold text-white">
+              <p
+                class="whitespace-nowrap text-xs font-bold text-white transition-colors duration-300 group-hover:text-zinc-100"
+              >
                 Всі відгуки
               </p>
               <img src="/src/assets/RightArrowWhite.svg" />
@@ -264,7 +278,7 @@
           </div>
           <button
             id="openReviewModal"
-            class="hidden whitespace-nowrap rounded-large bg-white px-9 py-3 text-xs font-bold text-gray-900 lg:block"
+            class="hidden whitespace-nowrap rounded-large bg-white px-9 py-3 text-xs font-bold text-gray-900 transition-colors duration-300 hover:bg-zinc-200 hover:text-slate-900 lg:block"
           >
             Залишити відгук
           </button>
@@ -277,16 +291,18 @@
         <div class="flex w-full flex-col items-center gap-7 lg:hidden">
           <a
             href="/reviews/"
-            class="flex items-center justify-center gap-1 pt-3"
+            class="group flex items-center justify-center gap-1 pt-3"
           >
-            <p class="whitespace-nowrap text-xs font-bold text-white">
+            <p
+              class="whitespace-nowrap text-xs font-bold text-white transition-colors duration-300 group-hover:text-zinc-100"
+            >
               Всі відгуки
             </p>
             <img src="/src/assets/RightArrowWhite.svg" />
           </a>
           <button
-            id="openReviewModal"
-            class="max-w-[180px] whitespace-nowrap rounded-large bg-white px-9 py-3 text-xs font-bold text-gray-900"
+            id="openReviewModalMobile"
+            class="max-w-[180px] whitespace-nowrap rounded-large bg-white px-9 py-3 text-xs font-bold text-gray-900 transition-colors duration-300 hover:bg-zinc-200 hover:text-slate-900"
           >
             Залишити відгук
           </button>

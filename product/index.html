@@ -26,7 +26,9 @@
     <div class="mb-10 md:mb-5">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
     <div class="container">
-      <div class="mb-8 flex items-center gap-1 text-xs text-gray-900 md:mb-10">
+      <div
+        class="mb-8 flex items-center gap-1 text-xs text-gray-900 transition-colors duration-300 hover:text-gray-950 md:mb-10"
+      >
         <a
           class="opacity-50"
           href="/"
@@ -213,7 +215,7 @@
               <p class="text-2xl font-bold text-gray-900">2200 &#8372;</p>
             </div>
             <button
-              class="rounded-large bg-blue-600 px-9 py-3 text-xs font-bold text-white"
+              class="rounded-large bg-blue-600 px-9 py-3 text-xs font-bold text-white transition-colors duration-300 hover:bg-blue-700 hover:text-zinc-100"
             >
               В кошик
             </button>
@@ -224,21 +226,21 @@
         class="mb-4 flex w-full gap-0 border-b border-gray-900/10 min-[425px]:gap-8 md:gap-[102px]"
       >
         <button
-          class="tabBtn p-2 leading-6 text-black min-[425px]:p-2.5"
+          class="tabBtn p-2 leading-6 text-black transition-colors duration-300 hover:text-slate-600 min-[425px]:p-2.5"
           id="descriptionTabBtn"
           data-tab="#descriptionTab"
         >
           Опис
         </button>
         <button
-          class="tabBtn p-2 leading-6 text-black min-[425px]:p-2.5"
+          class="tabBtn p-2 leading-6 text-black transition-colors duration-300 hover:text-slate-600 min-[425px]:p-2.5"
           id="specsTabBtn"
           data-tab="#specsTab"
         >
           Характеристики
         </button>
         <button
-          class="tabBtn p-2 leading-6 text-black min-[425px]:p-2.5"
+          class="tabBtn p-2 leading-6 text-black transition-colors duration-300 hover:text-slate-600 min-[425px]:p-2.5"
           id="reviwesTabBtn"
           data-tab="#reviwesTab"
         >
@@ -388,13 +390,17 @@
             Схожі товари
           </div>
           <div class="hidden h-10 gap-2.5 lg:flex">
-            <button class="paragraphIcon prevOffer rounded-full bg-white p-2">
+            <button
+              class="paragraphIcon prevOffer rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
+            >
               <img
                 class="h-6 w-6"
                 src="/src/assets/chevronLeft.svg"
               />
             </button>
-            <button class="paragraphIcon nextOffer rounded-full bg-white p-2">
+            <button
+              class="paragraphIcon nextOffer rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
+            >
               <img
                 class="h-6 w-6"
                 src="/src/assets/chevronRight.svg"
@@ -413,14 +419,18 @@
           <div class="swiper-slide">{{>ProductCardLiked}}</div>
         </div>
         <div class="mt-5 flex items-end justify-center gap-5 lg:hidden">
-          <button class="paragraphIcon prevOffer rounded-full bg-white p-2">
+          <button
+            class="paragraphIcon prevOffer rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
+          >
             <img
               class="h-6 w-6"
               src="/src/assets/chevronLeft.svg"
             />
           </button>
           <div class="swiperOffer-pagination !relative !w-auto"></div>
-          <button class="paragraphIcon nextOffer rounded-full bg-white p-2">
+          <button
+            class="paragraphIcon nextOffer rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
+          >
             <img
               class="h-6 w-6"
               src="/src/assets/chevronRight.svg"

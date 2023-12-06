@@ -19,10 +19,12 @@
   </head>
 
   <body class="font-montserrat">
-    <div class="mb-10 md:mb-5">{{>HeaderNotLogged}} {{>Navbar}}</div>
+    <div class="mb-10 md:mb-5">{{>HeaderLogged}} {{>Navbar}}</div>
 
     <div class="container px-1 min-[405px]:px-5 xl:px-[150px]">
-      <div class="mb-9 flex items-center gap-1 text-sm text-gray-900 md:mb-10">
+      <div
+        class="mb-9 flex items-center gap-1 text-sm text-gray-900 transition-colors duration-300 hover:text-gray-950 md:mb-10"
+      >
         <a
           class="opacity-50"
           href="/"
@@ -44,76 +46,84 @@
         </h1>
       </div>
       <div
-        class="mb-9 flex grid-cols-2 flex-col gap-5 whitespace-nowrap pl-4 md:flex-row md:items-center md:gap-8"
+        class="mb-9 flex flex-wrap gap-8 whitespace-nowrap pl-4 md:items-center"
       >
-        <div class="flex items-center gap-8">
+        <button
+          class="tabBtn group relative"
+          id="mainTabBtn"
+          data-tab="#mainTab"
+        >
           <div
-            class="tabBtn relative"
-            id="mainTabBtn"
-            data-tab="#mainTab"
+            class="absolute -left-4 -top-2 z-10 rounded-full border-2 border-white bg-gray-100 p-2 duration-300"
           >
             <img
               src="/src/assets/caseIcon.svg"
               alt="case icon"
-              class="absolute -left-4 -top-2 z-10 rounded-full border-2 border-white bg-gray-100 p-2"
             />
-            <p
-              class="inline-block rounded-lg bg-gray-100 py-2 pl-9 pr-5 text-xs font-medium text-slate-700"
-            >
-              Головна
-            </p>
           </div>
+          <p
+            class="inline-block rounded-lg bg-gray-100 py-2 pl-9 pr-5 text-xs font-medium text-slate-700 duration-300"
+          >
+            Головна
+          </p>
+        </button>
+        <button
+          class="tabBtn group relative"
+          id="infoTabBtn"
+          data-tab="#infoTab"
+        >
           <div
-            class="tabBtn relative"
-            id="infoTabBtn"
-            data-tab="#infoTab"
+            class="absolute -left-4 -top-2 z-10 rounded-full border-2 border-white bg-gray-100 p-2 duration-300"
           >
             <img
               src="/src/assets/orderIcon.svg"
               alt="order icon"
-              class="absolute -left-4 -top-2 z-10 rounded-full border-2 border-white bg-gray-100 p-2"
             />
-            <p
-              class="inline-block rounded-lg bg-gray-100 py-2 pl-9 pr-5 text-xs font-medium text-slate-700"
-            >
-              Особисті данні
-            </p>
           </div>
-        </div>
-        <div class="flex items-center gap-8">
+          <p
+            class="inline-block rounded-lg bg-gray-100 py-2 pl-9 pr-5 text-xs font-medium text-slate-700 duration-300"
+          >
+            Особисті данні
+          </p>
+        </button>
+        <button
+          class="tabBtn group relative"
+          id="favoriteTabBtn"
+          data-tab="#favoriteTab"
+        >
           <div
-            class="tabBtn relative"
-            id="favoriteTabBtn"
-            data-tab="#favoriteTab"
+            class="absolute -left-4 -top-2 z-10 rounded-full border-2 border-white bg-gray-100 p-2 duration-300"
           >
             <img
               src="/src/assets/HeartRedIcon.svg"
               alt="case icon"
-              class="absolute -left-4 -top-2 z-10 rounded-full border-2 border-white bg-gray-100 p-2"
             />
-            <p
-              class="inline-block rounded-lg bg-gray-100 py-2 pl-9 pr-5 text-xs font-medium text-slate-700"
-            >
-              Обране
-            </p>
           </div>
+          <p
+            class="inline-block rounded-lg bg-gray-100 py-2 pl-9 pr-5 text-xs font-medium text-slate-700 duration-300"
+          >
+            Обране
+          </p>
+        </button>
+        <button
+          class="tabBtn group relative"
+          id="ordersTabBtn"
+          data-tab="#ordersTab"
+        >
           <div
-            class="tabBtn relative"
-            id="ordersTabBtn"
-            data-tab="#ordersTab"
+            class="absolute -left-4 -top-2 z-10 rounded-full border-2 border-white bg-gray-100 p-2 duration-300"
           >
             <img
               src="/src/assets/boxIcon.svg"
               alt="order icon"
-              class="absolute -left-4 -top-2 z-10 rounded-full border-2 border-white bg-gray-100 p-2"
             />
-            <p
-              class="inline-block rounded-lg bg-gray-100 py-2 pl-9 pr-5 text-xs font-medium text-slate-700"
-            >
-              Мої замовлення
-            </p>
           </div>
-        </div>
+          <p
+            class="inline-block rounded-lg bg-gray-100 py-2 pl-9 pr-5 text-xs font-medium text-slate-700 duration-300"
+          >
+            Мої замовлення
+          </p>
+        </button>
       </div>
       <div
         class="tab mb-24 hidden md:mb-32"
@@ -142,7 +152,7 @@
                 покупців.
               </p>
               <button
-                class="flex items-center gap-1 self-start text-sm font-medium text-blue-600"
+                class="flex items-center gap-1 self-start text-sm font-medium text-blue-600 transition-colors duration-300 hover:text-blue-700"
               >
                 Перейти до замовлень
                 <img src="/src/assets/ChevronRightSmallBlue.svg" />
@@ -225,18 +235,20 @@
             />
           </div>
         </div>
-        <p class="mb-8 text-xs font-medium leading-[18px] text-blue-600">
+        <button
+          class="mb-8 block text-xs font-medium leading-[18px] text-blue-600 transition-colors duration-300 hover:text-blue-700"
+        >
           Змінити пароль
-        </p>
+        </button>
         <button
           disabled
-          class="rounded-large bg-blue-600 px-9 py-3 text-xs font-bold text-white disabled:opacity-50"
+          class="rounded-large bg-blue-600 px-9 py-3 text-xs font-bold text-white transition-colors duration-300 hover:bg-blue-700 hover:text-zinc-100 disabled:opacity-50 disabled:hover:bg-blue-600 disabled:hover:text-white"
         >
           Зберегти зміни
         </button>
       </div>
       <div
-        class="tab mb-24 hidden grid-cols-2 gap-4 md:mb-32 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4"
+        class="tab mb-24 hidden gap-3 min-[360px]:grid-cols-2 min-[425px]:gap-5 sm:grid-cols-3 min-[880px]:grid-cols-4"
         id="favoriteTab"
       >
         {{>ProductCard}} {{>ProductCard}} {{>ProductCard}} {{>ProductCard}}
@@ -246,25 +258,25 @@
         class="tab mb-24 hidden md:mb-32"
         id="ordersTab"
       >
-        <div class="mb-8 flex gap-4 text-sm leading-5">
-          <p
+        <div class="mb-8 flex flex-wrap gap-4 text-sm leading-5">
+          <button
             data-tab="#ordersActive"
-            class="orderTabBtn rounded-full px-2 py-1"
+            class="orderTabBtn rounded-full px-2 py-1 transition-colors duration-300"
           >
             Активні
-          </p>
-          <p
+          </button>
+          <button
             data-tab="#ordersCancel"
-            class="orderTabBtn rounded-full px-2 py-1"
+            class="orderTabBtn rounded-full px-2 py-1 transition-colors duration-300"
           >
             Відмінені
-          </p>
-          <p
+          </button>
+          <button
             data-tab="#ordersComplete"
-            class="orderTabBtn rounded-full px-2 py-1"
+            class="orderTabBtn rounded-full px-2 py-1 transition-colors duration-300"
           >
             Завершені
-          </p>
+          </button>
         </div>
         <div
           id="ordersActive"

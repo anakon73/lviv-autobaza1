@@ -22,7 +22,9 @@
     <div class="md:mb-5 mb-10">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
     <div class="container mb-24 lg:mb-32">
-      <div class="text-gray-900 text-xs mb-8 md:mb-10 flex items-center gap-1">
+      <div
+        class="text-gray-900 text-xs mb-8 md:mb-10 flex items-center transition-colors duration-300 hover:text-gray-950 gap-1"
+      >
         <p class="opacity-50">
           <a href="/">Головна</a>
         </p>
@@ -43,7 +45,7 @@
           </h1>
         </div>
         <button
-          class="py-3 px-9 font-bold text-white text-xs bg-blue-600 rounded-large md:block hidden"
+          class="py-3 px-9 font-bold text-white text-xs bg-blue-600 rounded-large md:block hidden transition-colors duration-300 hover:bg-blue-700 hover:text-zinc-100"
         >
           Зателефонувати
         </button>
@@ -60,24 +62,32 @@
         </div>
         <div class="flex flex-col gap-2.5 justify-start">
           <h2 class="font-bold">Телефон</h2>
-          <p class="text-neutral-500 leading-7">
+          <p
+            class="text-neutral-500 transition-colors duration-300 hover:text-neutral-600 leading-7"
+          >
             <a href="tel:380980000122">+38(098)-0000-122</a>
           </p>
-          <p class="text-neutral-500 leading-7">
+          <p
+            class="text-neutral-500 transition-colors duration-300 hover:text-neutral-600 leading-7"
+          >
             <a href="tel:380960000127">+38(096)-0000-127</a>
           </p>
         </div>
         <div class="flex flex-col gap-2.5 justify-start">
           <h2 class="font-bold">Пошта:</h2>
-          <p class="text-neutral-500 leading-7 underline">
+          <p
+            class="text-neutral-500 transition-colors duration-300 hover:text-neutral-600 leading-7 underline"
+          >
             <a href="mailto:avtobaza12@ukr.net">avtobaza12@ukr.net</a>
           </p>
-          <p class="text-neutral-500 leading-7 underline">
+          <p
+            class="text-neutral-500 transition-colors duration-300 hover:text-neutral-600 leading-7 underline"
+          >
             <a href="mailto:avtobaza12@ukr.net">avtobaza12@ukr.net</a>
           </p>
         </div>
         <button
-          class="py-3 px-9 font-bold text-white text-xs bg-blue-600 rounded-large block md:hidden self-start"
+          class="py-3 px-9 font-bold text-white text-xs bg-blue-600 rounded-large block md:hidden self-start transition-colors duration-300 hover:bg-blue-700 hover:text-zinc-100"
         >
           Зателефонувати
         </button>

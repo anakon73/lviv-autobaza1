@@ -10,35 +10,47 @@ tabsBtn.forEach((btn) => {
       tabs.forEach((item) => item.classList.add("hidden"))
       tabsBtn.forEach((item) => {
         const textParagraph = item.querySelector("p")
-        const image = item.querySelector("img")
+        const image = item.querySelector("div")
 
         textParagraph.classList.remove(
           "font-semibold",
           "text-white",
           "bg-blue-600",
+          "group-hover:bg-blue-700",
+          "group-hover:text-zinc-50",
         )
-        textParagraph.classList.add("font-medium", "text-slate", "bg-gray-100")
+        textParagraph.classList.add(
+          "font-medium",
+          "text-slate-700",
+          "bg-gray-100",
+          "group-hover:bg-gray-200",
+          "group-hover:text-slate-800",
+        )
 
-        image.classList.remove("bg-blue-600")
-        image.classList.add("bg-gray-100")
+        image.classList.remove("bg-blue-600", "group-hover:bg-blue-700")
+        image.classList.add("bg-gray-100", "group-hover:bg-gray-200")
       })
 
       const currentTextParagraph = btn.querySelector("p")
-      const currentImage = btn.querySelector("img")
+      const currentImage = btn.querySelector("div")
 
       currentTextParagraph.classList.remove(
         "font-medium",
-        "text-slate",
+        "text-slate-700",
         "bg-gray-100",
+        "group-hover:bg-gray-200",
+        "group-hover:text-slate-800",
       )
-      currentImage.classList.remove("bg-gray-100")
+      currentImage.classList.remove("bg-gray-100", "group-hover:bg-gray-200")
 
       currentTextParagraph.classList.add(
         "font-semibold",
         "text-white",
         "bg-blue-600",
+        "group-hover:bg-blue-700",
+        "group-hover:text-zinc-50",
       )
-      currentImage.classList.add("bg-blue-600")
+      currentImage.classList.add("bg-blue-600", "group-hover:bg-blue-700")
 
       currentTab.classList.remove("hidden")
 

@@ -87,41 +87,71 @@
     >
       <ul class="flex flex-col gap-5">
         <li>
-          <a href="/">Головна</a>
+          <a
+            class="hover:text-zinc-200 transition-colors duration-300"
+            href="/"
+            >Головна</a
+          >
         </li>
         <li>
-          <a href="/catalog/">Каталог</a>
+          <a
+            class="hover:text-zinc-200 transition-colors duration-300"
+            href="/catalog/"
+            >Каталог</a
+          >
         </li>
         <li>
-          <a href="/services/">Послуги</a>
+          <a
+            class="hover:text-zinc-200 transition-colors duration-300"
+            href="/services/"
+            >Послуги</a
+          >
         </li>
         <li>
-          <a href="/about-us/">Про нас</a>
+          <a
+            class="hover:text-zinc-200 transition-colors duration-300"
+            href="/about-us/"
+            >Про нас</a
+          >
         </li>
         <li>
-          <a href="/contacts/">Контакти</a>
+          <a
+            class="hover:text-zinc-200 transition-colors duration-300"
+            href="/contacts/"
+            >Контакти</a
+          >
         </li>
         <li>
-          <a href="/reviews/">Відгуки</a>
+          <a
+            class="hover:text-zinc-200 transition-colors duration-300"
+            href="/reviews/"
+            >Відгуки</a
+          >
         </li>
         <li>
-          <a href="/articles/">Статті</a>
+          <a
+            class="hover:text-zinc-200 transition-colors duration-300"
+            href="/articles/"
+            >Статті</a
+          >
         </li>
       </ul>
       <hr class="h-px border-0 bg-zinc-50/50" />
       <a
         href="/registration/"
-        class="block"
+        class="block group"
       >
         <div class="flex items-center gap-2">
           <img
             src="/src/assets/userWhiteIcon.svg"
             alt="user icon"
           />
-          <p>Особистий кабінет</p>
+          <p class="group-hover:text-zinc-200 transition-colors duration-300">
+            Особистий кабінет
+          </p>
         </div>
       </a>
-      <div class="flex items-center gap-2">
+      <button class="flex items-center gap-2 group">
         <div class="relative">
           <img
             src="/src/assets/heartWhiteIcon.svg"
@@ -134,10 +164,17 @@
             0
           </div>
         </div>
-        <p>Обране</p>
-      </div>
-      <a href="/cart/">
-        <div class="flex items-center gap-1">
+        <p class="group-hover:text-zinc-200 transition-colors duration-300">
+          Обране
+        </p>
+      </button>
+      <a
+        href="/cart/"
+        class="group"
+      >
+        <div
+          class="flex items-center gap-1 group-hover:text-zinc-200 transition-colors duration-300"
+        >
           <div class="relative">
             <img
               src="/src/assets/cartWhiteIcon.svg"

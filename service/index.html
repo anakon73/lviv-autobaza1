@@ -23,7 +23,9 @@
 
     <div class="bg-gray-100 pt-10 md:pt-5">
       <div class="container xl:pr-24">
-        <div class="mb-6 flex gap-1 text-xs text-gray-900">
+        <div
+          class="mb-6 flex gap-1 text-xs text-gray-900 transition-colors duration-300 hover:text-gray-950"
+        >
           <a
             class="opacity-50"
             href="/"
@@ -64,7 +66,7 @@
             </p>
             <button
               id="signUpBtn"
-              class="self-start rounded-large bg-blue-600 px-9 py-3 text-sm font-bold text-white"
+              class="self-start rounded-large bg-blue-600 px-9 py-3 text-sm font-bold text-white transition-colors duration-300 hover:bg-blue-700 hover:text-zinc-100"
             >
               Записатись на ремонт
             </button>
@@ -117,7 +119,9 @@
       <p class="mb-48 text-sm leading-6 text-gray-900 md:mb-64">
         * Всі ціни і тривалість робіт вказані приблизні. Щоб дізнатись точну
         ціну - звʼяжіться з нами по номеру :
-        <span class="font-medium text-blue-600">
+        <span
+          class="font-medium text-blue-600 transition-colors duration-300 hover:text-blue-700"
+        >
           <a href="tel:+380930000000">+38 (093) 000-00-00 </a>
         </span>
       </p>
@@ -212,9 +216,11 @@
             </div>
             <a
               href="/reviews/"
-              class="hidden items-center gap-1 pt-3 lg:flex"
+              class="group hidden items-center gap-1 pt-3 lg:flex"
             >
-              <p class="whitespace-nowrap text-xs font-bold text-white">
+              <p
+                class="whitespace-nowrap text-xs font-bold text-white transition-colors duration-300 group-hover:text-zinc-100"
+              >
                 Всі відгуки
               </p>
               <img src="/src/assets/RightArrowWhite.svg" />
@@ -222,7 +228,7 @@
           </div>
           <button
             id="openReviewModal"
-            class="hidden whitespace-nowrap rounded-large bg-white px-9 py-3 text-xs font-bold text-gray-900 lg:block"
+            class="hidden whitespace-nowrap rounded-large bg-white px-9 py-3 text-xs font-bold text-gray-900 transition-colors duration-300 hover:bg-zinc-100 hover:text-gray-950 lg:block"
           >
             Залишити відгук
           </button>
@@ -235,16 +241,18 @@
         <div class="flex w-full flex-col items-center gap-7 lg:hidden">
           <a
             href="/reviews/"
-            class="flex items-center justify-center gap-1 pt-3"
+            class="group flex items-center justify-center gap-1 pt-3"
           >
-            <p class="whitespace-nowrap text-xs font-bold text-white">
+            <p
+              class="whitespace-nowrap text-xs font-bold text-white transition-colors duration-300 group-hover:text-zinc-100"
+            >
               Всі відгуки
             </p>
             <img src="/src/assets/RightArrowWhite.svg" />
           </a>
           <button
-            id="openReviewModal"
-            class="max-w-[180px] whitespace-nowrap rounded-large bg-white px-9 py-3 text-xs font-bold text-gray-900"
+            id="openReviewModalMobile"
+            class="max-w-[180px] whitespace-nowrap rounded-large bg-white px-9 py-3 text-xs font-bold text-gray-900 transition-colors duration-300 hover:bg-zinc-100 hover:text-gray-950"
           >
             Залишити відгук
           </button>
