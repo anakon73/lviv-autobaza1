@@ -19,11 +19,22 @@
   </head>
 
   <body class="font-montserrat">
+    <div
+      id="filterFormOverlay"
+      class="fixed z-30 hidden h-full w-full bg-black/10 lg:hidden"
+    ></div>
     <div class="mb-10 md:mb-5">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
     <div
       class="container mb-24 px-5 max-[425px]:px-1 lg:mb-32 xl:px-24 min-[1400px]:px-[150px]"
     >
+      <div
+        id="filterForm"
+        class="fixed left-0 top-0 z-40 -translate-x-full transition-all duration-300 ease-in lg:hidden"
+      >
+        {{>FilterForm}}
+      </div>
+
       <div
         class="mb-8 flex items-center gap-1 text-xs text-gray-900 transition-colors duration-300 hover:text-gray-950 md:mb-10"
       >
@@ -49,7 +60,8 @@
       <div class="flex gap-3 xl:gap-5">
         <div class="hidden lg:block">{{>FilterForm}}</div>
         <div>
-          <div
+          <button
+            id="showFilterForm"
             class="card mb-8 flex w-full justify-between rounded-2xl px-6 py-3 lg:hidden"
           >
             <div class="flex items-center gap-3">
@@ -57,7 +69,7 @@
               <p class="font-medium text-gray-900">Фільтр</p>
             </div>
             <img src="/src/assets/chevronDown.svg" />
-          </div>
+          </button>
           <div
             class="mb-10 grid gap-3 min-[360px]:grid-cols-2 min-[425px]:gap-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3"
           >
@@ -115,6 +127,10 @@
     ></script>
     <script
       src="/src/scripts/NumberFormat.js"
+      type="module"
+    ></script>
+    <script
+      src="/src/scripts/FilterForm.js"
       type="module"
     ></script>
   </body>
