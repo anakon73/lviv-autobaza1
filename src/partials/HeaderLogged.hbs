@@ -153,13 +153,22 @@
     </a>
     {{>Search}}
     <div class="flex h-5 gap-10">
-      <a href="/registration/">
+      <div class="flex items-center gap-1">
         <img
           src="/src/assets/userIcon.svg"
           alt="user icon"
-          class="max-w-none"
         />
-      </a>
+        <div class="text-xs font-medium">
+          <p class="transition-colors duration-300">Олександр</p>
+          <a href="/">
+            <p
+              class="text-blue-600 transition-colors duration-300 hover:text-blue-700"
+            >
+              Вийти
+            </p>
+          </a>
+        </div>
+      </div>
       <button class="relative">
         <img
           src="/src/assets/heartIcon.svg"
