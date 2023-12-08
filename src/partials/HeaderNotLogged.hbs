@@ -1,4 +1,132 @@
 <div
+  class="flex fixed top-0 flex-col bg-blue-600 gap-6 text-white z-50 py-7 px-8 -translate-y-full transition-all duration-300 ease-in md:hidden w-full h-full"
+  id="dropMenu"
+>
+  <div class="flex items-center justify-between">
+    <a href="/">
+      <img
+        src="/src/assets/Logo.svg"
+        alt="service tir logo"
+        class="max-w-none"
+      />
+    </a>
+    <button id="closeHeaderButton">
+      <img
+        src="/src/assets/xMarkWhiteIcon.svg"
+        alt="x-mark icon"
+      />
+    </button>
+  </div>
+  <ul class="flex flex-col gap-5">
+    <li>
+      <a
+        class="hover:text-zinc-200 transition-colors duration-300"
+        href="/"
+        >Головна</a
+      >
+    </li>
+    <li>
+      <a
+        class="hover:text-zinc-200 transition-colors duration-300"
+        href="/catalog/"
+        >Каталог</a
+      >
+    </li>
+    <li>
+      <a
+        class="hover:text-zinc-200 transition-colors duration-300"
+        href="/services/"
+        >Послуги</a
+      >
+    </li>
+    <li>
+      <a
+        class="hover:text-zinc-200 transition-colors duration-300"
+        href="/about-us/"
+        >Про нас</a
+      >
+    </li>
+    <li>
+      <a
+        class="hover:text-zinc-200 transition-colors duration-300"
+        href="/contacts/"
+        >Контакти</a
+      >
+    </li>
+    <li>
+      <a
+        class="hover:text-zinc-200 transition-colors duration-300"
+        href="/reviews/"
+        >Відгуки</a
+      >
+    </li>
+    <li>
+      <a
+        class="hover:text-zinc-200 transition-colors duration-300"
+        href="/articles/"
+        >Статті</a
+      >
+    </li>
+  </ul>
+  <hr class="h-px border-0 bg-zinc-50/50" />
+  <a
+    href="/registration/"
+    class="block group"
+  >
+    <div class="flex items-center gap-2">
+      <img
+        src="/src/assets/userWhiteIcon.svg"
+        alt="user icon"
+      />
+      <p class="group-hover:text-zinc-200 transition-colors duration-300">
+        Особистий кабінет
+      </p>
+    </div>
+  </a>
+  <button class="flex items-center gap-2 group">
+    <div class="relative">
+      <img
+        src="/src/assets/heartWhiteIcon.svg"
+        alt="heart icon"
+      />
+      <div
+        id="favorite"
+        class="absolute -top-0.5 left-3.5 inline-flex h-2.5 items-center justify-center rounded-full border border-white bg-cyan-100 px-0.5 text-center text-[8px] text-sky-500"
+      >
+        0
+      </div>
+    </div>
+    <p class="group-hover:text-zinc-200 transition-colors duration-300">
+      Обране
+    </p>
+  </button>
+  <a
+    href="/cart/"
+    class="group"
+  >
+    <div
+      class="flex items-center gap-2 group-hover:text-zinc-200 transition-colors duration-300"
+    >
+      <div class="relative">
+        <img
+          src="/src/assets/cartWhiteIcon.svg"
+          alt="cart icon"
+        />
+        <div
+          class="absolute -top-0.5 left-3.5 inline-flex h-2.5 items-center justify-center rounded-full border border-white bg-green-100 px-0.5 text-center text-[8px] text-emerald-500"
+        >
+          6
+        </div>
+      </div>
+      <div class="flex gap-2">
+        <p>&#8372;10 000</p>
+        <p>Кошик</p>
+      </div>
+    </div>
+  </a>
+  {{>SearchMobile }}
+</div>
+<header
   id="header"
   class="relative z-20 py-7 text-sm text-gray-900 md:py-5"
 >
@@ -71,131 +199,9 @@
           class="max-w-none"
         />
       </button>
-      <button
-        id="closeHeaderButton"
-        class="hidden"
-      >
-        <img
-          src="/src/assets/xMarkWhiteIcon.svg"
-          alt="x-mark icon"
-        />
-      </button>
-    </div>
-    <div
-      class="mt-[54px] hidden w-full flex-col gap-6 text-white"
-      id="dropMenu"
-    >
-      <ul class="flex flex-col gap-5">
-        <li>
-          <a
-            class="hover:text-zinc-200 transition-colors duration-300"
-            href="/"
-            >Головна</a
-          >
-        </li>
-        <li>
-          <a
-            class="hover:text-zinc-200 transition-colors duration-300"
-            href="/catalog/"
-            >Каталог</a
-          >
-        </li>
-        <li>
-          <a
-            class="hover:text-zinc-200 transition-colors duration-300"
-            href="/services/"
-            >Послуги</a
-          >
-        </li>
-        <li>
-          <a
-            class="hover:text-zinc-200 transition-colors duration-300"
-            href="/about-us/"
-            >Про нас</a
-          >
-        </li>
-        <li>
-          <a
-            class="hover:text-zinc-200 transition-colors duration-300"
-            href="/contacts/"
-            >Контакти</a
-          >
-        </li>
-        <li>
-          <a
-            class="hover:text-zinc-200 transition-colors duration-300"
-            href="/reviews/"
-            >Відгуки</a
-          >
-        </li>
-        <li>
-          <a
-            class="hover:text-zinc-200 transition-colors duration-300"
-            href="/articles/"
-            >Статті</a
-          >
-        </li>
-      </ul>
-      <hr class="h-px border-0 bg-zinc-50/50" />
-      <a
-        href="/registration/"
-        class="block group"
-      >
-        <div class="flex items-center gap-2">
-          <img
-            src="/src/assets/userWhiteIcon.svg"
-            alt="user icon"
-          />
-          <p class="group-hover:text-zinc-200 transition-colors duration-300">
-            Особистий кабінет
-          </p>
-        </div>
-      </a>
-      <button class="flex items-center gap-2 group">
-        <div class="relative">
-          <img
-            src="/src/assets/heartWhiteIcon.svg"
-            alt="heart icon"
-          />
-          <div
-            id="favorite"
-            class="absolute -top-0.5 left-3.5 inline-flex h-2.5 items-center justify-center rounded-full border border-white bg-cyan-100 px-0.5 text-center text-[8px] text-sky-500"
-          >
-            0
-          </div>
-        </div>
-        <p class="group-hover:text-zinc-200 transition-colors duration-300">
-          Обране
-        </p>
-      </button>
-      <a
-        href="/cart/"
-        class="group"
-      >
-        <div
-          class="flex items-center gap-1 group-hover:text-zinc-200 transition-colors duration-300"
-        >
-          <div class="relative">
-            <img
-              src="/src/assets/cartWhiteIcon.svg"
-              alt="cart icon"
-            />
-            <div
-              class="absolute -top-0.5 left-3.5 inline-flex h-2.5 items-center justify-center rounded-full border border-white bg-green-100 px-0.5 text-center text-[8px] text-emerald-500"
-            >
-              6
-            </div>
-          </div>
-          <div class="flex gap-2">
-            <p>&#8372;10 000</p>
-            <p>Кошик</p>
-          </div>
-        </div>
-      </a>
-      {{>SearchMobile }}
     </div>
   </div>
-</div>
+</header>
 
 <script
   type="module"
