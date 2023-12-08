@@ -25,7 +25,7 @@ const hotOffersSwiper = new Swiper(".hotOffersSwiper", {
     640: {
       slidesPerView: 3,
     },
-    360: {
+    400: {
       slidesPerView: 2,
     },
   },
