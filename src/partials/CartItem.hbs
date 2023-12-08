@@ -1,20 +1,21 @@
 <div
-  class="relative flex w-full flex-col gap-4 rounded-2xl border border-slate-300 bg-white px-3.5 py-3 md:flex-row md:items-center md:gap-0 xl:pr-0"
+  class="relative flex w-full flex-col gap-4 rounded-2xl border border-slate-300 bg-white px-3.5 py-3 md:flex-row md:items-center md:gap-0 2xl:pr-0"
 >
   <img
     src="/src/assets/xMarkIcon.svg"
     class="absolute right-3 top-3 cursor-pointer"
   />
-  <div class="flex items-start">
+  <div class="flex items-start max-w-[290px] w-full mr-5 gap-5">
     <div
-      class="mr-5 inline-flex rounded-xl bg-indigo-100 md:flex md:items-center md:justify-center"
+      class="inline-flex rounded-xl bg-indigo-100 md:flex md:items-center md:justify-center"
     >
       <img
         src="/src/assets/scaniaTank.png"
         alt="result product image"
+        class="max-w-none"
       />
     </div>
-    <div class="mr-5 flex max-w-[194px] flex-col gap-2">
+    <div class="flex flex-col gap-2">
       <h2 class="text-sm font-semibold leading-small text-gray-900 truncate">
         Паливний бак Scania
       </h2>
@@ -34,7 +35,7 @@
         <div class="relative">
           <img
             src="/src/assets/discountBlue.svg"
-            class="resize-none"
+            class="max-w-none"
           />
           <p
             class="absolute left-2 top-0.5 whitespace-nowrap text-[10px] font-bold text-white"
@@ -46,12 +47,19 @@
       <div class="text-xl font-semibold text-gray-900">2200 &#8372;</div>
     </div>
     <div class="flex items-center gap-4 md:mr-[85px]">
-      <img src="/src/assets/minusIcon.svg" />
+      <button>
+        <img
+          src="/src/assets/minusIcon.svg"
+          class="max-w-none"
+        />
+      </button>
       <p class="text-sm font-semibold text-gray-900">1</p>
-      <img
-        class="rounded bg-blue-500 p-[5px]"
-        src="/src/assets/plusIcon.svg"
-      />
+      <button class="rounded bg-blue-500 p-[5px]">
+        <img
+          src="/src/assets/plusIcon.svg"
+          class="max-w-none"
+        />
+      </button>
     </div>
     <div class="whitespace-nowrap text-xl font-semibold text-gray-900">
       2200 &#8372;

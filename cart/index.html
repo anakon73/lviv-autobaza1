@@ -18,83 +18,87 @@
     <title>Service Tir | Cart</title>
   </head>
 
-  <body class="flex h-screen flex-col font-montserrat">
-    <div class="mb-10 md:mb-5">{{>HeaderNotLogged}} {{>Navbar}}</div>
+  <body class="font-montserrat">
+    <div class="flex h-screen flex-col">
+      <div class="mb-10 md:mb-5">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
-    <div class="container mb-24 w-full md:mb-32">
-      <div
-        class="mb-8 flex items-center gap-1 text-sm text-gray-900 transition-colors duration-300 hover:text-gray-950 md:mb-10"
-      >
-        <a
-          href="/"
-          class="opacity-50"
-          >Головна</a
-        >
-        <img src="/src/assets/ChevronRightSmall.svg" />
-        <p class="cursor-pointer">Кошик</p>
-      </div>
-      <div class="mb-8 flex items-center gap-3">
-        <div class="paragraphIcon rounded-full bg-white p-2">
-          <img
-            src="/src/assets/cartEmojiIcon.png"
-            alt="tools icon"
-          />
-        </div>
-        <h1
-          class="font-jakarta text-3xl font-bold leading-normal text-gray-900 lg:text-big lg:leading-extra-height"
-        >
-          Кошик
-        </h1>
-      </div>
-      <div class="grid items-start gap-5 lg:flex">
-        <div class="flex w-full flex-col gap-2">
-          <div
-            class="hidden w-full gap-16 rounded-lg bg-gray-100 text-sm tracking-[0.28px] text-gray-900 md:flex"
-          >
-            <p class="w-full max-w-[240px] px-6 py-4">Назва товару</p>
-            <p class="px-6 py-4">Вартість</p>
-            <p class="px-6 py-4">Кількість</p>
-            <p class="px-6 py-4">Сума</p>
-          </div>
-          {{>CartItem}} {{>CartItem}} {{>CartItem}}
-        </div>
+      <div class="container h-full w-full overflow-x-hidden">
         <div
-          class="card row-end-1 flex w-full flex-col gap-6 rounded-xl border border-gray-100 bg-white px-5 py-6 lg:max-w-[270px]"
+          class="mb-8 flex items-center gap-1 text-sm text-gray-900 transition-colors duration-300 hover:text-gray-950 md:mb-10"
         >
-          <h1 class="text-xl font-semibold text-gray-900">Ваше замовлення:</h1>
-          <div>
-            <div class="flex flex-col gap-5">
-              <div class="flex flex-col gap-3">
-                <div class="flex items-center justify-between">
-                  <p class="text-neutral-400">Товари (3)</p>
-                  <p class="font-medium text-zinc-600">75 092 &#8372;</p>
+          <a
+            href="/"
+            class="opacity-50"
+            >Головна</a
+          >
+          <img src="/src/assets/ChevronRightSmall.svg" />
+          <p class="cursor-pointer">Кошик</p>
+        </div>
+        <div class="mb-8 flex items-center gap-3">
+          <div class="paragraphIcon rounded-full bg-white p-2">
+            <img
+              src="/src/assets/cartEmojiIcon.png"
+              alt="tools icon"
+            />
+          </div>
+          <h1
+            class="font-jakarta text-3xl font-bold leading-normal text-gray-900 lg:text-big lg:leading-extra-height"
+          >
+            Кошик
+          </h1>
+        </div>
+        <div class="grid items-start gap-5 lg:flex">
+          <div class="flex w-full flex-col gap-2">
+            <div
+              class="hidden w-full gap-16 rounded-lg bg-gray-100 text-sm tracking-[0.28px] text-gray-900 md:flex"
+            >
+              <p class="w-full max-w-[240px] px-6 py-4">Назва товару</p>
+              <p class="px-6 py-4">Вартість</p>
+              <p class="px-6 py-4">Кількість</p>
+              <p class="px-6 py-4">Сума</p>
+            </div>
+            {{>CartItem}} {{>CartItem}} {{>CartItem}}
+          </div>
+          <div
+            class="card row-end-1 flex w-full flex-col gap-6 rounded-xl border border-gray-100 bg-white px-5 py-6 lg:max-w-[270px]"
+          >
+            <h1 class="text-xl font-semibold text-gray-900">
+              Ваше замовлення:
+            </h1>
+            <div>
+              <div class="flex flex-col gap-5">
+                <div class="flex flex-col gap-3">
+                  <div class="flex items-center justify-between">
+                    <p class="text-neutral-400">Товари (3)</p>
+                    <p class="font-medium text-zinc-600">75 092 &#8372;</p>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <p class="text-neutral-400">Знижка</p>
+                    <p class="font-medium text-zinc-600">5 092 &#8372;</p>
+                  </div>
                 </div>
-                <div class="flex items-center justify-between">
-                  <p class="text-neutral-400">Знижка</p>
-                  <p class="font-medium text-zinc-600">5 092 &#8372;</p>
+                <hr />
+                <div
+                  class="flex items-center justify-between font-semibold text-gray-900"
+                >
+                  <p class="text-lg">Сума</p>
+                  <p class="text-xl">10 095 &#8372;</p>
                 </div>
-              </div>
-              <hr />
-              <div
-                class="flex items-center justify-between font-semibold text-gray-900"
-              >
-                <p class="text-lg">Сума</p>
-                <p class="text-xl">10 095 &#8372;</p>
               </div>
             </div>
+            <a href="/order/">
+              <button
+                class="self-start whitespace-nowrap rounded-large bg-blue-600 px-[27px] py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-blue-700 hover:text-zinc-100"
+              >
+                Оформити замовлення
+              </button>
+            </a>
           </div>
-          <a href="/order/">
-            <button
-              class="self-start whitespace-nowrap rounded-large bg-blue-600 px-[27px] py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-blue-700 hover:text-zinc-100"
-            >
-              Оформити замовлення
-            </button>
-          </a>
         </div>
       </div>
-    </div>
 
-    <div class="justify-end">{{>Footer}}</div>
+      <div class="justify-self-end">{{>Footer}}</div>
+    </div>
 
     <script
       src="/src/scripts/NumberFormat.js"
