@@ -30,6 +30,17 @@
     drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.04));
 }
 
+.swiper-pagination-bullet {
+  --swiper-pagination-bullet-inactive-color: #d2d2d2;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  --swiper-pagination-bullet-active-color: #246def;
+  --swiper-pagination-bullet-active-opacity: 1;
+}
+
 @layer utilities {
   .container {
     @apply max-w-[90rem];
