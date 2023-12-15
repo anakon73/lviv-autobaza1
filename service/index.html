@@ -230,13 +230,11 @@
       </div>
     </div>
 
-    <div class="relative">
-      <div
-        class="absolute top-64 z-20 min-[375px]:left-5 lg:top-24 lg:mx-0 xl:left-96"
-      >
-        {{>ContactCard}}
+    <div class="relative h-[800px] w-full lg:h-[669px]">
+      <div class="absolute h-full w-full">{{>Map}}</div>
+      <div class="container relative">
+        <div class="absolute top-24 z-20">{{>ContactCard}}</div>
       </div>
-      {{>Map}}
     </div>
 
     {{>Footer}} {{>ServiceSignUpModal}}
