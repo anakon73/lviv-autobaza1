@@ -19,11 +19,11 @@
   </head>
 
   <body class="font-montserrat">
-    <div class="md:mb-5 mb-10">{{>HeaderNotLogged}} {{>Navbar}}</div>
+    <div class="sm:mb-5 mb-10">{{>HeaderNotLogged}} {{>Navbar}}</div>
 
     <div class="container mb-24 lg:mb-32">
       <div
-        class="text-gray-900 text-xs mb-8 md:mb-10 flex items-center transition-colors duration-300 hover:text-gray-950 gap-1"
+        class="text-gray-900 text-xs mb-8 sm:mb-10 flex items-center transition-colors duration-300 hover:text-gray-950 gap-1"
       >
         <p class="opacity-50">
           <a href="/">Головна</a>
@@ -40,19 +40,19 @@
             />
           </div>
           <h1
-            class="text-gray-900 font-jakarta font-bold md:leading-extra-height md:text-big text-2xl leading-[26px] whitespace-nowrap"
+            class="text-gray-900 font-jakarta font-bold sm:leading-extra-height sm:text-big text-2xl leading-[26px] whitespace-nowrap"
           >
             Наші контакти
           </h1>
         </div>
         <button
-          class="py-3 px-9 font-bold text-white text-xs bg-blue-600 rounded-large md:block hidden transition-colors duration-300 hover:bg-blue-700 hover:text-zinc-100"
+          class="py-3 px-9 font-bold text-white text-xs bg-blue-600 rounded-large sm:block hidden transition-colors duration-300 hover:bg-blue-700 hover:text-zinc-100"
         >
           Зателефонувати
         </button>
       </div>
       <div
-        class="flex md:gap-[120px] md:items-start text-base mb-8 flex-col md:flex-row gap-6"
+        class="flex sm:gap-[50px] md:gap-[120px] flex-wrap sm:items-start text-base mb-8 flex-col sm:flex-row gap-6"
       >
         <div class="flex flex-col gap-2.5 justify-start">
           <h2 class="font-bold">Адреса:</h2>
@@ -88,17 +88,24 @@
           </p>
         </div>
         <button
-          class="py-3 px-9 font-bold text-white text-xs bg-blue-600 rounded-large block md:hidden self-start transition-colors duration-300 hover:bg-blue-700 hover:text-zinc-100"
+          class="py-3 px-9 font-bold text-white text-xs bg-blue-600 rounded-large block sm:hidden self-start transition-colors duration-300 hover:bg-blue-700 hover:text-zinc-100"
         >
           Зателефонувати
         </button>
       </div>
+      <button class="flex gap-2.5 items-center mb-6">
+        <img
+          src="/src/assets/wayIcon.svg"
+          alt="way icon"
+        />
+        <p class="text-xs font-medium text-blue-600">Прокласти маршрут</p>
+      </button>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5149.608856919481!2d24.05850095232348!3d49.808544341551475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae81a36741bbf%3A0xe7464f623da4015b!2z0JvRjNCy0ZbQstGB0YzQutCwINCQ0LLRgtC-0LHQsNC30LAg4oSWMSwg0KLQlNCS!5e0!3m2!1sru!2sua!4v1698168999309!5m2!1sru!2sua"
         width="100%"
         style="border-radius: 30px"
         loading="lazy"
-        class="md:h-[550px] h-[432px]"
+        class="sm:h-[550px] h-[432px]"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
