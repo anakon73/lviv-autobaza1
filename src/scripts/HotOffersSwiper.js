@@ -16,7 +16,7 @@ const hotOffersSwiper = new Swiper(".hotOffersSwiper", {
   },
   slideActiveClass: "activeOffer",
   loop: true,
-  spaceBetween: 20,
+  spaceBetween: 29,
   slidesPerView: 1,
   breakpoints: {
     768: {

@@ -15,7 +15,7 @@ const articlesSwiper = new Swiper(".articlesSwiper", {
     el: ".swiperArticle-pagination",
   },
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 22,
   loop: true,
   breakpoints: {
     400: {
