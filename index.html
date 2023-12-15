@@ -115,7 +115,7 @@
           </button>
         </div>
       </div>
-      <div class="mb-[184px] pb-4 lg:mb-[232px]">
+      <div class="mb-[72px] pb-4 lg:mb-[120px]">
         <div class="mb-8 flex items-center">
           <div class="paragraphIcon mr-3 rounded-full bg-white p-2">
             <img
@@ -142,8 +142,11 @@
         </div>
         {{>ServicesSwiper}}
       </div>
-      <div class="mb-48 lg:mb-64">
-        <div class="mb-10 flex items-start gap-0.5">
+    </div>
+
+    <div class="mb-20 bg-[#FBFDFF] py-24 lg:mb-36 lg:py-[120px]">
+      <div class="container">
+        <div class="mb-6 flex items-start gap-0.5 md:mb-10">
           <div class="paragraphIcon mr-3 rounded-full bg-white p-2">
             <img
               src="/src/assets/advantagesStarIcon.svg"
@@ -169,54 +172,25 @@
           {{>AdvantageCard}} {{>AdvantageCard}}
         </div>
       </div>
+    </div>
 
-      <div>
-        <div
-          class="articlesSwiper mb-[84px] overflow-hidden pb-4 lg:mb-[114px]"
-        >
-          <div class="mb-9 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-              <div class="paragraphIcon rounded-full bg-white p-2">
-                <img
-                  src="/src/assets/orderIcon.svg"
-                  alt="fireIcon"
-                />
-              </div>
-              <div
-                class="font-jakarta text-3xl font-bold leading-normal text-gray-900 lg:text-big lg:leading-extra-height"
-              >
-                Cтатті
-              </div>
+    <div class="container">
+      <div class="articlesSwiper mb-[84px] overflow-hidden pb-4 lg:mb-[114px]">
+        <div class="mb-9 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="paragraphIcon rounded-full bg-white p-2">
+              <img
+                src="/src/assets/orderIcon.svg"
+                alt="fireIcon"
+              />
             </div>
-            <div class="hidden h-10 gap-2.5 md:flex">
-              <button
-                class="paragraphIcon prevArticle rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
-              >
-                <img
-                  class="h-6 w-6"
-                  src="/src/assets/chevronLeft.svg"
-                />
-              </button>
-              <button
-                class="paragraphIcon nextArticle rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
-              >
-                <img
-                  class="h-6 w-6"
-                  src="/src/assets/chevronRight.svg"
-                />
-              </button>
+            <div
+              class="font-jakarta text-3xl font-bold leading-normal text-gray-900 lg:text-big lg:leading-extra-height"
+            >
+              Cтатті
             </div>
           </div>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">{{>ArticleCard}}</div>
-            <div class="swiper-slide">{{>ArticleCard}}</div>
-            <div class="swiper-slide">{{>ArticleCard}}</div>
-            <div class="swiper-slide">{{>ArticleCard}}</div>
-            <div class="swiper-slide">{{>ArticleCard}}</div>
-            <div class="swiper-slide">{{>ArticleCard}}</div>
-            <div class="swiper-slide">{{>ArticleCard}}</div>
-          </div>
-          <div class="mt-5 flex items-end justify-center gap-5 md:hidden">
+          <div class="hidden h-10 gap-2.5 md:flex">
             <button
               class="paragraphIcon prevArticle rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
             >
@@ -225,7 +199,6 @@
                 src="/src/assets/chevronLeft.svg"
               />
             </button>
-            <div class="swiperArticle-pagination !relative !w-auto"></div>
             <button
               class="paragraphIcon nextArticle rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
             >
@@ -235,6 +208,34 @@
               />
             </button>
           </div>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+          <div class="swiper-slide">{{>ArticleCard}}</div>
+        </div>
+        <div class="mt-5 flex items-end justify-center gap-5 md:hidden">
+          <button
+            class="paragraphIcon prevArticle rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
+          >
+            <img
+              class="h-6 w-6"
+              src="/src/assets/chevronLeft.svg"
+            />
+          </button>
+          <div class="swiperArticle-pagination !relative !w-auto"></div>
+          <button
+            class="paragraphIcon nextArticle rounded-full bg-white p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-50"
+          >
+            <img
+              class="h-6 w-6"
+              src="/src/assets/chevronRight.svg"
+            />
+          </button>
         </div>
       </div>
     </div>
