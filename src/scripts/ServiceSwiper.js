@@ -15,4 +15,9 @@ const serviceSwiper = new Swiper(".servicesSwiper", {
   },
   slidesPerView: 1,
   spaceBetween: 16,
+  breakpoints: {
+    550: {
+      slidesPerView: 2,
+    },
+  },
 })
