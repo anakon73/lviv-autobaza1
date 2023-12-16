@@ -54,5 +54,6 @@ body {
 @layer utilities {
   .container {
     @apply max-w-[90rem];
+    @apply basis-full;
   }
 }
